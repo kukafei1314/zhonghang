@@ -1,17 +1,18 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+/*
+ * ¹¦ÄÜ£ºÖ÷Ò³¿ØÖÆÆ÷
+ * ×÷Õß£ºlizzyphy
+ * ÈÕÆÚ£º2014.12.29
+ */
 class Index extends CI_Controller {
-
-	/**
-	 * æž„é€ å‡½æ•°
-	 */
-	public function __construct()
+	function __construct()
 	{
 		parent::__construct();
+		$this->load->helper('url');
 	}
 	
 	public function index()
 	{
-		$this->load->view('index.php');
+		$this->load->view('main_nav');
 	}
 }
