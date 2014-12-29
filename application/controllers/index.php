@@ -1,8 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /*
- * åŠŸèƒ½ï¼šä¸»é¡µæŽ§åˆ¶å™¨
- * ä½œè€…ï¼šlizzyphy
- * æ—¥æœŸï¼š2014.12.29
+ * ¹¦ÄÜ£ºÖ÷Ò³¿ØÖÆÆ÷
+ * ×÷Õß£ºlizzyphy
+ * ÈÕÆÚ£º2014.12.29
  */
 class Index extends CI_Controller {
 	function __construct()
