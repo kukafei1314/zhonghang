@@ -1,8 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /*
- * ¹¦ÄÜ£ºÖ÷Ò³¿ØÖÆÆ÷
- * ×÷Õß£ºlizzyphy
- * ÈÕÆÚ£º2014.12.29
+ * ï¿½ï¿½ï¿½Ü£ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ß£ï¿½lizzyphy
+ * ï¿½ï¿½ï¿½Ú£ï¿½2014.12.29
  */
 class Index extends CI_Controller {
 	function __construct()
@@ -14,5 +14,9 @@ class Index extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('main_nav');
+	}
+	public function middle()
+	{
+		$this->load->view('main_middle');
 	}
 }
