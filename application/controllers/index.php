@@ -22,4 +22,5 @@ class Index extends CI_Controller {
 	{
 		$this->load->view('second_header');
 	}
+	
 }
