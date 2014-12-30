@@ -139,12 +139,17 @@ body {
 	padding-left:8px;
     padding-right:38px;
 }
-
+#bottom_div {
+	margin-top:20px;
+	padding:25px 6% 55px 6%;
+	background:#fafafa;
+	border-top:#eaeaea 2px solid;
+}
 .main_bottom{
-	margin:20px 6% 55px 6%;
 	padding:50px 5% 50px 5%;
-	border:#CCC 1px solid;
+	border:#efefef 1px solid;
 	font-size:14px;
+	background:#fff;
 }
 
 .main_bottom a{
