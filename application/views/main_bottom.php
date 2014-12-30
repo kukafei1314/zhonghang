@@ -79,7 +79,7 @@
         </div>
         <div class="bottom_right">
         	<div class="bottom_logo">
-            	<img src="../../static/image/logo3.png"/>
+            	<img src="<?php echo base_url('static/image/logo3.png');?>"/>
             </div>
             <div class="main_search">
             	<form action="#">

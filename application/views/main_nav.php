@@ -11,7 +11,7 @@
 <body>
 	<div class="top">
 		<div class="top_title">
-			<img src="../../static/image/logo.png" width="110" height="28" class="top_logo"/>
+			<img src="<?php echo base_url('static/image/logo.png'); ?>" width="110" height="28" class="top_logo"/>
             <div class="top_nav">
             	<ul>
                     <li>
