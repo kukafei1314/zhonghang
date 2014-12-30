@@ -21,6 +21,9 @@ class Index extends CI_Controller {
 	public function middle()
 	{
 		$this->load->view('second_header');
+		$this->load->view('navigation');
+		$this->load->view('main_bottom');
+		$this->load->view('footer');
 	}
 	
 }
