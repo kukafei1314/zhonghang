@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";
+.list_right {
+background-color: #FFF;
+width: 64%;
+line-height: 30px;
+float: left;
+-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+margin: 15px 0px 20px 5px;
+position: relative;
+}
+
+#right_head {
+line-height: 20px;
+padding-top: 10px;
+margin: 0 30px 0px 10px;
+padding-left: 15px;
+}
+#right_head a{
+	color: #666;
+	text-decoration: none;
+}
+
+#right_head a:hover{
+	color: #F00;
+	text-decoration: none;
+}
+#right_title {
+font-size: 20px;
+color: #064481;
+font-weight: bold;
+padding: 5px 0px 5px 40px;
+/* border-bottom: 1px dashed #CCCCCC; */
+margin: 0px 10px 0px 10px;
+}
+
+#right_content {
+margin: 10px 0px 50px 0px;
+width: 98%;
+}
+
+#right_content a{
+	color: #666;
+	text-decoration: none;
+}
+
+#right_content a:hover{
+	color: #F00;
+	text-decoration: none;	
+}
+.content2 {
+width: 76%;
+display: block;
+overflow: hidden;
+font-size: 10px;
+text-overflow: ellipsis;
+float: left;
+}
+.time {
+width: 20%;
+float: right;
+display: block;
+height: 20px;
+font-size: 10px;
+color: #666;
+}
+
+#right_content ul li {
+width: 98%;
+height: 30px;
+overflow: hidden;
+display: block;
+text-overflow: ellipsis;
+padding-left: 5px;
+background-image: url(../img/2ji_list.jpg);
+background-position: left;
+background-repeat: no-repeat;
+margin: 2px 2px 0px 8px;
+text-align: left;
+}
+#page{
+	margin:10px 70px 50px 70px;
+;
+
+}
+#page a{
+	color: #666;
+	text-decoration: none;
+}
+
+#page a:hover{
+	color: #F00;
+	text-decoration: none;	
+}
+.clear{
+	clear:both;
+}
+/* CSS Document */
+
