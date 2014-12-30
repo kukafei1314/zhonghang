@@ -7,17 +7,17 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a>查看更多>></a>
+					<a>查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
 			<div class="focus">
 				<div id="pic">
 					<ul>
-						<li><a href=""><img width="250" height="200" src="<?php echo base_url('static/image/1.jpg')?>" /></a></li>
-						<li><a href=""><img width="250" height="200" src="<?php echo base_url('static/image/2.jpg')?>" /></a></li>
-						<li><a href=""><img width="250" height="200" src="<?php echo base_url('static/image/3.jpg')?>" /></a></li>
-						<li><a href=""><img width="250" height="200" src="<?php echo base_url('static/image/4.jpg')?>" /></a></li>
+						<li><a href=""><img width="250" height="180" src="<?php echo base_url('static/image/1.jpg')?>" /></a></li>
+						<li><a href=""><img width="250" height="180" src="<?php echo base_url('static/image/2.jpg')?>" /></a></li>
+						<li><a href=""><img width="250" height="180" src="<?php echo base_url('static/image/3.jpg')?>" /></a></li>
+						<li><a href=""><img width="250" height="180" src="<?php echo base_url('static/image/4.jpg')?>" /></a></li>
 					</ul>
 				</div>
 				<div id="tip">
@@ -29,6 +29,7 @@
 					</ul>
 				</div>
 			</div>
+			<div class="cl"></div>
 			<div class="news_title">集团总经理调研中</div>
 		</div>
 		<div class="content_middle">
@@ -39,7 +40,7 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a>查看更多>></a>
+					<a>查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
@@ -91,7 +92,7 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a>查看更多>></a>
+					<a>查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
@@ -123,6 +124,7 @@
 		</div>
 		<div class="cl"></div>
 	</div>
+
 
      
     
