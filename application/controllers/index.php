@@ -14,9 +14,11 @@ class Index extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('main_nav');
+		$this->load->view('main_middle');
+		$this->load->view('footer');
 	}
 	public function middle()
 	{
-		$this->load->view('main_middle');
+		$this->load->view('second_header');
 	}
 }

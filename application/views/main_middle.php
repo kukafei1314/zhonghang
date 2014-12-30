@@ -1,13 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"/>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel=stylesheet type="text/css" href="<?php echo base_url('static/css/home_middle.css'); ?>" />
-<script type="text/javascript" src="<?php echo base_url('static/js/pic.js'); ?>"></script>
-<title>爆炸</title>
-</head>
-
-<body>
 	<div id="home_content">
 		<div class="content_left">
 			<div class="content_title">
@@ -17,17 +7,17 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a>查看更多>></a>
+					<a>查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
 			<div class="focus">
 				<div id="pic">
 					<ul>
-						<li><a href=""><img width="250" height="200" src="<?php echo base_url('static/image/1.jpg')?>" /></a></li>
-						<li><a href=""><img width="250" height="200" src="<?php echo base_url('static/image/2.jpg')?>" /></a></li>
-						<li><a href=""><img width="250" height="200" src="<?php echo base_url('static/image/3.jpg')?>" /></a></li>
-						<li><a href=""><img width="250" height="200" src="<?php echo base_url('static/image/4.jpg')?>" /></a></li>
+						<li><a href=""><img width="250" height="180" src="<?php echo base_url('static/image/1.jpg')?>" /></a></li>
+						<li><a href=""><img width="250" height="180" src="<?php echo base_url('static/image/2.jpg')?>" /></a></li>
+						<li><a href=""><img width="250" height="180" src="<?php echo base_url('static/image/3.jpg')?>" /></a></li>
+						<li><a href=""><img width="250" height="180" src="<?php echo base_url('static/image/4.jpg')?>" /></a></li>
 					</ul>
 				</div>
 				<div id="tip">
@@ -39,6 +29,7 @@
 					</ul>
 				</div>
 			</div>
+			<div class="cl"></div>
 			<div class="news_title">集团总经理调研中</div>
 		</div>
 		<div class="content_middle">
@@ -49,7 +40,7 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a>查看更多>></a>
+					<a>查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
@@ -101,7 +92,7 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a>查看更多>></a>
+					<a>查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
@@ -133,7 +124,7 @@
 		</div>
 		<div class="cl"></div>
 	</div>
-</body>
+
 
      
     

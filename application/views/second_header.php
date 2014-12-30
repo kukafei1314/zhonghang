@@ -3,13 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="<?php echo base_url('static/css/home.css'); ?>"/>
-<link rel=stylesheet type="text/css" href="<?php echo base_url('static/css/home_middle.css'); ?>" />
-<script type="text/javascript" src="<?php echo base_url('static/js/pic.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/jquery-1.8.0.js'); ?>"></script>
 <title>主页</title>
 </head>
 <body>
-	<div class="top">
+	<div class="top_second">
 		<div class="top_title">
 			<img src="../../static/image/logo.png" width="110" height="28" class="top_logo"/>
             <div class="top_nav">
@@ -40,17 +38,4 @@
             </div>
             <div class="cl"></div>
 		</div>
-        <div class="top_bottom">
-        	<div class="top_bottom1">
-            	<div class="top_word1">企业文化</div>
-                <div class="top_word2">Corporate Culture</div>
-                <div class="cl"></div>
-            </div>
-            <div class="top_bottom2">
-            	<div class="top_word21">典型案例</div>
-                <div class="top_word22">Typical Case</div>
-                <div class="cl"></div>
-            </div>
-            <div class="cl"></div>
-        </div>
 	</div>
