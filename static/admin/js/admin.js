@@ -6,7 +6,7 @@ $(document).ready(function(){
     var find = 0;
 	$("#main_nav li").each(function(n) {
 		var b = $(this).attr("id");
-		alert(pn.indexOf(b));
+		//alert(pn.indexOf(b));
 		if (pn.indexOf(b) != -1){
 			$(this)[0].className = 'active';
 			
