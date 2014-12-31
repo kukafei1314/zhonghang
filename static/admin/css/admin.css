@@ -2,3 +2,13 @@
 body {
 font-family:"Arial","Microsoft YaHei","黑体","宋体",sans-serif !important;
 }
+.col-md-8 {
+	width: 100%;
+}
+.col-md-3 {
+	width: 15%;
+}
+.admin-pull-center {
+	margin:0 auto;
+	text-align:center;
+}

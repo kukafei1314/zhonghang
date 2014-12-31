@@ -25,5 +25,5 @@ class Index extends CI_Controller {
 		$this->load->view('main_bottom');
 		$this->load->view('footer');
 	}
-	
+
 }

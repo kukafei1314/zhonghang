@@ -17,4 +17,8 @@ class Index extends CI_Controller
 	{
 		$this->load->view('admin/index');
 	}
+	public function add()
+	{
+		$this->load->view('admin/add_news');
+	}
 }
