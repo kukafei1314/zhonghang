@@ -1,9 +1,9 @@
 <div class="list_right">
     	<div id="right_head">
-        	<p><a href="http://est.bit.edu.cn/index">首页</a>&nbsp;>&nbsp;<a href="">新闻中心</a>&nbsp;>&nbsp;<a href="">新闻快讯</a></p>
+        	<p>当前位置：<a href="http://est.bit.edu.cn/index">首页</a>&nbsp;>&nbsp;<a href="">人力资源</a>&nbsp;>&nbsp;<a href="">企业动态</a></p>
         </div>
         <div id="right_title">
-        	<p>新闻快讯</p>
+        	<p>企业动态</p>
         </div>
         <div id="right_content">
             <ul>
