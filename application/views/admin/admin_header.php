@@ -160,5 +160,10 @@
 				</ul>
 			</li>
 			<li role="presentation" class="divider"></li>
+			<li>
+				<a href="<?php echo base_url('admin/article_type');?>" id="index">
+					<span class="glyphicon glyphicon-th-large"></span> 类别管理
+				</a>
+			</li>
 		</ul>
 	</div><!--/.sidebar-->
