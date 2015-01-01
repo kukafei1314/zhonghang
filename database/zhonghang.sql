@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2014-12-31 09:47:54
+-- Generation Time: 2015-01-01 07:39:16
 -- 服务器版本： 5.6.17
 -- PHP Version: 5.5.12
 
@@ -66,14 +66,29 @@ CREATE TABLE IF NOT EXISTS `zh_articles` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `zh_aticles_type`
+-- 表的结构 `zh_articles_type`
 --
 
-CREATE TABLE IF NOT EXISTS `zh_aticles_type` (
-  `tid` varchar(20) NOT NULL,
-  `pid` varchar(20) NOT NULL,
-  `name` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `zh_articles_type` (
+  `pid` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `tid` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`tid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
+
+--
+-- 转存表中的数据 `zh_articles_type`
+--
+
+INSERT INTO `zh_articles_type` (`pid`, `name`, `tid`) VALUES
+(0, '公司概况', 4),
+(4, '公司简介', 5),
+(4, '董事长致辞', 6),
+(4, '管理团队', 7),
+(4, '组织机构', 8),
+(4, '公司战略', 9),
+(4, '荣誉与奖励', 10),
+(4, '企业文化', 11);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

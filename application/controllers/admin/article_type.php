@@ -20,11 +20,8 @@ class Article_type extends CI_Controller
 	
 	public function index()
 	{
-		$data['pid'] = 0;
-		$data['name'] = '';
-		$data['form_url'] = '/admin/article_type/add';
 		$data['types'] = $this->article_type_m->get_option();
-		$this->load->view('admin/add_type',$data);
+		$this->load->view('admin/index_type',$data);
 		//$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
 	}
 	
@@ -74,10 +71,7 @@ class Article_type extends CI_Controller
 		$data['form_url'] = '/admin/article_type/edit?tid=' . $tid;
 		$data['types'] = $this->article_type_m->get_option();
 		
-		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
-		$this->load->view('admin/left_navi.php');
-		$this->load->view('admin/article_type_add.php', $data);
-		$this->load->view('admin/footer.php');
+		$this->load->view('admin/add_type.php', $data);
 	}
 	
 	public function add_v() 
@@ -87,9 +81,6 @@ class Article_type extends CI_Controller
 		$data['form_url'] = '/admin/article_type/add';
 		$data['types'] = $this->article_type_m->get_option();
 		
-		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
-		$this->load->view('admin/left_navi.php');
-		$this->load->view('admin/article_type_add.php', $data);
-		$this->load->view('admin/footer.php');
+		$this->load->view('admin/add_type.php', $data);
 	}
 }

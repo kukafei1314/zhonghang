@@ -35,7 +35,7 @@
 								<div class="form-group">
 									<label class="col-md-3 control-label col-admin" for="name">类别名称</label>
 									<div class="col-md-9 col-admin-div">
-										<input id="name" name="name" type="text" class="form-control add-width">
+										<input id="name" name="name" type="text" class="form-control add-width" value="<?php echo $name;?>">
 									</div>
 									<div class="cl"></div>
 								</div>
@@ -53,6 +53,24 @@
 			</div><!--/.col-->
 		</div><!--/.row-->
 	</div>	<!--/.main-->
+	<script>
+		$('#calendar').datepicker({
+		});
+
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
 </body>
 
 </html>

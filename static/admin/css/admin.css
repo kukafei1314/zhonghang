@@ -29,3 +29,44 @@ margin-bottom: 20px !important;
 .cl {
 	clear:both;
 }
+#table1 {
+	width:20%!important;
+}
+#table2 {
+	width:60%!important;
+}
+#table3 {
+	width:20%!important;
+}
+.left {
+	float:left;
+}
+.add_a {
+	padding:15px 20px 10px 0;
+}
+.add_a a{
+	float:right;
+	display:block;
+	padding:0 10px 0 10px;
+	height:35px;
+	line-height:35px;
+	background:#30a5ff;
+	color:#fff;
+	border-radius:4px;
+}
+.add_a a:active, .add_a a:hover, .add_a a:focus{
+	background:#63bafd;
+	text-decoration:none;
+}
+.panel-heading {
+	border:none !important;
+}
+th,td {
+	text-align:center !important;
+}
+.edit_type a:active,.edit_type a:hover, .edit_type a:focus {
+	color:#fa232d;
+}
+td a{
+	margin-left:10px;
+}
