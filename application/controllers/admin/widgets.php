@@ -13,6 +13,6 @@ class Widgets extends CI_Controller
 	
 	public function index() 
 	{
-		$this->load->view('admin/widgets');
+		$this->load->view('admin/article_list');
 	}
 }
