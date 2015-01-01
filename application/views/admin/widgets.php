@@ -120,6 +120,7 @@
 				</div>
 			</div>
 		</div><!--/.row-->	
+	</div>
 </body>
 
 </html>
