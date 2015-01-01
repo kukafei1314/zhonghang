@@ -4,7 +4,7 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-				<li class="active">动态要闻</li>
+				<li class="active">动态要闻<!--显示一级标题--></li>
 			</ol>
 		</div><!--/.row-->
 		
@@ -12,7 +12,7 @@
 			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-                    	<div class="sec_head">公司动态</div>
+                    	<div class="sec_head">公司动态<!--显示二级标题--></div>
                         <form role="search" class="my_search">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="请输入关键字搜索">
@@ -37,9 +37,9 @@
                     <td>2014.12.31</td>
                     <td>
                         <div class="action-buttons">
-                            <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
-                            <a href="#" class="flag"><span class="glyphicon glyphicon-file"></span></a>
-                            <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" title="编辑"><span class="glyphicon glyphicon-pencil"></span></a>
+                            <a href="#" class="flag" title="查看"><span class="glyphicon glyphicon-file"></span></a>
+                            <a href="#" class="trash" title="删除"><span class="glyphicon glyphicon-trash"></span></a>
                     	</div>
                     </td>
                 </tr>
@@ -119,7 +119,8 @@
 					</div>
 				</div>
 			</div>
-		</div><!--/.row-->	
+		</div><!--/.row-->
+    </div>	
 </body>
 
 </html>
