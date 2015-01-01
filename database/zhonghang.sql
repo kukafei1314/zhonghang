@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2015-01-01 07:39:16
+-- Generation Time: 2015-01-01 08:17:33
 -- 服务器版本： 5.6.17
 -- PHP Version: 5.5.12
 
@@ -75,20 +75,6 @@ CREATE TABLE IF NOT EXISTS `zh_articles_type` (
   `tid` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`tid`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
-
---
--- 转存表中的数据 `zh_articles_type`
---
-
-INSERT INTO `zh_articles_type` (`pid`, `name`, `tid`) VALUES
-(0, '公司概况', 4),
-(4, '公司简介', 5),
-(4, '董事长致辞', 6),
-(4, '管理团队', 7),
-(4, '组织机构', 8),
-(4, '公司战略', 9),
-(4, '荣誉与奖励', 10),
-(4, '企业文化', 11);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
