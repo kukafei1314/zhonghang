@@ -1,1 +1,2 @@
-#zhonghang
+1、将database/database.php文件复制到application\config中
+2、将database文件夹的sql文件导入数据库
