@@ -54,13 +54,13 @@
 		
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<ul class="nav menu" id="main_nav">
-			<li class="active">
+			<li class="parent">
 				<a href="<?php echo base_url('admin/index');?>" id="index">
 					<span class="glyphicon glyphicon-dashboard"></span> 公司概况
 				</a>
 			</li>
-			<li class="parent ">
-				<a href="<?php echo base_url('admin/widgets');?>" id="widgets">
+			<li class="parent"  id="widgets">
+				<a href="<?php echo base_url('admin/widgets');?>">
 					<span class="glyphicon glyphicon-list-alt"></span> 动态要闻
 					<span data-toggle="collapse" href="#sub-item-1" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
@@ -84,8 +84,8 @@
 					</li>
 				</ul>
 			</li>
-			<li class="parent ">
-				<a href="<?php echo base_url('admin/charts');?>" id="charts">
+			<li class="parent" id="charts">
+				<a href="<?php echo base_url('admin/charts');?>">
 					<span class="glyphicon glyphicon-stats"></span> 业务总览
 					<span data-toggle="collapse" href="#sub-item-2" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
@@ -104,8 +104,8 @@
 					</li>
 				</ul>
 			</li>
-			<li class="parent ">
-				<a href="<?php echo base_url('admin/tables');?>" id="tables">
+			<li class="parent" id="tables">
+				<a href="<?php echo base_url('admin/tables');?>">
 					<span class="glyphicon glyphicon-eye-close"></span> 业界观察
 					<span data-toggle="collapse" href="#sub-item-3" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
@@ -124,8 +124,8 @@
 					</li>
 				</ul>
 			</li>
-			<li class="parent ">
-				<a href="<?php echo base_url('admin/forms');?>" id="forms">
+			<li class="parent" id="forms">
+				<a href="<?php echo base_url('admin/forms');?>">
 					<span class="glyphicon glyphicon-globe"></span> 人力资源
 					<span data-toggle="collapse" href="#sub-item-4" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>

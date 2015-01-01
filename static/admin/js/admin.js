@@ -8,13 +8,13 @@ $(document).ready(function(){
 		var b = $(this).attr("id");
 		//alert(pn.indexOf(b));
 		if (pn.indexOf(b) != -1){
-			$(this)[0].className = 'active';
+			$(this)[0].className = 'parent active';
 			
 			find = 1;
 		}
     });
 	if(!find) {
-		$("#main_nav li a")[0].className = 'active';
+		$("#main_nav li a")[0].className = 'parent active';
 	}
 
 });

@@ -29,6 +29,57 @@ margin-bottom: 20px !important;
 .cl {
 	clear:both;
 }
+
+.col-md-4 {
+	width: 90%;
+	margin:0 5%;
+}
+
+.list_showing{
+	margin-top:50px;
+}
+
+.todo-list-item .glyphicon {
+	color: #30a5ff;
+}
+
+.panel-body {
+	background:#fff;
+}
+
+.my_table th{
+	text-align: center;
+}
+
+.my_table td{
+	text-align: center;
+	height:35px;
+	line-height:35px;
+}
+
+.my_search{
+	float:left;
+	margin-top:7px;
+	margin-left:48%;
+	width:20%;
+}
+
+.form-control {
+	height: 38px;
+}
+
+.sec_head{
+	float:left;
+	width:20%;
+}
+
+.my_botton{
+	width:10%;
+	height:38px;
+	margin-top:7px;
+	float:right;
+}
+}
 #table1 {
 	width:20%!important;
 }
