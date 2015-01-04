@@ -28,8 +28,8 @@
 	
 	<div class="row">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-			<div class="login-panel panel panel-default">
-				<div class="panel-heading">Log in</div>
+			<div class="login-panel panel panel-default" style = "border:3px solid #B8D3F1;">
+				<div class="panel-heading" style = "text-align:center; font-family:微软雅黑; font-size:25px;">管理员登录</div>
 				<div class="panel-body">
 							
 				    <?php 
@@ -40,28 +40,32 @@
 				
 					<!--<form role="form"> -->
 						<fieldset>
-							<div class="login_error"><?php echo $error;?></div>
+							<div class="login_error" style = "color:red; font-size:12px; height:15px; margin-left:40px;"><?php echo $error;?></div>
 							<div class="form-group">
-								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="" value = ""> 
+								<div class = "username" style = "width:20%; margin-left: 30px; float:left; line-height:34px; text-align:center; font-family:微软雅黑; font-size:16px;">管理员：</div>
+								<input class="form-control" style = "width:60%!important; float:left;" placeholder="E-mail" name="email" type="email" autofocus="" value = "<?php echo $email_cookie;?>"> 
+								<div class="clear" style="clear:both;"></div>
 							</div>
 							<div class="form-group">
-								<input class="form-control" placeholder="Password" name="password" type="password" value="">
+								<div class = "password" style = "width:20%; margin-left: 30px; float:left; line-height:34px; text-align:center; font-family:微软雅黑; font-size:16px;">密码：</div>
+								<input class="form-control" style = "width:60%!important; float:left;" placeholder="Password" name="password" type="password" value="">
+								<div class="clear" style="clear:both;"></div>
 							</div>
 							<div class="captchaDiv">
-								<input name="usercheck" type="text" id="usercheck"
-								size="7" /><img class="captcha"src="index.php?d=admin&c=login&m=captcha"/>
+								<div class = "captchaDivTitle" style = "width:20%; margin-left: 30px; float:left; line-height:34px; text-align:center; font-family:微软雅黑; font-size:16px;">验证码：</div>
+								<input name="usercheck" type="text" id="usercheck" placeholder="captcha"
+								size="7" style="height:34px; border:#eee; padding:6px 12px;"/> &nbsp&nbsp&nbsp <img class="captcha"src="index.php?d=admin&c=login&m=captcha"/>
 								<!--<img class="captcha"src="login/captcha"/>-->
 								
 							</div>
-							<div class="checkbox">
+							<div class="checkbox" style = "margin-left:110px !important;">
 								<label>
 									<input name="remember" type="checkbox" value="Remember Me">Remember Me
 								</label>
 							</div>
 							<!--<a href="index.html" class="btn btn-primary">Login</a> -->
-							<button type="submit" class="login_submit" value="">登&nbsp;&nbsp;录</button>
-							
-							
+							<button type="submit" class="login_submit" value="" style="background:#309cfe; border:none; border-radius:5px; color:#FFFFFF; margin-left:120px; width:25%; height:30px; float:left; font-family:微软雅黑; font-size:16px;">登&nbsp&nbsp录</button>
+
 						</fieldset>
 					</form>
 				</div>
