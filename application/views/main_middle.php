@@ -155,7 +155,7 @@
 		</div>
 		<div class="cl"></div>
 	</div>
-<HR width="100%" color=#eaeaea SIZE=2>
+<HR width="99%" color=#eaeaea SIZE=2>
 
      
     
