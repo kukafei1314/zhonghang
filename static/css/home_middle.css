@@ -1,7 +1,9 @@
 @CHARSET "UTF-8";
 #home_content {
-	width:1000px;
-	margin:0 6%;
+	width:90%;
+	padding:0 5%;
+	padding-bottom:40px;
+	border-bottom:#eaeaea 2px solid;
 }
 .cl {
 	clear:both;
@@ -14,14 +16,14 @@ li {
 	list-style-type:none;
 }
 .content_left {
-	width:25%;
+	width:27%;
 	float:left;
 }
 .content_middle {
 	width:35%;
 	float:left;
-	margin-left:4%;
-	margin-right:4%;
+	margin-left:5%;
+	margin-right:5%;
 }
 .content_right {
 	width:23%;
@@ -57,6 +59,9 @@ li {
 }
 .title_right a{
 	color:#999;
+}
+.title_right a:hover{
+	color:#555;
 }
 .news_title {
 	height:30px;

@@ -7,7 +7,7 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a>查看更多></a>
+					<a href="<?php echo base_url('index/middle');?>">查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
@@ -40,7 +40,7 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a>查看更多></a>
+					<a href="<?php echo base_url('index/middle');?>">查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
@@ -92,7 +92,7 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a>查看更多></a>
+					<a href="<?php echo base_url('index/middle');?>">查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
