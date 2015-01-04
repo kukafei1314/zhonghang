@@ -40,10 +40,10 @@
 				<a class="navbar-brand" href="#"><span>中航泰达</span>后台管理</a>
 				<ul class="user-menu">
 					<li class="dropdown pull-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> 用户 <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $username;?> <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> 重置密码</a></li>
-							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> 退出</a></li>
+							<li><a href="index.php?d=admin&c=login&m=logout"><span class="loginOut"></span> 退出</a></li>
 						</ul>
 					</li>
 				</ul>

@@ -31,20 +31,37 @@
 			<div class="login-panel panel panel-default">
 				<div class="panel-heading">Log in</div>
 				<div class="panel-body">
-					<form role="form">
+							
+				    <?php 
+					
+						echo form_open('d=admin&c=login&m=login_admin');
+						//echo form_open('admin/login/login_admin');
+					?>
+				
+					<!--<form role="form"> -->
 						<fieldset>
+							<div class="login_error"><?php echo $error;?></div>
 							<div class="form-group">
-								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
+								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="" value = "<?php echo $email_cookie;?>"> 
 							</div>
 							<div class="form-group">
-								<input class="form-control" placeholder="Password" name="password" type="password" value="">
+								<input class="form-control" placeholder="Password" name="password" type="password" value="<?php echo $password_cookie;?>">
+							</div>
+							<div class="captchaDiv">
+								<input name="usercheck" type="text" id="usercheck"
+								size="7" /><img class="captcha"src="index.php?d=admin&c=login&m=captcha"/>
+								<!--<img class="captcha"src="login/captcha"/>-->
+								
 							</div>
 							<div class="checkbox">
 								<label>
 									<input name="remember" type="checkbox" value="Remember Me">Remember Me
 								</label>
 							</div>
-							<a href="index.html" class="btn btn-primary">Login</a>
+							<!--<a href="index.html" class="btn btn-primary">Login</a> -->
+							<button type="submit" class="login_submit" value="">登&nbsp;&nbsp;录</button>
+							
+							
 						</fieldset>
 					</form>
 				</div>
