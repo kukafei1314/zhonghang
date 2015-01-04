@@ -43,24 +43,24 @@
 							<div class="login_error" style = "color:red; font-size:12px; height:15px; margin-left:40px;"><?php echo $error;?></div>
 							<div class="form-group">
 								<div class = "username" style = "width:20%; margin-left: 30px; float:left; line-height:34px; text-align:center; font-family:微软雅黑; font-size:16px;">管理员：</div>
-								<input class="form-control" style = "width:60%!important; float:left;" placeholder="E-mail" name="email" type="email" autofocus="" value = "<?php echo $email_cookie;?>"> 
+								<input class="form-control" style = "width:60%!important; float:left;" placeholder="请输入用户名！" name="email" type="email" autofocus="" value = "<?php echo $email_cookie;?>"> 
 								<div class="clear" style="clear:both;"></div>
 							</div>
 							<div class="form-group">
 								<div class = "password" style = "width:20%; margin-left: 30px; float:left; line-height:34px; text-align:center; font-family:微软雅黑; font-size:16px;">密码：</div>
-								<input class="form-control" style = "width:60%!important; float:left;" placeholder="Password" name="password" type="password" value="">
+								<input class="form-control" style = "width:60%!important; float:left;" placeholder="请输入密码！" name="password" type="password" value="">
 								<div class="clear" style="clear:both;"></div>
 							</div>
 							<div class="captchaDiv">
 								<div class = "captchaDivTitle" style = "width:20%; margin-left: 30px; float:left; line-height:34px; text-align:center; font-family:微软雅黑; font-size:16px;">验证码：</div>
-								<input name="usercheck" type="text" id="usercheck" placeholder="captcha"
+								<input name="usercheck" type="text" id="usercheck" placeholder="验证码"
 								size="7" style="height:34px; border:#eee; padding:6px 12px;"/> &nbsp&nbsp&nbsp <img class="captcha"src="index.php?d=admin&c=login&m=captcha"/>
 								<!--<img class="captcha"src="login/captcha"/>-->
 								
 							</div>
-							<div class="checkbox" style = "margin-left:110px !important;">
+							<div class="checkbox" style = "margin-left:110px !important;  font-size:12px; line-height:20px;">
 								<label>
-									<input name="remember" type="checkbox" value="Remember Me">Remember Me
+									<input name="remember" type="checkbox" value="Remember Me">一周内不再提示
 								</label>
 							</div>
 							<!--<a href="index.html" class="btn btn-primary">Login</a> -->

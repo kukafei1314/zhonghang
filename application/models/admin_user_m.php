@@ -269,4 +269,19 @@ class Admin_user_m extends CI_Model
 		$max = pow(10, $len) - 1;
 		return mt_rand($min, $max) . '';
 	}
+	
+	public function edit_token($uid){
+		$salt = $this -> _make_salt();
+		$time = time();
+		$token = md5(md5($time . $salt));
+		$data['token'] = $token;
+		$this->db->where('uid', $uid);
+		if($this->db->update($this->table, $data) ===FALSE){
+			return FALSE;
+		}
+		else{
+			return $data;
+		}
+	}
+	
 }
