@@ -26,5 +26,12 @@ class Index extends CI_Controller {
 		$this->load->view('main_bottom');
 		$this->load->view('footer');
 	}
-
+	public function listpage()
+	{
+		$this->load->view('second_header');
+		$this->load->view('navigation');
+		$this->load->view('nav_list');
+		$this->load->view('main_bottom');
+		$this->load->view('footer');
+	}
 }

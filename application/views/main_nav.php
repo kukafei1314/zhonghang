@@ -11,26 +11,26 @@
 <body>
 	<div class="top">
 		<div class="top_title">
-			<img src="<?php echo base_url('static/image/logo.png'); ?>" width="110" height="28" class="top_logo"/>
+			<img src="<?php echo base_url('static/image/logo.png'); ?>" width="170" height="45" class="top_logo"/>
             <div class="top_nav">
             	<ul>
                     <li>
-                    	<a href="#">公司概况</a>
+                    	<a href="<?php echo base_url('index/middle');?>">公司概况</a>
                     </li>
                     <li>
-                    	<a href="#">新闻动态</a>
+                    	<a href="<?php echo base_url('index/middle');?>">新闻动态</a>
                     </li>
                     <li>
-                    	<a href="#">业绩案例</a>
+                    	<a href="<?php echo base_url('index/middle');?>">业绩案例</a>
                     </li>
                     <li>
-                    	<a href="#">研发中心</a>
+                    	<a  href="<?php echo base_url('index/middle');?>">研发中心</a>
                     </li>
                     <li>
-                    	<a href="#">人力资源</a>
+                    	<a  href="<?php echo base_url('index/middle');?>">人力资源</a>
                     </li>
                     <li>
-                    	<a href="#">下载中心</a>
+                    	<a  href="<?php echo base_url('index/middle');?>">下载中心</a>
                     </li>
                     <div class="cl"></div>
                 </ul>
