@@ -7,7 +7,7 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a href="<?php echo base_url('index/middle');?>">查看更多></a>
+					<a href="<?php echo base_url('index/listpage');?>">查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
@@ -40,44 +40,58 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a href="<?php echo base_url('index/middle');?>">查看更多></a>
+					<a href="<?php echo base_url('index/listpage');?>">查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
 			<div class="middle_list">
 				<ul>
 					<li class="news_list">
-						<div class="news_middle_title">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</div>
+						<div class="news_middle_title">
+                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        </div>
 						<div class="news_time">2014-02-14</div>
 						<div class="cl"></div>
 					</li>
 					<li class="news_list">
-						<div class="news_middle_title">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</div>
+						<div class="news_middle_title">
+                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        </div>
 						<div class="news_time">2014-02-14</div>
 						<div class="cl"></div>
 					</li>
 					<li class="news_list">
-						<div class="news_middle_title">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</div>
+						<div class="news_middle_title">
+                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        </div>
 						<div class="news_time">2014-02-14</div>
 						<div class="cl"></div>
 					</li>
 					<li class="news_list">
-						<div class="news_middle_title">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</div>
+						<div class="news_middle_title">
+                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        </div>
 						<div class="news_time">2014-02-14</div>
 						<div class="cl"></div>
 					</li>
 					<li class="news_list">
-						<div class="news_middle_title">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</div>
+						<div class="news_middle_title">
+                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        </div>
 						<div class="news_time">2014-02-14</div>
 						<div class="cl"></div>
 					</li>
 					<li class="news_list">
-						<div class="news_middle_title">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</div>
+						<div class="news_middle_title">
+                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        </div>
 						<div class="news_time">2014-02-14</div>
 						<div class="cl"></div>
 					</li>
 					<li class="news_list">
-						<div class="news_middle_title">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</div>
+						<div class="news_middle_title">
+                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        </div>
 						<div class="news_time">2014-02-14</div>
 						<div class="cl"></div>
 					</li>
@@ -92,39 +106,53 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a href="<?php echo base_url('index/middle');?>">查看更多></a>
+					<a href="<?php echo base_url('index/listpage');?>">查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
 			<div class="middle_list">
 				<ul>
 					<li class="news_list">
-						<div class="news_right_title">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</div>
+						<div class="news_right_title">
+                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        </div>
 					</li>
 					<li class="news_list">
-						<div class="news_right_title">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</div>
+						<div class="news_right_title">
+                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        </div>
 					</li>
 					<li class="news_list">
-						<div class="news_right_title">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</div>
+						<div class="news_right_title">
+                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        </div>
 					</li>
 					<li class="news_list">
-						<div class="news_right_title">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</div>
+						<div class="news_right_title">
+                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        </div>
 					</li>
 					<li class="news_list">
-						<div class="news_right_title">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</div>
+						<div class="news_right_title">
+                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        </div>
 					</li>
 					<li class="news_list">
-						<div class="news_right_title">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</div>
+						<div class="news_right_title">
+                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        </div>
 					</li>
 					<li class="news_list">
-						<div class="news_right_title">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</div>
+						<div class="news_right_title">
+                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        </div>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="cl"></div>
 	</div>
-
+<HR width="100%" color=#eaeaea SIZE=2>
 
      
     

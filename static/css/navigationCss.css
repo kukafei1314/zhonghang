@@ -5,9 +5,8 @@
 	margin:0 auto;
 }
 .leftNavi{
-	width:17%;
+	width:20%;
 	height:auto;
-	margin-left:8%;
 	float:left;
 }
 .leftNaviTitle{
@@ -21,13 +20,13 @@
 	width:100%;
 	font-size:20px;
 	padding-top:10px;
-	margin-left:10px;
+	margin-left:20px;
 }
 .naviTitleEn{
 	width:100%;
 	font-size:12px;
 	padding-bottom:10px;
-	margin-left:10px;
+	margin-left:20px;
 }
 .naviMenuButton{
 	width:100%;
@@ -38,7 +37,7 @@
 	line-height:40px;	
 }
 .naviMenuButton	a{
-	padding-left:10px;
+	padding-left:20px;
 	display:block;
 	text-decoration:none;
 	color:#222;
@@ -53,11 +52,11 @@
 	margin-top:2px;
 }
 .naviSearchTitle{
-	margin-left:10px;
+	margin-left:15px;
 	line-height:40px;
 }
 .naviSearchForm{
-	margin-left:10%;
+	margin-left:15px;
 }
 .naviSearchForm select {
 	margin-bottom:10px;
@@ -91,4 +90,8 @@
 }
 .naviMenuButton a:active,.naviMenuButton a:hover {
 	background:url(../image/nav_hover.jpg);
+}
+.second_content {
+	width:1100px;
+	margin:0 auto;
 }

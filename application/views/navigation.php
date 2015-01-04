@@ -1,4 +1,4 @@
-<div class="container">
+<div class="second_content">
 		<div class="leftNavi">
 			<div class="leftNaviTitle">
 				<div class="naviTitleCh">人力资源</div>
@@ -27,4 +27,3 @@
 				</div>
 			</div>
 		</div>
-</div>
