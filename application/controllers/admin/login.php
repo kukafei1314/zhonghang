@@ -65,7 +65,11 @@ class Login extends CI_Controller
 			$this->load->view('admin/login.php', $data);
 		} else if($this->admin_user_m->login($email, $password) > 0) {
 			if(!empty($remember)){
-				$this->input->set_cookie('email_cookie', $email, 600*100);
+				$uid = $this->admin_user_m->login($email, $password);
+				$tokenArray = $this->admin_user_m->edit_token($uid);
+				$token = $tokenArray['token'];
+				$this->input->set_cookie('email_cookie', $email, 60*60*24*100);
+				$this->input->set_cookie('token_cookie', $token, 60*60*24*100);
 			}
 			redirect('d=admin&c=index');
 			//redirect('admin/index');
