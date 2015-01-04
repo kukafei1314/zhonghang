@@ -22,7 +22,7 @@
 							<option value="">选择工作地点</option>
 						</select>
 						<input type="text" name="workKeyWord" placeholder="请输入关键字"/>
-						<input style="height:25px; width:85%; line-height:20px; border:none; background:#2997f1; color:#FFFFFF; font-weight: bold; font-family:黑体;" type="submit" name="searchSubmit" value ="搜索"/>
+						<input class="searchNav" type="submit" name="searchSubmit" value ="搜&nbsp;索"/>
 					</form>
 				</div>
 			</div>
