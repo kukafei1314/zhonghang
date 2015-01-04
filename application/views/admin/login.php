@@ -42,10 +42,10 @@
 						<fieldset>
 							<div class="login_error"><?php echo $error;?></div>
 							<div class="form-group">
-								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="" value = "<?php echo $email_cookie;?>"> 
+								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="" value = ""> 
 							</div>
 							<div class="form-group">
-								<input class="form-control" placeholder="Password" name="password" type="password" value="<?php echo $password_cookie;?>">
+								<input class="form-control" placeholder="Password" name="password" type="password" value="">
 							</div>
 							<div class="captchaDiv">
 								<input name="usercheck" type="text" id="usercheck"
