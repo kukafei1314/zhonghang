@@ -1,19 +1,19 @@
 @CHARSET "UTF-8";
 .list_right {
-width: 64%;
-line-height: 30px;
-float: left;
-margin: 15px 0px 0px 10px;
-position: relative;
+	width: 64%;
+	line-height: 30px;
+	float: left;
+	margin: 15px 0px 0px 10px;
+	position: relative;
 }
 
 #right_head {
-line-height: 20px;
-padding: 10px 0px 10px 0px;
-margin: 0 30px 10px 15px;
-padding-left: 5px;
-border-bottom: 2px solid #004080;
-font-size:15px;
+	line-height: 20px;
+	padding: 10px 0px 10px 0px;
+	margin: 0 0px 10px 15px;
+	padding-left: 5px;
+	border-bottom: 2px solid #eaeaea;
+	font-size:15px;
 }
 #right_head a{
 	color: #666;
@@ -25,16 +25,16 @@ font-size:15px;
 	text-decoration: none;
 }
 #right_title {
-font-size: 20px;
-color: #064481;
-font-weight: bold;
-padding: 5px 0px 10px 40px;
-margin: 0px 10px 0px 10px;
+	font-size: 20px;
+	color: #064481;
+	font-weight: bold;
+	padding: 5px 0px 10px 40px;
+	margin: 0px 10px 0px 10px;
 }
 
 #right_content {
-margin: 10px 0px 50px 30px;
-width: 98%;
+	margin: 10px 0px 0px 30px;
+	width: 98%;
 }
 
 #right_content a:hover{
@@ -42,39 +42,37 @@ width: 98%;
 	text-decoration: none;	
 }
 .content2 {
-width: 76%;
-display: block;
-overflow: hidden;
-font-size: 15px;
-text-overflow: ellipsis;
-float: left;
+	width: 76%;
+	display: block;
+	overflow: hidden;
+	font-size: 15px;
+	text-overflow: ellipsis;
+	float: left;
 }
 .time {
-width: 20%;
-float: right;
-display: block;
-height: 20px;
-font-size: 14px;
-color: #666;
+	width: 17%;
+	float: right;
+	display: block;
+	height: 20px;
+	font-size: 14px;
+	color: #666;
 }
 
 #right_content ul li {
-width: 98%;
-height: 30px;
-overflow: hidden;
-display: block;
-text-overflow: ellipsis;
-padding-left: 5px;
-background-image: url(../img/2ji_list.jpg);
-background-position: left;
-background-repeat: no-repeat;
-margin: 2px 2px 0px 8px;
-text-align: left;
+	width: 98%;
+	height: 30px;
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	padding-left: 5px;
+	background-image: url(../img/2ji_list.jpg);
+	background-position: left;
+	background-repeat: no-repeat;
+	margin: 2px 2px 0px 8px;
+	text-align: left;
 }
 #page{
-	margin:10px 70px 50px 70px;
-;
-
+	margin:10px 70px 10px 70px;
 }
 #page a{
 	color: #666;
