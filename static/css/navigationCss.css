@@ -5,9 +5,9 @@
 	margin:0 auto;
 }
 .leftNavi{
-	width:15%;
+	width:17%;
 	height:auto;
-	margin-left:10%;
+	margin-left:8%;
 	float:left;
 }
 .leftNaviTitle{
@@ -15,7 +15,7 @@
 	background:#2997f1;
 	color:#FFFFFF;
 	font-family:微软雅黑;
-	margin-bottom:2%;
+	margin-bottom:2px;
 }
 .naviTitleCh{
 	width:100%;
@@ -31,20 +31,17 @@
 }
 .naviMenuButton{
 	width:100%;
-	background:#99D1FF;
 	color:#000000;
 	font-size:14px;
 	font-family:微软雅黑;
 	font-weight:bold;
-	line-height:30px;
-	margin-bottom:1%;
-	
+	line-height:35px;	
 }
 .naviMenuButton	a{
 	margin-left:10px;
 	display:block;
 	text-decoration:none;
-	color:#000000;
+	color:#222;
 }
 
 .leftNaviSearch{
@@ -53,14 +50,14 @@
 	font-size:14px;
 	font-family:微软雅黑;
 	font-weight:bold;
-	margin-top:1%;
+	margin-top:2px;
 }
 .naviSearchTitle{
 	margin-left:10px;
-	line-height:30px;
+	line-height:40px;
 }
 .naviSearchForm{
-	margin-left:10px;
+	margin-left:10%;
 }
 .naviSearchForm select {
 	margin-bottom:10px;
@@ -70,9 +67,23 @@
 	border-radius:3px;
 }
 .naviSearchForm input{
-	margin-bottom:10px;
+	margin-bottom:15px;
 	width:82%;
 	height:18px;
 	font-size:12px;
 	border-radius:3px;
+}
+.searchNav {
+	height:25px!important; 
+	width:85%; 
+	line-height:25px; 
+	border:none; 
+	background:#2997f1; 
+	color:#FFFFFF; 
+	font-size:14px!important;
+	font-family:Microsoft Yahei;
+}
+.leftNaviMenu {
+	padding:5px 0 5px 0;
+	background:#99D1FF;
 }
