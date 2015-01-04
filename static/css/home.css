@@ -151,11 +151,11 @@ body {
 	_width:100px;
 }
 #bottom_div {
-	padding:40px 5% 40px 5%;
+	padding:30px 5% 60px 5%;
 	background:#fafafa;
 }
 .main_bottom{
-	padding:50px 4% 80px 4%;
+	padding:55px 4% 70px 4%;
 	border:#efefef 1px solid;
 	font-size:12px;
 	background:#fff;
@@ -271,6 +271,7 @@ body {
 	color:#666;
 	line-height:25px;
 	border:none;
+	border:1px #ccc solid\9 !important;
 }
 
 .main_info{
