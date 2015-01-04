@@ -56,6 +56,8 @@ body {
 	padding:0 68px 0 5%;
 	border-left:#CCC 1px solid;
 	line-height:34px;
+	_padding:0 20px 0 2% !important;
+	_width:550px;
 }
 
 .top_nav li {
@@ -94,7 +96,8 @@ body {
  	-ms-filter:alpha(opacity=90);
 	height:75px;
 	margin-left:33%;
-	
+	_width:300px;
+	_margin-left:15%;
 }
 
 .top_bottom2{
@@ -105,6 +108,7 @@ body {
  	-ms-filter:alpha(opacity=90);
 	height:75px;
 	margin-left:16px;
+	_width:300px;
 }
 
 .top_word1{
@@ -114,6 +118,7 @@ body {
 	font-weight:900;
 	padding-left:20px;
 	font-family:SimSun;
+	_width:100px;
 }
 
 .top_word2{
@@ -123,6 +128,7 @@ body {
 	padding-top:8px;
 	padding-left:8px;
 	padding-right:15px;
+	_width:150px;
 }
 
 .top_word21{
@@ -132,6 +138,7 @@ body {
 	font-weight:900;
 	padding-left:38px;
 	font-family:SimSun;
+	_width:100px;
 }
 
 .top_word22{
@@ -141,14 +148,14 @@ body {
 	padding-top:8px;
 	padding-left:8px;
     padding-right:38px;
+	_width:100px;
 }
 #bottom_div {
-	padding:20px 5% 40px 5%;
+	padding:40px 5% 40px 5%;
 	background:#fafafa;
-	margin-top:20px;
 }
 .main_bottom{
-	padding:50px 4% 50px 4%;
+	padding:50px 4% 80px 4%;
 	border:#efefef 1px solid;
 	font-size:12px;
 	background:#fff;
@@ -173,6 +180,7 @@ body {
 	float:left;
 	width:9%;
 	margin-left:5%;
+	_margin-left:3%;
 }
 
 .bottom_nav3{
@@ -211,6 +219,7 @@ body {
 .bottom_right{
 	float:left;
 	margin-left:12%;
+	_width:220px;
 }
 
 .bottom_logo{
@@ -220,29 +229,39 @@ body {
 .main_search{
 	margin-top:20px;
 	border:#CCC 1px solid;
+	height:26px;
 }
 
 .main_search2{
 	margin-top:10px;
 	border:#CCC 1px solid;
+	border:none\9 !important; /* all ie */
+	border:none\0 !important; /* ie8-9 目前应用于IE8的单独hack，情况比较少 */
+	*border:none !important; /* ie6-7 */
+	+border:none !important; /* ie7 */
+	_border:none !important; /* ie6 */
 }
 
 .main_search_input{
-	float:left;
-	width:200px;
+	width:190px;
 	height:25px;
 	line-height:25px;
 	border:none;
 	border-right:#CCC 1px solid;
+	width:170px\9 !important;较少
 }
 
 .main_search_button{
-	float:left;
 	width:53px;
 	height:25px;
 	line-height:25px;
 	border:none;
 	background:#FFF;
+	width:40px\9 !important; /* all ie */
+	width:40px\0 !important; /* ie8-9 目前应用于IE8的单独hack，情况比较少 */
+	*width:40px !important; /* ie6-7 */
+	+width:40px !important; /* ie7 */
+	_width:40px !important; /* ie6 */
 }
 
 .main_select{
