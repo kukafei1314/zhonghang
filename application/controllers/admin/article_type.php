@@ -10,16 +10,18 @@ class Article_type extends CI_Controller
 	public function __construct() 
 	{
 		parent::__construct();
-		//$this->load->model('admin_user_m');
-		//if($this->admin_user_m->check_login() === FALSE) {
-		//	redirect('d=admin&c=index');
-		//}
+		$this->load->model('admin_user_m');
+		if($this->admin_user_m->check_login() === FALSE) {
+			redirect('d=admin&c=index');
+		}
 		$this->load->model('article_type_m');
 		$this->load->helper('form');
 	}
 	
 	public function index()
 	{
+		$data['username'] = $this->admin_user_m->user->username;
+
 		$data['types'] = $this->article_type_m->get_option();
 		$this->load->view('admin/index_type',$data);
 		//$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
@@ -70,7 +72,7 @@ class Article_type extends CI_Controller
 		$data['name'] = $name;
 		$data['form_url'] = '/admin/article_type/edit?tid=' . $tid;
 		$data['types'] = $this->article_type_m->get_option();
-		
+		$data['username'] = $this->admin_user_m->user->username;
 		$this->load->view('admin/add_type.php', $data);
 	}
 	
@@ -80,7 +82,7 @@ class Article_type extends CI_Controller
 		$data['name'] = '';
 		$data['form_url'] = '/admin/article_type/add';
 		$data['types'] = $this->article_type_m->get_option();
-		
+		$data['username'] = $this->admin_user_m->user->username;
 		$this->load->view('admin/add_type.php', $data);
 	}
 }
