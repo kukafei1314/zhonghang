@@ -46,11 +46,11 @@
 							</div>
 							<div class="form-group">
 								<input class="form-control" placeholder="请输入密码" name="password" type="password" value="">
-								<div class="clear" style="clear:both;"></div>
 							</div>
 							<div class="captchaDiv">
-								<input name="usercheck" type="text" id="usercheck" placeholder="验证码"
-								size="7" style="height:34px; border:#eee; padding:6px 12px;"/> &nbsp&nbsp&nbsp <img class="captcha"src="index.php?d=admin&c=login&m=captcha"/>
+								<input name="usercheck" type="text" id="usercheck" placeholder="验证码" class = "form-control"
+								size="7" style="width:20%; float:left;"/> 
+								<img class="captcha" style ="clear:both; margin-left:50px; margin-top:4px;" src="index.php?d=admin&c=login&m=captcha"/>
 								<!--<img class="captcha"src="login/captcha"/>-->
 								
 							</div>
