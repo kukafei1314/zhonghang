@@ -29,7 +29,7 @@
 	<div class="row">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 			<div class="login-panel panel panel-default" >
-				<div class="panel-heading" style = "text-align:left; font-family:微软雅黑; font-size:25px;">管理员登录</div>
+				<div class="panel-heading" style = "text-align:center; font-family:微软雅黑; font-size:25px;">管理员登录</div>
 				<div class="panel-body">
 							
 				    <?php 
@@ -52,15 +52,14 @@
 								size="7" style="width:20%; float:left;"/> 
 								<img class="captcha" style ="clear:both; margin-left:50px; margin-top:4px;" src="index.php?d=admin&c=login&m=captcha"/>
 								<!--<img class="captcha"src="login/captcha"/>-->
-								
 							</div>
-							<div class="checkbox" style = " font-size:12px; line-height:20px;">
+							<div class="checkbox" style = "font-size:12px; line-height:20px; margin-left:10px; margin-top:20px;">
 								<label>
 									<input name="remember" type="checkbox" value="Remember Me">一周内不再提示
 								</label>
 							</div>
 							<!--<a href="index.html" class="btn btn-primary">Login</a> -->
-							<button type="submit" class="login_submit" value="" style="background:#309cfe; border:none; border-radius:5px; color:#FFFFFF; width:25%; height:30px; float:left; font-family:微软雅黑; font-size:16px;">登&nbsp&nbsp录</button>
+							<button type="submit" class="login_submit" value="" style="background:#309cfe; border:none; border-radius:5px; color:#FFFFFF; width:25%; height:30px; margin-left:160px; margin-top:10px; font-family:微软雅黑; font-size:16px;">登&nbsp&nbsp录</button>
 
 						</fieldset>
 					</form>
