@@ -85,7 +85,6 @@
             	<form action="#">
                     <input class="main_search_input" type="text" value=""  name="keyword" placeholder="请输入关键字" />
                     <input class="main_search_button" type="button" size="30" value="搜索" />
-                    <div class="cl"></div>
                 </form>
             </div>
             <div class="main_search2">

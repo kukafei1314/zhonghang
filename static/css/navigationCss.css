@@ -14,16 +14,16 @@
 	background:#2997f1;
 	color:#FFFFFF;
 	font-family:微软雅黑;
-	margin-bottom:2px;
+	margin-bottom:3px;
 }
 .naviTitleCh{
-	width:100%;
+	width:90%;
 	font-size:20px;
 	padding-top:10px;
 	margin-left:20px;
 }
 .naviTitleEn{
-	width:100%;
+	width:90%;
 	font-size:12px;
 	padding-bottom:10px;
 	margin-left:20px;
@@ -32,9 +32,10 @@
 	width:100%;
 	color:#000000;
 	font-size:14px;
-	font-family:微软雅黑;
 	font-weight:bold;
 	line-height:40px;	
+	margin-bottom:1px;
+	background:#99D1FF;
 }
 .naviMenuButton	a{
 	padding-left:20px;
@@ -84,9 +85,6 @@
 	color:#FFFFFF; 
 	font-size:14px!important;
 	font-family:Microsoft Yahei;
-}
-.leftNaviMenu {
-	background:#99D1FF;
 }
 .naviMenuButton a:active,.naviMenuButton a:hover {
 	background:url(../image/nav_hover.jpg);

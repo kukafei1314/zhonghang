@@ -34,16 +34,17 @@
 		</div>
 		<div class="content_middle">
 			<div class="content_title">
-				<div class="title_left">
+				<div class="title_left" style="padding-left:5%;">
 					<div class="title_img"><img src="<?php echo base_url('static/image/title1.jpg')?>"></img></div>
 					<div class="title_font">行业动态</div>
 					<div class="cl"></div>
 				</div>
-				<div class="title_right">
+				<div class="title_right" style="padding-right:5%;">
 					<a href="<?php echo base_url('index/listpage');?>">查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
+            <div class="middle_border">
 			<div class="middle_list">
 				<ul>
 					<li class="news_list">
@@ -97,7 +98,9 @@
 					</li>
 				</ul>
 			</div>
+            </div>
 		</div>
+        
 		<div class="content_right">
 			<div class="content_title">
 				<div class="title_left">
@@ -152,7 +155,7 @@
 		</div>
 		<div class="cl"></div>
 	</div>
-<HR width="100%" color=#eaeaea SIZE=2>
+<HR width="99%" color=#eaeaea SIZE=2>
 
      
     
