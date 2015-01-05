@@ -27,11 +27,17 @@ class Login extends CI_Controller
 	{
 		if($this->admin_user_m->check_login() === FALSE) {
 			$data['error'] = '';
-			$data['email_cookie'] = '';
+		//	$data['email_cookie'] = '';
 		//	$data['email_cookie'] = $this->input->cookie('email_cookie');
-			$ans = $this->input->cookie('email_cookie');
-			if($ans){
-				$data['email_cookie'] = $ans;
+			$ans['email'] = $this->input->cookie('email_cookie');
+			$ans['token'] = $this->input->cookie('token_cookie');
+			if(!empty($ans['email']) && !empty($ans['token'])){
+				$username = $ans['email'];
+				$token = $ans['token'];
+				$res = $this->admin_user_m->token_login($username,$token);
+				if ($res > 0){
+					redirect('d=admin&c=index');
+				}
 			}
 			$this->load->view('admin/login.php', $data);
 		} else {
