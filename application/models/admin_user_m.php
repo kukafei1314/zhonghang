@@ -305,7 +305,7 @@ class Admin_user_m extends CI_Model
 			$this->session->unset_userdata('uid');
 			$this->db->select('uid, username, salt, token');
 			$this->db->where('username', $username);
-			$query->$this->db->get($this->table);
+			$query = $this->db->get($this->table);
 			if($query->num-rows()<1){
 				return -1;
 			}
