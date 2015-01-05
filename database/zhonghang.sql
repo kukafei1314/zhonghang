@@ -54,6 +54,7 @@ CREATE TABLE `zh_admin_user` (
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   `salt` varchar(50) NOT NULL,
+  `token` varchar(50) NOT NULL,
   PRIMARY KEY (`uid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -64,7 +65,7 @@ CREATE TABLE `zh_admin_user` (
 
 LOCK TABLES `zh_admin_user` WRITE;
 /*!40000 ALTER TABLE `zh_admin_user` DISABLE KEYS */;
-INSERT INTO `zh_admin_user` VALUES (2,'wangte@wangte.com','7edec1ff2d4a904a4f19ce92cd648253','422996');
+INSERT INTO `zh_admin_user` VALUES (2,'wangte@wangte.com','7edec1ff2d4a904a4f19ce92cd648253','422996','4ed8d21886e2e238414fa063efe2b634');
 /*!40000 ALTER TABLE `zh_admin_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -127,4 +128,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-01-04 15:30:01
+-- Dump completed on 2015-01-05 10:30:44

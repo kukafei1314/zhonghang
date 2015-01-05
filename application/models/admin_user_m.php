@@ -1,5 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
+ * 2015.1.5
+ * lyb 修改logout函数109 110 行，删除cookie，增加token函数
+ * @author 风格独特
+ */
+ 
+ /**
  * 管理员用户管理
  * 
  * @author 风格独特
@@ -100,6 +106,8 @@ class Admin_user_m extends CI_Model
 		if($this->session->unset_userdata('uid') === FALSE) {
 			return FALSE;
 		}
+		delete_cookie('email_cookie');
+		delete_cookie('token_cookie');
 		return TRUE;
 	}
 	
@@ -270,6 +278,10 @@ class Admin_user_m extends CI_Model
 		return mt_rand($min, $max) . '';
 	}
 	
+	/* 
+	* token生成函数
+	*
+	*/
 	public function edit_token($uid){
 		$salt = $this -> _make_salt();
 		$time = time();
@@ -283,5 +295,31 @@ class Admin_user_m extends CI_Model
 			return $data;
 		}
 	}
-	
+
+
+	/* 
+	* token登录函数
+	*
+	*/
+		public function token_login($username, $token){
+			$this->session->unset_userdata('uid');
+			$this->db->select('uid, username, salt, token');
+			$this->db->where('username', $username);
+			$query->$this->db->get($this->table);
+			if($query->num-rows()<1){
+				return -1;
+			}
+			$row = $query->row_array();
+			if($token != $row['token']){
+				return -2;
+			}
+			$this->user->uid = $row['uid'];
+			$this->user->username = $row['username'];
+			$data = array(
+				'uid' => $this->user->uid
+			);
+			$this->session->set_userdata($data);
+			return $this->user->uid;
+		}	
+
 }

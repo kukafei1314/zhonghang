@@ -43,7 +43,7 @@
 							<div class="login_error" style = "color:red; font-size:12px; height:15px; margin-left:40px;"><?php echo $error;?></div>
 							<div class="form-group">
 								<div class = "username" style = "width:20%; margin-left: 30px; float:left; line-height:34px; text-align:center; font-family:微软雅黑; font-size:16px;">管理员：</div>
-								<input class="form-control" style = "width:60%!important; float:left;" placeholder="请输入用户名！" name="email" type="email" autofocus="" value = "<?php echo $email_cookie;?>"> 
+								<input class="form-control" style = "width:60%!important; float:left;" placeholder="请输入用户名！" name="email" type="email" autofocus="" value = ""> 
 								<div class="clear" style="clear:both;"></div>
 							</div>
 							<div class="form-group">
