@@ -68,7 +68,7 @@
 				</a>
 				<ul class="children collapse" id="sub-item-1">
 					<li>
-						<a class="" href="#">
+						<a class="" href="<?php echo base_url('admin/widgets/industryNews?pid=1&tid=11');?>">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 公司动态
 						</a>
 					</li>

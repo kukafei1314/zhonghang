@@ -14,30 +14,31 @@
 				<div class="panel panel-default">
 					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 添加新闻</div>
 					<div class="panel-body">
-						<form class="form-horizontal" action="" method="post">
+						<form class="form-horizontal" action="<?php echo base_url('admin/widgets/insertNews');?>" method="post">
 							<fieldset>
 								<!-- Name input-->
 								<div class="form-group">
-									<label class="col-md-3 control-label" for="name">文章标题</label>
+									<label class="col-md-3 control-label" for="title">文章标题</label>
 									<div class="col-md-9">
-									<input id="name" name="name" type="text" placeholder="Your name" class="form-control add-width">
+									<input id="title" name="title" type="text" placeholder="标题" class="form-control add-width">
 									</div>
 								</div>
 							
 								<!-- Email input-->
 								<div class="form-group">
-									<label class="col-md-3 control-label" for="email">文章类别</label>
+									<label class="col-md-3 control-label" for="type">文章类别</label>
 									<div class="col-md-9">
-										<select class="form-control add-width">
-											<option>1</option>
-											<option>1</option>
+										<select id="type" class="form-control add-width">
+										    <?php foreach ($types as $type): ?>
+    											<option value = "<?php echo $type['tid'];?>"><?php echo $type['name'];?></option>
+    										<?php endforeach;?>	
 										</select>
 									</div>
 								</div>
 								
 								<!-- Message body -->
 								<div class="form-group">
-									<label class="col-md-3 control-label" for="message">文章内容</label>
+									<label class="col-md-3 control-label" for="content">文章内容</label>
 									<div class="col-md-9">
 										<script id="ue_content" name="ue_content" type="text/plain"></script>
 									</div>
