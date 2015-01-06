@@ -61,7 +61,7 @@
 			</li>
 			<li class="parent"  id="widgets">
 				<a href="#">
-					<span class="glyphicon glyphicon-list-alt"></span> 动态要闻
+					<span class="glyphicon glyphicon-list-alt"></span> 新闻动态
 					<span data-toggle="collapse" href="#sub-item-1" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
 					</span> 
@@ -86,7 +86,7 @@
 			</li>
 			<li class="parent" id="charts">
 				<a href="<?php echo base_url('admin/charts');?>">
-					<span class="glyphicon glyphicon-stats"></span> 业务总览
+					<span class="glyphicon glyphicon-stats"></span> 业绩案例
 					<span data-toggle="collapse" href="#sub-item-2" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
 					</span> 
@@ -102,19 +102,9 @@
 							<span class="glyphicon glyphicon-tree-conifer"></span> 水务投资项目
 						</a>
 					</li>
-				</ul>
-			</li>
-			<li class="parent" id="tables">
-				<a href="<?php echo base_url('admin/tables');?>">
-					<span class="glyphicon glyphicon-eye-close"></span> 业界观察
-					<span data-toggle="collapse" href="#sub-item-3" class="icon pull-right">
-						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
-					</span> 
-				</a>
-				<ul class="children collapse" id="sub-item-3">
 					<li>
 						<a class="" href="#">
-							<span class="glyphicon glyphicon-tree-conifer"></span> 业内动态
+							<span class="glyphicon glyphicon-tree-conifer"></span> 行业动态
 						</a>
 					</li>
 					<li>
@@ -123,6 +113,14 @@
 						</a>
 					</li>
 				</ul>
+			</li>
+			<li class="parent" id="tables">
+				<a href="<?php echo base_url('admin/tables');?>">
+					<span class="glyphicon glyphicon-eye-close"></span> 研发中心
+					<span data-toggle="collapse" href="#sub-item-3" class="icon pull-right">
+						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
+					</span> 
+				</a>
 			</li>
 			<li class="parent" id="forms">
 				<a href="<?php echo base_url('admin/forms');?>">
@@ -158,6 +156,22 @@
 						</a>
 					</li>
 				</ul>
+			</li>
+			<li class="parent" id="tables">
+				<a href="<?php echo base_url('admin/tables');?>">
+					<span class="glyphicon glyphicon-eye-close"></span> 下载中心
+					<span data-toggle="collapse" href="#sub-item-3" class="icon pull-right">
+						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
+					</span> 
+				</a>
+			</li>
+			<li class="parent" id="tables">
+				<a href="<?php echo base_url('admin/tables');?>">
+					<span class="glyphicon glyphicon-eye-close"></span> 公司公告
+					<span data-toggle="collapse" href="#sub-item-3" class="icon pull-right">
+						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
+					</span> 
+				</a>
 			</li>
 			<li role="presentation" class="divider"></li>
 			<li>
