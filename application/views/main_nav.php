@@ -9,6 +9,20 @@
 <title>中航泰达</title>
 </head>
 <body>
+	<div id="pic1"></div>
+    <div id="pic2"></div>
+    <div id="pic3"></div>
+    <div id="pic4"></div>
+    <div id="pic5"></div>
+    <div id="tip_top">
+		<ul>
+			<li id="fading_1" onclick="fadetop(1)" class="fading_top"></li>
+			<li id="fading_2" onclick="fadetop(2)"></li>
+			<li id="fading_3" onclick="fadetop(3)"></li>
+            <li id="fading_4" onclick="fadetop(4)"></li>
+			<li id="fading_5" onclick="fadetop(5)"></li>
+		</ul>
+	</div>
 	<div class="top">
 		<div class="top_title">
 			<img src="<?php echo base_url('static/image/logo.png'); ?>" width="170" height="45" class="top_logo"/>

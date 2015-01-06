@@ -12,15 +12,15 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="panel panel-default">
-					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 添加文章</div>
+					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 添加新闻</div>
 					<div class="panel-body">
-						<form class="form-horizontal" action="<?php echo base_url('admin/subtitle/insertNews?pid='.$pid.'&tid='.$tid);?>" method="post">
+						<form class="form-horizontal" action="<?php echo base_url('admin/subtitle/updateNews?aid='.$aid.'&pid='.$pid.'&tid='.$tid);?>" method="post">
 							<fieldset>
 								<!-- Name input-->
 								<div class="form-group">
 									<label class="col-md-3 control-label" for="title">文章标题</label>
 									<div class="col-md-9">
-									<input id="title" name="title" type="text" placeholder="标题" class="form-control add-width">
+									<input id="title" name="title" type="text" value = "<?php echo $article['title'];?>" placeholder="标题" class="form-control add-width">
 									</div>
 								</div>
 							
@@ -29,7 +29,11 @@
 									<label class="col-md-3 control-label" for="type">文章类别</label>
 									<div class="col-md-9">
 										<select id="type" name="type" class="form-control add-width">
-											<option value = "<?php echo $tid;?>"><?php echo $name;?></option>
+										    <?php foreach ($types as $type): ?>
+    											<?php if($type['level'] < 3): ?>
+    											<option <?php if($tid == $type['tid']) echo 'selected="selected"';?> value="<?php echo $type['tid'];?>"><?php echo $type['name']?></option>
+    											<?php endif; ?>
+											<?php endforeach; ?>
 										</select>
 									</div>
 								</div>
@@ -38,7 +42,7 @@
 								<div class="form-group">
 									<label class="col-md-3 control-label" for="ue_content">文章内容</label>
 									<div class="col-md-9">
-										<script id="ue_content" name="ue_content" type="text/plain"></script>
+										<script id="ue_content" name="ue_content" type="text/plain"><?php echo $article['content'];?></script>
 									</div>
 								</div>
 								
