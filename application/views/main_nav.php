@@ -15,22 +15,22 @@
             <div class="top_nav">
             	<ul>
                     <li>
-                    	<a href="<?php echo base_url('index/middle');?>">公司概况</a>
+                    	<a href="<?php echo site_url('c=index&m=middle');?>">公司概况</a>
                     </li>
                     <li>
-                    	<a href="<?php echo base_url('index/middle');?>">新闻动态</a>
+                    	<a href="<?php echo site_url('c=index&m=middle');?>">新闻动态</a>
                     </li>
                     <li>
-                    	<a href="<?php echo base_url('index/middle');?>">业绩案例</a>
+                    	<a href="<?php echo site_url('c=index&m=middle');?>">业绩案例</a>
                     </li>
                     <li>
-                    	<a  href="<?php echo base_url('index/middle');?>">研发中心</a>
+                    	<a  href="<?php echo site_url('c=index&m=middle');?>">研发中心</a>
                     </li>
                     <li>
-                    	<a  href="<?php echo base_url('index/middle');?>">人力资源</a>
+                    	<a  href="<?php echo site_url('c=index&m=middle');?>">人力资源</a>
                     </li>
                     <li>
-                    	<a  href="<?php echo base_url('index/middle');?>">下载中心</a>
+                    	<a  href="<?php echo site_url('c=index&m=middle');?>">下载中心</a>
                     </li>
                     <div class="cl"></div>
                 </ul>
