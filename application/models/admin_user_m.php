@@ -237,7 +237,7 @@ class Admin_user_m extends CI_Model
 	 * @param string $username
 	 * @return multitype:array |boolean
 	 */
-	private function _get_userbyusername($username)
+	public function _get_userbyusername($username)
 	{
 	//	$this->db->select('uid, username, name, power');
 		$this->db->select('uid, username');
