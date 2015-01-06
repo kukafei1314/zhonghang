@@ -8,11 +8,11 @@
 			</ol>
 		</div><!--/.row-->
 									
-		<?php echo form_open('d=admin&c=about&m=add'); ?>
+		<?php echo form_open('d=admin&c=about&m=edit&aid='.$aid); ?>
 		<div class="row">
 			<div class="col-md-8">
 				<div class="panel panel-default">
-					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 添加概况</div>
+					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 编辑概况</div>
 					<div class="panel-body">
 						<form class="form-horizontal" action="" method="post">
 							<fieldset>
@@ -20,7 +20,7 @@
 								<div class="form-group">
 									<label class="col-md-3 control-label" for="name">文章标题</label>
 									<div class="col-md-9">
-									<input id="name" name="title" type="text"   class="form-control add-width">
+									<input id="name" name="title" type="text"  value="<?php echo $title;?>" class="form-control add-width">
 									</div>
 								</div>
 							
@@ -28,7 +28,7 @@
 								<div class="form-group">
 									<label class="col-md-3 control-label" for="message">文章内容</label>
 									<div class="col-md-9">
-										<script id="ue_content" name="ue_content" type="text/plain" ></script>
+										<script id="ue_content" name="ue_content" type="text/plain" ><?php echo $content;?></script>
 									</div>
 								</div>
 								
