@@ -38,9 +38,9 @@
                         <td>
                             <?php $aid = $singleNews['aid'];?>
                             <div class="action-buttons">
-                                <a href="<?php echo base_url('admin/subtitle/editNews?aid='.$aid.'&pid='.$pid.'&tid='.$tid);?>"><span class="glyphicon glyphicon-pencil"></span></a>
-                                <a href="#" class="flag"><span class="glyphicon glyphicon-file"></span></a>
-                                <a href="<?php echo base_url('admin/subtitle/deleteNews?aid='.$aid.'&pid='.$pid.'&tid='.$tid);?>" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a href="<?php echo base_url('admin/subtitle/editNews?aid='.$aid.'&pid='.$pid.'&tid='.$tid);?>" title="编辑"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <a href="#" class="flag" title="查看"><span class="glyphicon glyphicon-file"></span></a>
+                                <a href="<?php echo base_url('admin/subtitle/deleteNews?aid='.$aid.'&pid='.$pid.'&tid='.$tid);?>" title="删除" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
                         	</div>
                         </td>
                     </tr>

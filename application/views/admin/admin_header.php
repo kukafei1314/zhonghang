@@ -117,9 +117,6 @@
 			<li class="parent" id="tables">
 				<a href="#">
 					<span class="glyphicon glyphicon-eye-close"></span> 研发中心
-					<span data-toggle="collapse" href="#sub-item-3" class="icon pull-right">
-						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
-					</span> 
 				</a>
 			</li>
 			<li class="parent" id="forms">
@@ -160,17 +157,11 @@
 			<li class="parent" id="tables">
 				<a href="#">
 					<span class="glyphicon glyphicon-eye-close"></span> 下载中心
-					<span data-toggle="collapse" href="#sub-item-3" class="icon pull-right">
-						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
-					</span> 
 				</a>
 			</li>
 			<li class="parent" id="tables">
 				<a href="#">
 					<span class="glyphicon glyphicon-eye-close"></span> 公司公告
-					<span data-toggle="collapse" href="#sub-item-3" class="icon pull-right">
-						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
-					</span> 
 				</a>
 			</li>
 			<li role="presentation" class="divider"></li>
