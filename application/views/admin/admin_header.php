@@ -68,24 +68,24 @@
 				</a>
 				<ul class="children collapse" id="sub-item-1">
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=1&tid=11');?>">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=8');?>">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 公司动态
 						</a>
 					</li>
 					<li>
-						<a class="" href="#">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=9');?>">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 图片新闻
 						</a>
 					</li>
 					<li>
-						<a class="" href="#">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=10');?>">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 媒体聚焦
 						</a>
 					</li>
 				</ul>
 			</li>
 			<li class="parent" id="charts">
-				<a href="<?php echo base_url('admin/charts');?>">
+				<a href="#">
 					<span class="glyphicon glyphicon-stats"></span> 业绩案例
 					<span data-toggle="collapse" href="#sub-item-2" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
@@ -93,29 +93,29 @@
 				</a>
 				<ul class="children collapse" id="sub-item-2">
 					<li>
-						<a class="" href="#">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=11');?>">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 业务领域
 						</a>
 					</li>
 					<li>
-						<a class="" href="#">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=12');?>">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 水务投资项目
 						</a>
 					</li>
 					<li>
-						<a class="" href="#">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=13');?>">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 行业动态
 						</a>
 					</li>
 					<li>
-						<a class="" href="#">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=13');?>">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 业务视野
 						</a>
 					</li>
 				</ul>
 			</li>
 			<li class="parent" id="tables">
-				<a href="<?php echo base_url('admin/tables');?>">
+				<a href="#">
 					<span class="glyphicon glyphicon-eye-close"></span> 研发中心
 					<span data-toggle="collapse" href="#sub-item-3" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
@@ -123,7 +123,7 @@
 				</a>
 			</li>
 			<li class="parent" id="forms">
-				<a href="<?php echo base_url('admin/forms');?>">
+				<a href="#">
 					<span class="glyphicon glyphicon-globe"></span> 人力资源
 					<span data-toggle="collapse" href="#sub-item-4" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
@@ -131,34 +131,34 @@
 				</a>
 				<ul class="children collapse" id="sub-item-4">
 					<li>
-						<a class="" href="#">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=15');?>">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 人才理念
 						</a>
 					</li>
 					<li>
-						<a class="" href="#">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=16');?>">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 人才现状
 						</a>
 					</li>
 					<li>
-						<a class="" href="#">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=17');?>">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 人才政策
 						</a>
 					</li>
 					<li>
-						<a class="" href="#">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=18');?>">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 招聘信息
 						</a>
 					</li>
 					<li>
-						<a class="" href="#">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=19');?>">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 澄清公告
 						</a>
 					</li>
 				</ul>
 			</li>
 			<li class="parent" id="tables">
-				<a href="<?php echo base_url('admin/tables');?>">
+				<a href="#">
 					<span class="glyphicon glyphicon-eye-close"></span> 下载中心
 					<span data-toggle="collapse" href="#sub-item-3" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
@@ -166,7 +166,7 @@
 				</a>
 			</li>
 			<li class="parent" id="tables">
-				<a href="<?php echo base_url('admin/tables');?>">
+				<a href="#">
 					<span class="glyphicon glyphicon-eye-close"></span> 公司公告
 					<span data-toggle="collapse" href="#sub-item-3" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
