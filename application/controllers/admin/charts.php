@@ -9,10 +9,15 @@ class Charts extends CI_Controller
 	public function __construct() 
 	{
 		parent::__construct();
+		$this->load->model('admin_user_m');
+		if($this->admin_user_m->check_login() === FALSE) {
+		    redirect('d=admin&c=index');
+		}
 	}
 	
 	public function index() 
 	{
-		$this->load->view('admin/charts');
+	    $data['username'] = $this->admin_user_m->user->username;
+		$this->load->view('admin/charts',$data);
 	}
 }

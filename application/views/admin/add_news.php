@@ -12,7 +12,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="panel panel-default">
-					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 添加新闻</div>
+					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 添加文章</div>
 					<div class="panel-body">
 						<form class="form-horizontal" action="<?php echo base_url('admin/subtitle/insertNews?pid='.$pid.'&tid='.$tid);?>" method="post">
 							<fieldset>
