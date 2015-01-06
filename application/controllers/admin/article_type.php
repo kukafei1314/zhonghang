@@ -70,7 +70,7 @@ class Article_type extends CI_Controller
 		
 		$data['pid'] = $this->article_type_m->get_parent($tid);
 		$data['name'] = $name;
-		$data['form_url'] = 'd=admin&c=article_type&m=edit?tid=' . $tid;
+		$data['form_url'] = 'd=admin&c=article_type&m=edit&tid=' . $tid;
 		$data['types'] = $this->article_type_m->get_option();
 		$data['username'] = $this->admin_user_m->user->username;
 		$this->load->view('admin/add_type.php', $data);
