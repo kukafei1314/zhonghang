@@ -29,7 +29,11 @@
 									<label class="col-md-3 control-label" for="type">文章类别</label>
 									<div class="col-md-9">
 										<select id="type" name="type" class="form-control add-width">
-											<option value = "<?php echo $tid;?>"><?php echo $name;?></option>
+										    <?php foreach ($types as $type): ?>
+    											<?php if($type['level'] < 3): ?>
+    											<option <?php if($tid == $type['tid']) echo 'selected="selected"';?> value="<?php echo $type['tid'];?>"><?php echo $type['name']?></option>
+    											<?php endif; ?>
+											<?php endforeach; ?>
 										</select>
 									</div>
 								</div>

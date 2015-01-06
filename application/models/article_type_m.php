@@ -193,4 +193,10 @@ class Article_type_m extends CI_Model
 		}
 		return $return;
 	}
+	public function get_children()
+	{
+	    $sql = "SELECT * FROM `zh_articles_type` WHERE `pid` != 0";
+	    $query = $this->db->query($sql);
+	    return $query->result_array();
+	}
 }
