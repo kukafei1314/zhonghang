@@ -14,7 +14,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 添加新闻</div>
 					<div class="panel-body">
-						<form class="form-horizontal" action="<?php echo base_url('admin/widgets/insertNews');?>" method="post">
+						<form class="form-horizontal" action="<?php echo base_url('admin/subtitle/insertNews?pid='.$pid.'&tid='.$tid);?>" method="post">
 							<fieldset>
 								<!-- Name input-->
 								<div class="form-group">
@@ -28,17 +28,15 @@
 								<div class="form-group">
 									<label class="col-md-3 control-label" for="type">文章类别</label>
 									<div class="col-md-9">
-										<select id="type" class="form-control add-width">
-										    <?php foreach ($types as $type): ?>
-    											<option value = "<?php echo $type['tid'];?>"><?php echo $type['name'];?></option>
-    										<?php endforeach;?>	
+										<select id="type" name="type" class="form-control add-width">
+											<option value = "<?php echo $tid;?>"><?php echo $name;?></option>
 										</select>
 									</div>
 								</div>
 								
 								<!-- Message body -->
 								<div class="form-group">
-									<label class="col-md-3 control-label" for="content">文章内容</label>
+									<label class="col-md-3 control-label" for="ue_content">文章内容</label>
 									<div class="col-md-9">
 										<script id="ue_content" name="ue_content" type="text/plain"></script>
 									</div>

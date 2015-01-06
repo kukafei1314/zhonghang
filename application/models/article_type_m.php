@@ -193,11 +193,4 @@ class Article_type_m extends CI_Model
 		}
 		return $return;
 	}
-	
-	public function list_type()
-	{
-	    $this->db->order_by('pid ASC, tid ASC');
-	    $query = $this->db->get('articles_type');
-	    return $query->result_array();
-	}
 }

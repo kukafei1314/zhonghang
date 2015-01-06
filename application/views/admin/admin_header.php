@@ -60,7 +60,7 @@
 				</a>
 			</li>
 			<li class="parent"  id="widgets">
-				<a href="<?php echo base_url('admin/widgets');?>">
+				<a href="#">
 					<span class="glyphicon glyphicon-list-alt"></span> 动态要闻
 					<span data-toggle="collapse" href="#sub-item-1" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
@@ -68,7 +68,7 @@
 				</a>
 				<ul class="children collapse" id="sub-item-1">
 					<li>
-						<a class="" href="<?php echo base_url('admin/widgets/industryNews?pid=1&tid=11');?>">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=1&tid=11');?>">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 公司动态
 						</a>
 					</li>
