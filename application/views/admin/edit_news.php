@@ -4,45 +4,31 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-				<li class="active">新闻</li>
+				<li class="active">企业概况</li>
 			</ol>
 		</div><!--/.row-->
 									
-		
+		<?php echo form_open('d=admin&c=about&m=edit&aid='.$aid); ?>
 		<div class="row">
 			<div class="col-md-8">
 				<div class="panel panel-default">
-					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 添加新闻</div>
+					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 编辑概况</div>
 					<div class="panel-body">
-						<form class="form-horizontal" action="<?php echo base_url('admin/subtitle/updateNews?aid='.$aid.'&pid='.$pid.'&tid='.$tid);?>" method="post">
+						<form class="form-horizontal" action="" method="post">
 							<fieldset>
 								<!-- Name input-->
 								<div class="form-group">
-									<label class="col-md-3 control-label" for="title">文章标题</label>
+									<label class="col-md-3 control-label" for="name">文章标题</label>
 									<div class="col-md-9">
-									<input id="title" name="title" type="text" value = "<?php echo $article['title'];?>" placeholder="标题" class="form-control add-width">
+									<input id="name" name="title" type="text"  value="<?php echo $title;?>" class="form-control add-width">
 									</div>
 								</div>
 							
-								<!-- Email input-->
-								<div class="form-group">
-									<label class="col-md-3 control-label" for="type">文章类别</label>
-									<div class="col-md-9">
-										<select id="type" name="type" class="form-control add-width">
-										    <?php foreach ($types as $type): ?>
-    											<?php if($type['level'] < 3): ?>
-    											<option <?php if($tid == $type['tid']) echo 'selected="selected"';?> value="<?php echo $type['tid'];?>"><?php echo $type['name']?></option>
-    											<?php endif; ?>
-											<?php endforeach; ?>
-										</select>
-									</div>
-								</div>
-								
 								<!-- Message body -->
 								<div class="form-group">
-									<label class="col-md-3 control-label" for="ue_content">文章内容</label>
+									<label class="col-md-3 control-label" for="message">文章内容</label>
 									<div class="col-md-9">
-										<script id="ue_content" name="ue_content" type="text/plain"><?php echo $article['content'];?></script>
+										<script id="ue_content" name="ue_content" type="text/plain" ><?php echo $content;?></script>
 									</div>
 								</div>
 								
@@ -62,6 +48,7 @@
 			<script type="text/javascript">
 				var ue = UE.getEditor('ue_content');
 			</script>
+
 		</div><!--/.row-->
 	</div>	<!--/.main-->
 </body>
