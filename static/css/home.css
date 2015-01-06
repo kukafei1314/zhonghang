@@ -40,6 +40,7 @@ body {
 	height:400px;
 	z-index:-10;
 	opacity:0;
+	filter:alpha(opacity=0); 
 }
 #pic3 {
 	background:url(../image/top2.jpg) no-repeat center;
@@ -49,6 +50,7 @@ body {
 	height:400px;
 	z-index:-10;
 	opacity:0;
+	filter:alpha(opacity=0); 
 }
 #pic4 {
 	background:url(../image/top3.jpg) no-repeat center;
@@ -58,6 +60,7 @@ body {
 	height:400px;
 	z-index:-10;
 	opacity:0;
+	filter:alpha(opacity=0); 
 }
 #pic5 {
 	background:url(../image/top4.jpg) no-repeat center;
@@ -67,6 +70,7 @@ body {
 	height:400px;
 	z-index:-10;
 	opacity:0;
+	filter:alpha(opacity=0); 
 }
 #tip_top{
 	width:10px;
@@ -179,7 +183,6 @@ body {
 	font-size:24px;
 	font-weight:900;
 	padding-left:20px;
-	font-family:SimSun;
 	_width:100px;
 }
 
@@ -199,7 +202,6 @@ body {
 	font-size:24px;
 	font-weight:900;
 	padding-left:38px;
-	font-family:SimSun;
 	_width:100px;
 }
 
