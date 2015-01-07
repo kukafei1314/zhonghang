@@ -7,3 +7,10 @@ function parent_hold(id){
 		}
 	}
 }
+$(document).ready(function(e) {
+    $(".parent_none").click(function(){
+		for (var i = 1; i <= 4; i++) {
+			$("#parent_"+i).removeClass();
+		}
+	});
+});

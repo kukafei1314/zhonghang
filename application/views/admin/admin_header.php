@@ -58,7 +58,7 @@
 				<a href="">
 					<span class="glyphicon glyphicon-list-alt"></span> 新闻动态
 					<span data-toggle="collapse" href="#sub-item-1" class="icon pull-right">
-						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
+						<em class="glyphicon glyphicon-s glyphicon-plus parent_none"></em>
 					</span> 
 				</a>
 				<ul class="children collapse" id="sub-item-1">
@@ -83,7 +83,7 @@
 				<a href="">
 					<span class="glyphicon glyphicon-stats"></span> 业绩案例
 					<span data-toggle="collapse" href="#sub-item-2" class="icon pull-right">
-						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
+						<em class="glyphicon glyphicon-s glyphicon-plus parent_none"></em>
 					</span> 
 				</a>
 				<ul class="children collapse" id="sub-item-2">
@@ -118,7 +118,7 @@
 				<a>
 					<span class="glyphicon glyphicon-globe"></span> 人力资源
 					<span data-toggle="collapse" href="#sub-item-4" class="icon pull-right">
-						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
+						<em class="glyphicon glyphicon-s glyphicon-plus parent_none"></em>
 					</span> 
 				</a>
 				<ul class="children collapse" id="sub-item-4">
