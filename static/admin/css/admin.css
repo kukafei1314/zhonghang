@@ -157,3 +157,7 @@ td a{
 .fixed-table-body {
 	height:75%;
 }
+.current {
+	background:#30a5ff;
+	color:#fff;
+}

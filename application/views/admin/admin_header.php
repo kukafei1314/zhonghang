@@ -32,7 +32,10 @@
 				<a class="navbar-brand" href=""><span>中航泰达</span>后台管理</a>
 				<ul class="user-menu">
 					<li class="dropdown pull-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $username;?> <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-user"></span> <?php echo $username;?> 
+                            <span class="caret"></span>
+                        </a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> 重置密码</a></li>
 							<li><a href="index.php?d=admin&c=login&m=logout"><span class="loginOut"></span> 退出</a></li>
@@ -47,7 +50,7 @@
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<ul class="nav menu" id="main_nav">
 			<li class="parent">
-				<a href="<?php echo base_url('admin/about');?>" id="index" target="main">
+				<a href="<?php echo base_url('admin/about');?>" id="parent_1" onclick="parent_hold(1)" target="main">
 					<span class="glyphicon glyphicon-dashboard"></span> 公司概况
 				</a>
 			</li>
@@ -107,7 +110,7 @@
 				</ul>
 			</li>
 			<li class="parent" id="tables">
-				<a>
+				<a id="parent_2" onclick="parent_hold(2)">
 					<span class="glyphicon glyphicon-eye-close"></span> 研发中心
 				</a>
 			</li>
@@ -147,12 +150,12 @@
 				</ul>
 			</li>
 			<li class="parent" id="tables">
-				<a>
+				<a id="parent_3" onclick="parent_hold(3)" >
 					<span class="glyphicon glyphicon-eye-close"></span> 下载中心
 				</a>
 			</li>
 			<li class="parent" id="tables">
-				<a>
+				<a id="parent_4" onclick="parent_hold(4)" >
 					<span class="glyphicon glyphicon-eye-close"></span> 公司公告
 				</a>
 			</li>
