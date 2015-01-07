@@ -3,21 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lumino - Tables</title>
+<title>中航泰达后台管理</title>
 
-<link href="<?php echo base_url('/static/admin/css/bootstrap-table.css');?>" rel="stylesheet">
 <link href="<?php echo base_url('/static/admin/css/bootstrap.min.css');?>" rel="stylesheet">
-<link href="<?php echo base_url('/static/admin/css/datepicker3.css');?>" rel="stylesheet">
 <link href="<?php echo base_url('/static/admin/css/styles.css');?>" rel="stylesheet">
 <link href="<?php echo base_url('/static/admin/css/admin.css');?>" rel="stylesheet">
 <script src="<?php echo base_url('/static/admin/js/jquery-1.11.1.min.js');?>"></script>
 <script src="<?php echo base_url('/static/admin/js/bootstrap.min.js');?>"></script>
-<script src="<?php echo base_url('/static/admin/js/chart.min.js');?>"></script>
-<script src="<?php echo base_url('/static/admin/js/chart-data.js');?>"></script>
-<script src="<?php echo base_url('/static/admin/js/easypiechart.js');?>"></script>
-<script src="<?php echo base_url('/static/admin/js/easypiechart-data.js');?>"></script>
-<script src="<?php echo base_url('/static/admin/js/bootstrap-datepicker.js');?>"></script>
-<script src="<?php echo base_url('/static/admin/js/bootstrap-table.js');?>"></script>
 <script src="<?php echo base_url('/static/admin/js/admin.js');?>"></script>
 
 <!--[if lt IE 9]>
@@ -173,5 +165,20 @@
 		</ul>
 	</div><!--/.sidebar-->
     <div id="mainframe">
-		<iframe frameborder="0" id="main" name="main" style="HEIGHT: 100%; VISIBILITY: inherit; WIDTH: 100%; Z-INDEX: 1;" target="main"></iframe>
+		<iframe frameborder="0" id="main" name="main" style="HEIGHT:100%;VISIBILITY: inherit; WIDTH: 83%; Z-INDEX: 1;" target="main"></iframe>
 	</div>
+	<script>
+        !function ($) {
+            $(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
+                $(this).find('em:first').toggleClass("glyphicon-minus");	  
+            }); 
+            $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+        }(window.jQuery);
+
+        $(window).on('resize', function () {
+          if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+        })
+        $(window).on('resize', function () {
+          if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+        })
+    </script>	

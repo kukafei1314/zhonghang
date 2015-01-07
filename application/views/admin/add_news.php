@@ -1,18 +1,4 @@
-<?php //$this->load->view('admin/admin_header'); ?>
-<link href="<?php echo base_url('/static/admin/css/bootstrap-table.css');?>" rel="stylesheet">
-<link href="<?php echo base_url('/static/admin/css/bootstrap.min.css');?>" rel="stylesheet">
-<link href="<?php echo base_url('/static/admin/css/datepicker3.css');?>" rel="stylesheet">
-<link href="<?php echo base_url('/static/admin/css/styles.css');?>" rel="stylesheet">
-<link href="<?php echo base_url('/static/admin/css/admin.css');?>" rel="stylesheet">
-<script src="<?php echo base_url('/static/admin/js/jquery-1.11.1.min.js');?>"></script>
-<script src="<?php echo base_url('/static/admin/js/bootstrap.min.js');?>"></script>
-<script src="<?php echo base_url('/static/admin/js/chart.min.js');?>"></script>
-<script src="<?php echo base_url('/static/admin/js/chart-data.js');?>"></script>
-<script src="<?php echo base_url('/static/admin/js/easypiechart.js');?>"></script>
-<script src="<?php echo base_url('/static/admin/js/easypiechart-data.js');?>"></script>
-<script src="<?php echo base_url('/static/admin/js/bootstrap-datepicker.js');?>"></script>
-<script src="<?php echo base_url('/static/admin/js/bootstrap-table.js');?>"></script>
-<script src="<?php echo base_url('/static/admin/js/admin.js');?>"></script>
+<?php $this->load->view('admin/headerfile'); ?>
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">		
 		<div class="row">
 			<ol class="breadcrumb">
@@ -62,21 +48,6 @@
 			<script type="text/javascript">
 				var ue = UE.getEditor('ue_content');
 			</script>
-		<script>
-            !function ($) {
-                $(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
-                    $(this).find('em:first').toggleClass("glyphicon-minus");	  
-                }); 
-                $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
-            }(window.jQuery);
-    
-            $(window).on('resize', function () {
-              if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
-            })
-            $(window).on('resize', function () {
-              if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
-            })
-        </script>	
 		</div><!--/.row-->
 	</div>	<!--/.main-->
 </body>

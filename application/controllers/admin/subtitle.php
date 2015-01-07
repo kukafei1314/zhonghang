@@ -11,7 +11,7 @@ class Subtitle extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin_user_m');
 		if($this->admin_user_m->check_login() === FALSE) {
-		    redirect('d=admin&c=index');
+		    redirect('d=admin&c=login');
 		}
 		$this->load->model('article_list_m');
 		$this->load->model('article_type_m');

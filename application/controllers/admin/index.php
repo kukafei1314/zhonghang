@@ -22,7 +22,6 @@ class Index extends CI_Controller
 		$this->load->model('admin_user_m');
 		if($this->admin_user_m->check_login() === FALSE) {
 			redirect('d=admin&c=login');
-			//redirect('admin/login');
 		}
 	}
 	
