@@ -1,0 +1,21 @@
+/* CSS Document */
+.check_all {
+	width:80%;
+	height:100px;
+	background:url(../../image/error.png) no-repeat;
+	position:absolute;
+	padding:23px 10px 0 45px;
+}
+.user {
+	top:115px;
+	left:58%;
+}
+.pass {
+	top:165px;
+	left:58%;
+}
+.check {
+	top:215px;
+	left:9%;
+	z-index:10;
+}

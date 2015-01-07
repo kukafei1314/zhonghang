@@ -55,7 +55,7 @@
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<ul class="nav menu" id="main_nav">
 			<li class="parent">
-				<a href="<?php echo base_url('admin/index');?>" id="index">
+				<a href="<?php echo base_url('admin/about');?>" id="index">
 					<span class="glyphicon glyphicon-dashboard"></span> 公司概况
 				</a>
 			</li>

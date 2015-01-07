@@ -61,9 +61,9 @@ function check_right() {
 		return false;
 	}
 }
-var username_empty = "<div style='width:80%;height:100px;background:url(../../../static/image/error.png) no-repeat;position:absolute;top:115px;left:58%;padding:23px 10px 0 45px;'>请输入用户名</div>";
-var username_error = "<div style='width:80%;height:100px;background:url(../../../static/image/error.png) no-repeat;position:absolute;top:115px;left:58%;padding:23px 10px 0 45px;'>用户名不存在</div>";
-var pass_empty = "<div style='width:80%;height:100px;background:url(../../../static/image/error.png) no-repeat;position:absolute;top:165px;left:58%;padding:23px 10px 0 45px;'>请输入密码</div>";
-var pass_error = "<div style='width:80%;height:100px;background:url(../../../static/image/error.png) no-repeat;position:absolute;top:165px;left:58%;padding:23px 10px 0 45px;'>用户名或密码错误</div>";
-var check_empty = "<div style='width:80%;height:100px;background:url(../../../static/image/error.png) no-repeat;position:absolute;top:215px;left:9%;padding:23px 10px 0 45px;z-index:10;'>请输入验证码</div>";
-var check_error = "<div style='width:80%;height:100px;background:url(../../../static/image/error.png) no-repeat;position:absolute;top:215px;left:9%;padding:23px 10px 0 45px;z-index:10;'>验证码输入错误</div>";
+var username_empty = "<div class='check_all user'>请输入用户名</div>";
+var username_error = "<div class='check_all user'>用户名不存在</div>";
+var pass_empty = "<div class='check_all pass'>请输入密码</div>";
+var pass_error = "<div class='check_all pass'>用户名或密码错误</div>";
+var check_empty = "<div class='check_all check'>请输入验证码</div>";
+var check_error = "<div class='check_all check'>验证码输入错误</div>";
