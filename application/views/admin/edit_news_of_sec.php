@@ -3,7 +3,7 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-				<li class="active">新闻</li>
+				<li class="active"><?php echo $name;?></li>
 			</ol>
 		</div><!--/.row-->
 									
@@ -49,6 +49,7 @@
 								<div class="form-group">
 									<div class="col-md-12 widget-right admin-pull-center">
 										<button type="submit" class="btn btn-primary">提&nbsp;交</button>
+										<button type="button" onclick="{location.href='index.php?d=admin&c=subtitle&m=editNews&aid='+<?php echo $aid;?>+'&pid='+<?php echo $pid;?>+'&tid='+<?php echo $tid;?>}" class="btn btn-primary">重&nbsp;置</button>
 									</div>
 								</div>
 							</fieldset>
