@@ -55,7 +55,7 @@
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<ul class="nav menu" id="main_nav">
 			<li class="parent">
-				<a href="<?php echo base_url('admin/about');?>" id="index">
+				<a href="<?php echo base_url('admin/about');?>" id="index" target="main">
 					<span class="glyphicon glyphicon-dashboard"></span> 公司概况
 				</a>
 			</li>
@@ -68,17 +68,17 @@
 				</a>
 				<ul class="children collapse" id="sub-item-1">
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=8');?>">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=8');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 公司动态
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=9');?>">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=9');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 图片新闻
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=10');?>">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=10');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 媒体聚焦
 						</a>
 					</li>
@@ -93,22 +93,22 @@
 				</a>
 				<ul class="children collapse" id="sub-item-2">
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=11');?>">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=11');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 业务领域
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=12');?>">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=12');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 水务投资项目
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=13');?>">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=13');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 行业动态
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=13');?>">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=13');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 业务视野
 						</a>
 					</li>
@@ -128,27 +128,27 @@
 				</a>
 				<ul class="children collapse" id="sub-item-4">
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=15');?>">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=15');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 人才理念
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=16');?>">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=16');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 人才现状
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=17');?>">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=17');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 人才政策
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=18');?>">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=18');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 招聘信息
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=19');?>">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=19');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 澄清公告
 						</a>
 					</li>
@@ -166,9 +166,12 @@
 			</li>
 			<li role="presentation" class="divider"></li>
 			<li>
-				<a href="<?php echo base_url('admin/article_type');?>" id="index">
+				<a href="<?php echo base_url('admin/article_type');?>" id="index" target="main">
 					<span class="glyphicon glyphicon-th-large"></span> 类别管理
 				</a>
 			</li>
 		</ul>
 	</div><!--/.sidebar-->
+    <div id="mainframe">
+		<iframe frameborder="0" id="main" name="main" style="HEIGHT: 100%; VISIBILITY: inherit; WIDTH: 100%; Z-INDEX: 1;" target="main"></iframe>
+	</div>

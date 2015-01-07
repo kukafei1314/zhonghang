@@ -29,14 +29,6 @@ class Index extends CI_Controller
 	public function index() 
 	{
 		$data['username'] = $this->admin_user_m->user->username;
-		$this->load->view('admin/index', $data);
-	}
-	public function add()
-	{
-		$this->load->view('admin/add_news');
-	}
-	public function add_type()
-	{
-		$this->load->view('admin/add_type');
+		$this->load->view('admin/admin_header', $data);
 	}
 }
