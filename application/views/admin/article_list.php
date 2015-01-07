@@ -46,5 +46,9 @@
     </div>	
 	</div>
 </body>
-
+<script>
+    function del_alert(){
+    	return confirm('删除操作不可恢复，确定删除么？');
+    }
+</script>
 </html>
