@@ -7,6 +7,17 @@ function parent_hold(id){
 		}
 	}
 }
+
+function child_hold(id){
+	for (var i = 1; i <= 12; i++) {
+		if(i == id){
+			$("#child_"+i).addClass("current");
+		}else{
+			$("#child_"+i).removeClass();
+		}
+	}
+}
+
 $(document).ready(function(e) {
     $(".parent_none").click(function(){
 		for (var i = 1; i <= 4; i++) {

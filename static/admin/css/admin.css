@@ -4,6 +4,7 @@ html,body {
 	height:100%;
 	margin:0;
 }
+
 .col-md-8 {
 	width: 100%;
 }
@@ -166,6 +167,6 @@ td a{
 	height:75%;
 }
 .current {
-	background:#30a5ff;
-	color:#fff;
+	background:#30a5ff !important;
+	color:#fff !important;
 }

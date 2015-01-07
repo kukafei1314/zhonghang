@@ -63,17 +63,17 @@
 				</a>
 				<ul class="children collapse" id="sub-item-1">
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=8');?>" target="main">
+						<a id = "child_1" onclick="child_hold(1)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=8');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 公司动态
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=9');?>" target="main">
+						<a id = "child_2" onclick="child_hold(2)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=9');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 图片新闻
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=10');?>" target="main">
+						<a id = "child_3" onclick="child_hold(3)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=10');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 媒体聚焦
 						</a>
 					</li>
@@ -88,22 +88,22 @@
 				</a>
 				<ul class="children collapse" id="sub-item-2">
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=11');?>" target="main">
+						<a id = "child_4" onclick="child_hold(4)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=11');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 业务领域
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=12');?>" target="main">
+						<a id = "child_5" onclick="child_hold(5)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=12');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 水务投资项目
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=13');?>" target="main">
+						<a id = "child_6" onclick="child_hold(6)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=13');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 行业动态
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=14');?>" target="main">
+						<a id = "child_7" onclick="child_hold(7)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=14');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 业务视野
 						</a>
 					</li>
@@ -123,27 +123,27 @@
 				</a>
 				<ul class="children collapse" id="sub-item-4">
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=15');?>" target="main">
+						<a id = "child_8" onclick="child_hold(8)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=15');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 人才理念
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=16');?>" target="main">
+						<a id = "child_9" onclick="child_hold(9)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=16');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 人才现状
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=17');?>" target="main">
+						<a id = "child_10" onclick="child_hold(10)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=17');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 人才政策
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=18');?>" target="main">
+						<a id = "child_11" onclick="child_hold(11)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=18');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 招聘信息
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=19');?>" target="main">
+						<a id = "child_12" onclick="child_hold(12)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=19');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 澄清公告
 						</a>
 					</li>
