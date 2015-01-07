@@ -29,7 +29,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><span>中航泰达</span>后台管理</a>
+				<a class="navbar-brand" href=""><span>中航泰达</span>后台管理</a>
 				<ul class="user-menu">
 					<li class="dropdown pull-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $username;?> <span class="caret"></span></a>
@@ -52,7 +52,7 @@
 				</a>
 			</li>
 			<li class="parent"  id="widgets">
-				<a href="#">
+				<a href="">
 					<span class="glyphicon glyphicon-list-alt"></span> 新闻动态
 					<span data-toggle="collapse" href="#sub-item-1" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
@@ -77,7 +77,7 @@
 				</ul>
 			</li>
 			<li class="parent" id="charts">
-				<a href="#">
+				<a href="">
 					<span class="glyphicon glyphicon-stats"></span> 业绩案例
 					<span data-toggle="collapse" href="#sub-item-2" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
@@ -107,12 +107,12 @@
 				</ul>
 			</li>
 			<li class="parent" id="tables">
-				<a href="#">
+				<a>
 					<span class="glyphicon glyphicon-eye-close"></span> 研发中心
 				</a>
 			</li>
 			<li class="parent" id="forms">
-				<a href="#">
+				<a>
 					<span class="glyphicon glyphicon-globe"></span> 人力资源
 					<span data-toggle="collapse" href="#sub-item-4" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus"></em>
@@ -147,12 +147,12 @@
 				</ul>
 			</li>
 			<li class="parent" id="tables">
-				<a href="#">
+				<a>
 					<span class="glyphicon glyphicon-eye-close"></span> 下载中心
 				</a>
 			</li>
 			<li class="parent" id="tables">
-				<a href="#">
+				<a>
 					<span class="glyphicon glyphicon-eye-close"></span> 公司公告
 				</a>
 			</li>
