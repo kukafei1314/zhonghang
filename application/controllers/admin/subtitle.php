@@ -41,7 +41,7 @@ class Subtitle extends CI_Controller
 	    $data['tid'] = $_GET['tid'];
 	    $data['name'] = $this->article_type_m->get_name($data['tid']);
 	    $data['username'] = $this->admin_user_m->user->username;
-	    $this->load->view('admin/add_news',$data);
+	    $this->load->view('admin/add_news_of_sec',$data);
 	}
 	
 	public function editNews()
@@ -52,7 +52,7 @@ class Subtitle extends CI_Controller
 	    $data['aid'] = $_GET['aid'];
 	    $data['types'] = $this->article_type_m->get_children();
 	    $data['article'] = $this->article_list_m->get_article($data['aid']);
-	    $this->load->view('admin/edit_news',$data);
+	    $this->load->view('admin/edit_news_of_sec',$data);
 	}
 	
 	public function deleteNews()
