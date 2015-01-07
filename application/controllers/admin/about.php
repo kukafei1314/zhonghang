@@ -13,7 +13,7 @@ class About extends CI_Controller
 		$this->load->database();
 		$this->load->model('admin_user_m');
 		if($this->admin_user_m->check_login() === FALSE) {
-			redirect('d=admin&c=index');
+			redirect('d=admin&c=login');
 		}
 		$this->load->model('about_m');
 		$this->load->helper('form');

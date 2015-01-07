@@ -22,21 +22,12 @@ class Index extends CI_Controller
 		$this->load->model('admin_user_m');
 		if($this->admin_user_m->check_login() === FALSE) {
 			redirect('d=admin&c=login');
-			//redirect('admin/login');
 		}
 	}
 	
 	public function index() 
 	{
 		$data['username'] = $this->admin_user_m->user->username;
-		$this->load->view('admin/index', $data);
-	}
-	public function add()
-	{
-		$this->load->view('admin/add_news');
-	}
-	public function add_type()
-	{
-		$this->load->view('admin/add_type');
+		$this->load->view('admin/admin_header', $data);
 	}
 }

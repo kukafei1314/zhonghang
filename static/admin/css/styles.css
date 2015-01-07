@@ -10,7 +10,6 @@ Version: 1.0
 
 body {
 	background: #f1f4f7;
-	padding-top: 50px;
 	color: #5f6468;
 }
 
@@ -20,6 +19,7 @@ p {
 
 a, a:hover, a:focus {
 	color: #30a5ff;
+	text-decoration:none !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -590,7 +590,7 @@ a.bg-danger:hover {
 .sidebar ul.nav ul.children li a {
 	height: 40px;
 	background: #f9f9f9;
-	color: #30a5ff!important;
+	color: #30a5ff;
 }
 
 .sidebar ul.nav li.current a {

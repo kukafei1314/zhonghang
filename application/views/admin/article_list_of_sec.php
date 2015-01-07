@@ -1,4 +1,5 @@
-<?php $this->load->view('admin/admin_header'); ?>
+<?php $this->load->view('admin/headerfile'); ?>
+
 	<!--新闻列表页面-->	
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">		
 		<div class="row">
@@ -17,7 +18,7 @@
                                 <input type="text" class="form-control" placeholder="请输入关键字搜索">
                             </div>
                         </form>
-                        <a href="<?php echo base_url('admin/subtitle/addNews?pid='.$pid.'&tid='.$tid);?>"><button type="submit" class="btn btn-primary my_botton">添加文章</button></a>
+                         <button onclick="{location.href='index.php?d=admin&c=subtitle&m=addNews&pid='+<?php echo $pid;?>+'&tid='+<?php echo $tid;?>}" target="main" type="submit" class="btn btn-primary my_botton">添加文章</button>
                     </div>
 					<div class="panel-body">	
         	
@@ -38,9 +39,9 @@
                         <td>
                             <?php $aid = $singleNews['aid'];?>
                             <div class="action-buttons">
-                                <a href="<?php echo base_url('admin/subtitle/editNews?aid='.$aid.'&pid='.$pid.'&tid='.$tid);?>" title="编辑"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <a href="<?php echo base_url('admin/subtitle/editNews?aid='.$aid.'&pid='.$pid.'&tid='.$tid);?>" title="编辑" target="main"><span class="glyphicon glyphicon-pencil"></span></a>
                                 <a href="#" class="flag" title="查看"><span class="glyphicon glyphicon-file"></span></a>
-                                <a href="<?php echo base_url('admin/subtitle/deleteNews?aid='.$aid.'&pid='.$pid.'&tid='.$tid);?>" title="删除" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a onclick="return del_alert()" href="<?php echo base_url('admin/subtitle/deleteNews?aid='.$aid.'&pid='.$pid.'&tid='.$tid);?>" title="删除" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
                         	</div>
                         </td>
                     </tr>
@@ -51,7 +52,11 @@
 			</div>
 		</div><!--/.row-->
     </div>	
-	</div>
+	</div>	
 </body>
-
+<script>
+    function del_alert(){
+    	return confirm('删除操作不可恢复，确定删除么？');
+    }
+</script>
 </html>

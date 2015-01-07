@@ -1,20 +1,27 @@
-/*
- * 左侧导航栏选中保持
- */
-$(document).ready(function(){
-    var pn = location.pathname;
-    var find = 0;
-	$("#main_nav li").each(function(n) {
-		var b = $(this).attr("id");
-		//alert(pn.indexOf(b));
-		if (pn.indexOf(b) != -1){
-			$(this)[0].className = 'parent active';
-			
-			find = 1;
+function parent_hold(id){
+	for (var i = 1; i <= 4; i++) {
+		if(i == id){
+			$("#parent_"+i).addClass("current");
+		}else{
+			$("#parent_"+i).removeClass();
 		}
-    });
-	if(!find) {
-		$("#main_nav li a")[0].className = 'parent active';
 	}
+}
 
+function child_hold(id){
+	for (var i = 1; i <= 12; i++) {
+		if(i == id){
+			$("#child_"+i).addClass("current");
+		}else{
+			$("#child_"+i).removeClass();
+		}
+	}
+}
+
+$(document).ready(function(e) {
+    $(".parent_none").click(function(){
+		for (var i = 1; i <= 4; i++) {
+			$("#parent_"+i).removeClass();
+		}
+	});
 });

@@ -1,5 +1,4 @@
-<?php $this->load->view('admin/admin_header'); ?>
-		
+<?php $this->load->view('admin/headerfile'); ?>
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">		
 		<div class="row">
 			<ol class="breadcrumb">
@@ -22,6 +21,7 @@
 									<div class="col-md-9">
 									<input id="name" name="title" type="text"   class="form-control add-width">
 									</div>
+                                    <div class="cl"></div>
 								</div>
 							
 								<!-- Message body -->
@@ -48,7 +48,6 @@
 			<script type="text/javascript">
 				var ue = UE.getEditor('ue_content');
 			</script>
-
 		</div><!--/.row-->
 	</div>	<!--/.main-->
 </body>

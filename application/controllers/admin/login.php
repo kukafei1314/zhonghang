@@ -57,19 +57,12 @@ class Login extends CI_Controller
 	
 	public function login_admin() 
 	{
-		$email = $this->input->post('email');
+		$email = $this->input->post('username');
 		$password = $this->input->post('password');
-		$usercheck = $this->input->post('usercheck');
 		$remember = $this->input->post('remember');
-		
-		$data['email_cookie'] = '';
-		
-		$check = $_SESSION['check'];
 		unset($_SESSION['check']);
-		if($check != $usercheck) {
-			$data['error'] = '验证码错误';
-			$this->load->view('admin/login.php', $data);
-		} else if($this->admin_user_m->login($email, $password) > 0) {
+		$data['email_cookie'] = '';
+		if($this->admin_user_m->login($email, $password) > 0) {
 			if(!empty($remember)){
 				$uid = $this->admin_user_m->login($email, $password);
 				$tokenArray = $this->admin_user_m->edit_token($uid);
@@ -78,14 +71,24 @@ class Login extends CI_Controller
 				$this->input->set_cookie('token_cookie', $token, 60*60*24*100);
 			}
 			redirect('d=admin&c=index');
-			//redirect('admin/index');
-			
-		} else {
-			$data['error'] = '用户名或密码错误';
-			$this->load->view('admin/login.php', $data);
 		}
 	}
-	
+	public function ajax_check()
+	{
+		$email = $this->input->post('username');
+		$password = $this->input->post('password');
+		$usercheck = $this->input->post('usercheck');
+		$check = $_SESSION['check'];
+		if($check != $usercheck) {
+			echo "1";//验证码错误
+		} else if($this->admin_user_m->login($email, $password) <= 0) {
+			if($this->admin_user_m->_get_userbyusername($email) == false) {
+				echo "2";//用户名不存在
+			} else {
+				echo "3";//登录名或密码错误
+			}
+		}
+	}
 	public function logout()
 	{
 		$this->admin_user_m->logout();
