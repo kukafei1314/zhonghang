@@ -11,7 +11,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="panel panel-default">
-					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 添加新闻</div>
+					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 编辑文章<button onclick="{location.href='index.php?d=admin&c=subtitle&m=listNews&pid='+<?php echo $pid;?>+'&tid='+<?php echo $tid;?>}" target="main" type="submit" class="btn btn-primary my_back">返回</button></div>
 					<div class="panel-body">
 						<form class="form-horizontal" action="<?php echo base_url('admin/subtitle/updateNews?aid='.$aid.'&pid='.$pid.'&tid='.$tid);?>" method="post">
 							<fieldset>

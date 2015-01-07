@@ -103,7 +103,7 @@
 						</a>
 					</li>
 					<li>
-						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=13');?>" target="main">
+						<a class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=14');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 业务视野
 						</a>
 					</li>

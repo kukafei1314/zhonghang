@@ -3,7 +3,7 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-				<li class="active">新闻</li>
+				<li class="active"><?php echo $name;?></li>
 			</ol>
 		</div><!--/.row-->
 									
@@ -11,7 +11,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="panel panel-default">
-					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 添加文章</div>
+					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 添加文章 <button onclick="{location.href='index.php?d=admin&c=subtitle&m=listNews&pid='+<?php echo $pid;?>+'&tid='+<?php echo $tid;?>}" target="main" type="submit" class="btn btn-primary my_back">返回</button></div>
 					<div class="panel-body">
 						<form class="form-horizontal" action="<?php echo base_url('admin/subtitle/insertNews?pid='.$pid.'&tid='.$tid);?>" method="post">
 							<fieldset>
@@ -45,6 +45,7 @@
 								<div class="form-group">
 									<div class="col-md-12 widget-right admin-pull-center">
 										<button type="submit" class="btn btn-primary">提&nbsp;交</button>
+										<button type="button" onclick="{location.href='index.php?d=admin&c=subtitle&m=addNews&pid='+<?php echo $pid;?>+'&tid='+<?php echo $tid;?>}" class="btn btn-primary">重&nbsp;置</button>
 									</div>
 								</div>
 							</fieldset>
