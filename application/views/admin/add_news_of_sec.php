@@ -13,7 +13,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 添加文章 <button onclick="{location.href='index.php?d=admin&c=subtitle&m=listNews&pid='+<?php echo $pid;?>+'&tid='+<?php echo $tid;?>}" target="main" type="submit" class="btn btn-primary my_back">返回</button></div>
 					<div class="panel-body">
-						<form class="form-horizontal" action="<?php echo base_url('admin/subtitle/insertNews?pid='.$pid.'&tid='.$tid);?>" method="post">
+						<form id = "my_form" class="form-horizontal" action="<?php echo base_url('admin/subtitle/insertNews?pid='.$pid.'&tid='.$tid);?>" method="post">
 							<fieldset>
 								<!-- Name input-->
 								<div class="form-group">
@@ -44,7 +44,7 @@
 								<!-- Form actions -->
 								<div class="form-group">
 									<div class="col-md-12 widget-right admin-pull-center">
-										<button type="submit" class="btn btn-primary">提&nbsp;交</button>
+										<button onclick="return is_empty()" type="submit" class="btn btn-primary">提&nbsp;交</button>
 										<button type="button" onclick="{location.href='index.php?d=admin&c=subtitle&m=addNews&pid='+<?php echo $pid;?>+'&tid='+<?php echo $tid;?>}" class="btn btn-primary">重&nbsp;置</button>
 									</div>
 								</div>
@@ -57,6 +57,18 @@
 			<script type=text/javascript src="/static/ueditor/ueditor.all.min.js"></script>
 			<script type="text/javascript">
 				var ue = UE.getEditor('ue_content');
+
+				function is_empty(){
+					if ($("#title").val() == "") {
+						alert("文章标题不能为空！");
+						return false;
+					}
+					
+					if ($(window.frames["ueditor_0"].document).find(":p").val() == "") {
+						alert("文章标题不能为空！");
+						return false;
+					}
+				}
 			</script>
 		</div><!--/.row-->
 	</div>	<!--/.main-->

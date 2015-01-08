@@ -71,12 +71,17 @@ class Subtitle extends CI_Controller
 	    $tid = $_GET['tid'];
 	    $article['title'] = $_POST['title'];
 	    $article['type'] = $_POST['type'];
-	    $article['content'] = $_POST['ue_content'];
+	    $article['content'] = "";
+	    if(isset($_POST['ue_content']))
+	    {
+	        $article['content'] = $_POST['ue_content'];
+	    }
 	    $article['username'] = $this->admin_user_m->user->username;
 	    $article['add_time'] = date("Y/m/d");
 	    $this->article_list_m->add_article($article); 
 	    Header("Location:listNews?pid=".$pid."&tid=".$tid);
 	}
+	
 	public function updateNews()
 	{
 	    $pid = $_GET['pid'];

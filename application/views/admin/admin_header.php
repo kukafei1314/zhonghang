@@ -151,12 +151,12 @@
 			</li>
 			<li class="parent" id="tables">
 				<a id="parent_3" onclick="parent_hold(3)" >
-					<span class="glyphicon glyphicon-eye-close"></span> 下载中心
+					<span class="glyphicon glyphicon-download-alt"></span> 下载中心
 				</a>
 			</li>
 			<li class="parent" id="tables">
 				<a id="parent_4" onclick="parent_hold(4)" >
-					<span class="glyphicon glyphicon-eye-close"></span> 公司公告
+					<span class="glyphicon glyphicon-comment"></span> 公司公告
 				</a>
 			</li>
 			<li role="presentation" class="divider"></li>
@@ -184,4 +184,5 @@
         $(window).on('resize', function () {
           if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
         })
+        
     </script>	
