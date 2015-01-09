@@ -20,14 +20,15 @@ class Navigcontrol extends CI_Controller
 		$tid = (int) $this->input->get('tid');
 		$row = $this->article_m->get_tid($tid);
 		$data['title'] = $row['name'];
+		$data['en_title'] = $row['en_name'];
 		$row_second = $this -> article_m->get_pid($tid);
 		$array_secondtitle = array();
-		foreach ($row_second as $row_second_name){
-			$array_secondtitle[] = $row_second_name['name'];
+		if(!empty($row_second)){
+			foreach ($row_second as $row_second_name){
+				$array_secondtitle[] = $row_second_name['name'];
+			}
+			$data['title_second'] = $array_secondtitle;
 		}
-		$data['title_second'] = $array_secondtitle;
-
-
 		$this->load->view('second_header');
 		$this->load->view('navigation_about',$data);
 		$this->load->view('nav_content');
