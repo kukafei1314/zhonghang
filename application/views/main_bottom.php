@@ -7,17 +7,17 @@
             <div class="bottom_na">
             	<div class="bottom_nav_left">
                 	<ul>
-                    	<li><a href="#">公司简介</a></li>
-                        <li><a href="#">董事长致辞</a></li>
-                        <li><a href="#">管理团队</a></li>
-                        <li><a href="#">组织机构</a></li>
+                    	<li><a href="<?php echo base_url('navigcontrol/?tid=20');?>">公司简介</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=21');?>">董事长致辞</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=22');?>">管理团队</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=23');?>">组织机构</a></li>
                     </ul>
                 </div>
                 <div class="bottom_nav_left1">
                 	<ul>
-                    	<li><a href="#">公司战略</a></li>
-                        <li><a href="#">荣誉与奖励</a></li>
-                        <li><a href="#">企业文化</a></li>
+                    	<li><a href="<?php echo base_url('navigcontrol/?tid=24');?>">公司战略</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=25');?>">荣誉与奖励</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=26');?>">企业文化</a></li>
                     </ul>
                 </div>
                 <div class="cl"></div>
@@ -30,9 +30,9 @@
             <div class="bottom_na">
             	<div class="bottom_nav_left2">
                 	<ul>
-                    	<li><a href="#">公司动态</a></li>
-                        <li><a href="#">图片新闻</a></li>
-                        <li><a href="#">媒体聚焦</a></li>
+                    	<li><a href="<?php echo base_url('navigcontrol/?tid=8');?>">公司动态</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=9');?>">图片新闻</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=10');?>">媒体聚焦</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,8 +44,8 @@
             <div class="bottom_na">
             	<div class="bottom_nav_left2">
                 	<ul>
-                    	<li><a href="#">业务领域</a></li>
-                        <li><a href="#">水务投资项目</a></li>
+                    	<li><a href="<?php echo base_url('navigcontrol/?tid=11');?>">业务领域</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=12');?>">水务投资项目</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,8 +55,8 @@
             <div class="bottom_na">
             	<div class="bottom_nav_left2">
                 	<ul>
-                    	<li><a href="#">业内动态</a></li>
-                        <li><a href="#">业务视野</a></li>
+                    	<li><a href="<?php echo base_url('navigcontrol/?tid=13');?>">业内动态</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=14');?>">业务视野</a></li>
                     </ul>
                 </div>
             </div>
@@ -68,11 +68,11 @@
             <div class="bottom_na">
             	<div class="bottom_nav_left2">
                 	<ul>
-                    	<li><a href="#">人才理念</a></li>
-                        <li><a href="#">人才现状</a></li>
-                        <li><a href="#">人才政策</a></li>
-                        <li><a href="#">招聘信息</a></li>
-                        <li><a href="#">澄清公告</a></li>
+                    	<li><a href="<?php echo base_url('navigcontrol/?tid=15');?>">人才理念</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=16');?>">人才现状</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=17');?>">人才政策</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=18');?>">招聘信息</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=19');?>">澄清公告</a></li>
                     </ul>
                 </div>
             </div>
