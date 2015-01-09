@@ -66,6 +66,10 @@ html,body {
 	width:20%;
 }
 
+.my_search button{
+	
+}
+
 .form-control {
 	height: 38px;
 }
@@ -88,6 +92,14 @@ html,body {
 	height:38px;
 	margin-top:7px;
 	margin-right:10%;
+}
+
+.my_page{
+	text-align:center;
+}
+
+.my_page a{
+	padding:0 5px 0 5px !important;
 }
 
 #table1 {
