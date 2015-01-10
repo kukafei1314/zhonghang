@@ -1,15 +1,16 @@
 <div class="second_content">
 		<div class="leftNavi">
 			<div class="leftNaviTitle">
-				<div class="naviTitleCh">人力资源</div>
-				<div class="naviTitleEn">Corporate Culture</div>
+				<div class="naviTitleCh"><?php echo $title; ?></div>
+				<div class="naviTitleEn"><?php echo $en_title; ?></div>
 			</div>
 			<div class="leftNaviMenu">
-				<div class="naviMenuButton"><a href="">> 人才理念</a></div>
-				<div class="naviMenuButton"><a href="">> 人才现状</a></div>
-				<div class="naviMenuButton"><a href="">> 人才政策</a></div>
-				<div class="naviMenuButton"><a href="">> 招聘信息</a></div>
-				<div class="naviMenuButton"><a href="">> 澄清广告</a></div>
+				<?php 
+					if(!empty($title_second)){
+						foreach($title_second as $item_second):?>
+							<div class="naviMenuButton"><a href="">> <?=$item_second?></a></div>
+					<?php endforeach; 
+				}?>
 			</div>
 			<div class="leftNaviSearch">
 				<div class="naviSearchTitle">职位搜索</div>

@@ -38,13 +38,14 @@
                     	<a href="<?php echo base_url('navigcontrol/?tid=3');?>">业绩案例</a>
                     </li>
                     <li>
-                    	<a  href="<?php echo site_url('c=index&m=middle');?>">研发中心</a>
+                    	<a  href="<?php echo base_url('navigcontrol/?tid=4');?>">研发中心</a>
                     </li>
                     <li>
-                    	<a  href="<?php echo site_url('c=index&m=middle');?>">人力资源</a>
+                    	<!-- <a  href="<?php //echo site_url('c=index&m=middle');?>">人力资源</a> -->
+                    	 <a  href="<?php echo base_url('navigcontrol/?tid=5');?>">人力资源</a> 
                     </li>
                     <li>
-                    	<a  href="<?php echo site_url('c=index&m=middle');?>">下载中心</a>
+                    	<a  href="<?php echo base_url('navigcontrol/?tid=6');?>">下载中心</a>
                     </li>
                     <div class="cl"></div>
                 </ul>
