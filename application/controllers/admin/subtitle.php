@@ -33,7 +33,7 @@ class Subtitle extends CI_Controller
 	        $start_page = ($per_page - 1) * 10;
 	    }
 	    $count = $this->article_list_m->num_articles($tid);
-	    $temp['base_url'] = base_url('admin/subtitle/listNews?&pid='.$pid.'&tid='.$tid);
+	    $temp['base_url'] = base_url('admin/subtitle/listNews?pid='.$pid.'&tid='.$tid);
 	    $temp['total_rows'] = (int)$count;
 	    $this->article_list_m->pageConfig($temp);
 	    $data['username'] = $this->admin_user_m->user->username;
