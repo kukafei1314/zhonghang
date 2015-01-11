@@ -110,7 +110,7 @@
 				</ul>
 			</li>
 			<li class="parent" id="tables">
-				<a id="parent_2" onclick="parent_hold(2)">
+				<a id="parent_2" onclick="parent_hold(2)" href="<?php echo base_url('admin/subtitle/listNews?pid=0&tid=4');?>" target="main">
 					<span class="glyphicon glyphicon-eye-close"></span> 研发中心
 				</a>
 			</li>
@@ -150,21 +150,23 @@
 				</ul>
 			</li>
 			<li class="parent" id="tables">
-				<a id="parent_3" onclick="parent_hold(3)" >
+				<a id="parent_3" onclick="parent_hold(3)" href="<?php echo base_url('admin/subtitle/listNews?pid=0&tid=6');?>" target="main">
 					<span class="glyphicon glyphicon-download-alt"></span> 下载中心
 				</a>
 			</li>
 			<li class="parent" id="tables">
-				<a id="parent_4" onclick="parent_hold(4)" >
+				<a id="parent_4" onclick="parent_hold(4)" href="<?php echo base_url('admin/subtitle/listNews?pid=0&tid=7');?>" target="main">
 					<span class="glyphicon glyphicon-comment"></span> 公司公告
 				</a>
 			</li>
 			<li role="presentation" class="divider"></li>
-			<li>
+<!--		
+            <li>
 				<a href="<?php echo base_url('admin/article_type');?>" id="index" target="main">
 					<span class="glyphicon glyphicon-th-large"></span> 类别管理
 				</a>
 			</li>
+-->
 		</ul>
 	</div><!--/.sidebar-->
     <div id="mainframe">
