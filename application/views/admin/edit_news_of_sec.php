@@ -49,6 +49,7 @@
 								<div class="form-group">
 									<div class="col-md-12 widget-right admin-pull-center">
 										<button onclick="return is_empty()" type="submit" class="btn btn-primary">提&nbsp;交</button>
+										<span class="depart"></span>
 										<button type="button" onclick="{location.href='index.php?d=admin&c=subtitle&m=editNews&aid='+<?php echo $aid;?>+'&pid='+<?php echo $pid;?>+'&tid='+<?php echo $tid;?>}" class="btn btn-primary">重&nbsp;置</button>
 									</div>
 								</div>
