@@ -170,7 +170,8 @@
 		</ul>
 	</div><!--/.sidebar-->
     <div id="mainframe">
-		<iframe frameborder="0" id="main" name="main" style="HEIGHT:100%;VISIBILITY: inherit; WIDTH: 83%; Z-INDEX: 1;" target="main"></iframe>
+		<iframe frameborder="0" id="main" name="main" style="HEIGHT:100%;VISIBILITY: inherit; WIDTH: 83%; Z-INDEX: 1;" target="main" src="<?php echo base_url('admin/index/index_image');?>">
+		</iframe>
 	</div>
 	<script>
         !function ($) {
