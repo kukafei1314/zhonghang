@@ -63,11 +63,6 @@
 						alert("文章标题不能为空！");
 						return false;
 					}
-					
-					if ($(window.frames["ueditor_0"].document).find(":p").val() == "") {
-						alert("文章标题不能为空！");
-						return false;
-					}
 				}
 			</script>
 		</div><!--/.row-->

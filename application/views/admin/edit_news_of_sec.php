@@ -2,7 +2,7 @@
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">		
 		<div class="row">
 			<ol class="breadcrumb">
-				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li><a href="<?php echo base_url('admin/index');?>"><span class="glyphicon glyphicon-home"></span></a></li>
 				<li class="active"><?php echo $name;?></li>
 			</ol>
 		</div><!--/.row-->
@@ -48,7 +48,7 @@
 								<!-- Form actions -->
 								<div class="form-group">
 									<div class="col-md-12 widget-right admin-pull-center">
-										<button type="submit" class="btn btn-primary">提&nbsp;交</button>
+										<button onclick="return is_empty()" type="submit" class="btn btn-primary">提&nbsp;交</button>
 										<button type="button" onclick="{location.href='index.php?d=admin&c=subtitle&m=editNews&aid='+<?php echo $aid;?>+'&pid='+<?php echo $pid;?>+'&tid='+<?php echo $tid;?>}" class="btn btn-primary">重&nbsp;置</button>
 									</div>
 								</div>
@@ -61,6 +61,13 @@
 			<script type=text/javascript src="/static/ueditor/ueditor.all.min.js"></script>
 			<script type="text/javascript">
 				var ue = UE.getEditor('ue_content');
+
+				function is_empty(){
+					if ($("#title").val() == "") {
+						alert("文章标题不能为空！");
+						return false;
+					}
+				}
 			</script>
 		</div><!--/.row-->
 	</div>	<!--/.main-->
