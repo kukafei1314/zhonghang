@@ -135,7 +135,8 @@ class Subtitle extends CI_Controller
 	    	 }
 	    }
 	    $article['username'] = $this->admin_user_m->user->username;
-	    $article['add_time'] = time();
+	   ;
+	    $article['add_time'] = date();
 	    $this->article_list_m->update_article($article);
 	    if($tid == 9) {
 	    	$this->article_list_m->update_pic($article['aid'],$goods_pic);

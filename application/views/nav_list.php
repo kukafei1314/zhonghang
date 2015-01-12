@@ -17,12 +17,9 @@
 					</li>
 				<?php endforeach;?>  
             </ul>
-            <!-- <div id="page" style="text-align:center; font-size:14px;";>
-            	&nbsp;<strong>1</strong>&nbsp;<a href="">2</a>
-                &nbsp;<a href="">3</a>
-                &nbsp;<a href="">下一页</a>
-                &nbsp;            
-            </div> -->
+            <div id="page" style="text-align:center; font-size:14px;";>
+            	<?php echo $page_html;?>             
+            </div>
         </div>
     </div>
 	<div class="clear"></div>

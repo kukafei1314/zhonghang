@@ -20,6 +20,9 @@ class Navigcontrol extends CI_Controller
 	*/
 	public function index()
 	{
+		$per_page		  =	5;
+		$p				  =	(int) page_cur();	// 获取当前页码
+		$data['p']        = $p;
 		$tid = (int) $this->input->get('tid');
 		$row = $this->article_m->get_tid($tid);   //通过tid得到包含tid的所有内容  
 		$data['title2'] = $row['name'];
@@ -33,7 +36,8 @@ class Navigcontrol extends CI_Controller
 		$data['title'] = $row['name'];
 		$data['en_title'] = $row['en_name'];
 		$data['tid'] = $tid;
-		$data['News'] = $this->article_list_model->query_article($tid);
+		$data['News'] = $this->article_list_model->query_article($tid,$per_page,$per_page*($p-1));
+		$data['page_html']	  =	page($this->article_list_model->query_article_num($tid), $per_page);
 		$this->load->view('second_header');
 		if($pid == 5) {
 			$this->load->view('navigation');
@@ -72,7 +76,8 @@ class Navigcontrol extends CI_Controller
 		$this->load->view('footer');
 	}
 	
-	public function search(){
+	public function search()
+	{
 		$per_page		  =	20;
 		$p				  =	(int) page_cur();	// 获取当前页码
 		$data['p']        = $p;
