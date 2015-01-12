@@ -1,4 +1,5 @@
 <?php $this->load->view('second_header');?>
+
 	<div id="home_content">
 		<div class="search_content">
             <table width="100%" border="0" cellpadding="0" cellspacing="0">
@@ -29,8 +30,5 @@
         </div>
 	</div>
 <HR width="99%" color=#eaeaea SIZE=2>
-
-     
-    
 
 <?php  $this->load->view('main_bottom'); $this->load->view('footer');?>

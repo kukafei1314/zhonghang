@@ -73,7 +73,7 @@ class Navigcontrol extends CI_Controller
 	}
 	
 	public function search(){
-		$per_page		  =	2;
+		$per_page		  =	20;
 		$p				  =	(int) page_cur();	// 获取当前页码
 		$data['p']        = $p;
 		$keyword = $this->input->get('keyword');
