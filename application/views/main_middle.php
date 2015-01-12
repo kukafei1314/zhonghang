@@ -75,7 +75,7 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a href="<?php echo base_url('index/listpage');?>">查看更多></a>
+					<a href="<?php echo base_url('navigcontrol/?tid=7');?>">查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>

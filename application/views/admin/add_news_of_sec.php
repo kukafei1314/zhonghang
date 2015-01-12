@@ -71,6 +71,10 @@
 						alert("文章标题不能为空！");
 						return false;
 					}
+					if ($("#pic1").val() == "") {
+						alert("上传图片不得为空");
+						return false;
+					}
 				}
 			</script>
 		</div><!--/.row-->
