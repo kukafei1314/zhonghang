@@ -89,7 +89,7 @@ class Article_list_m extends CI_Model
    public function add_pic($aid,$goods_pic) {
    		$data = array(
    			'aid' => $aid,
-   			'path' => $goods_pic
+   			'path_pic' => $goods_pic
    		);
    	$this->db->insert('zh_pic_news',$data);
    }
@@ -101,7 +101,7 @@ class Article_list_m extends CI_Model
 	   	$query = $this->db->get('zh_pic_news');
 	   	if($query->num_rows != 0) {
 	   		foreach ($query->result_array() as $row) {
-	   			$path = $row['path'];
+	   			$path = $row['path_pic'];
 	   		}
 	   	}
 	   	return $path;
@@ -112,7 +112,7 @@ class Article_list_m extends CI_Model
    public function update_pic($aid,$goods_pic) {
    	$data = array(
    			'aid' => $aid,
-   			'path' => $goods_pic
+   			'path_pic' => $goods_pic
    	);
    	$this->db->update('zh_pic_news',$data);
    }
