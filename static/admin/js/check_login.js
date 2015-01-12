@@ -30,7 +30,7 @@ function check_right() {
 	$.ajax({  
         type: "POST", 
 		async: false,     
-        url: "/admin/login/ajax_check",      
+        url: "admin/login/ajax_check",      
         data: {username:username,password:password,usercheck:usercheck},
         success: function(data){
 			if(data == "1") {

@@ -10,20 +10,20 @@
 						foreach($title_second as $item_second):?>
 							<?php 
 								switch($item_second){
-									case "¹«Ë¾¶¯Ì¬" : $link=8;break;
-									case "Í¼Æ¬ÐÂÎÅ" : $link=9;break;
-									case "Ã½Ìå¾Û½¹" : $link=10;break;
-									case "ÒµÎñÁìÓò" : $link=11;break;
-									case "Ë®ÎñÍ¶×ÊÏîÄ¿" : $link=12;break;
-									case "ÐÐÒµ¶¯Ì¬" : $link=13;break;
-									case "ÒµÎñÊÓÒ°" : $link=14;break;
-									case "¹«Ë¾¼ò½é" : $link=20;break;
-									case "¶­ÊÂ³¤ÖÂ´Ç" : $link=21;break;
-									case "¹ÜÀíÍÅ¶Ó" : $link=22;break;
-									case "×éÖ¯»ú¹¹" : $link=23;break;
-									case "¹«Ë¾Õ½ÂÔ" : $link=24;break;
-									case "ÈÙÓþÓë½±Àø" : $link=25;break;
-									case "ÆóÒµÎÄ»¯" : $link=26;break;
+									case "å…¬å¸åŠ¨æ€" : $link=8;break;
+									case "å›¾ç‰‡æ–°é—»" : $link=9;break;
+									case "åª’ä½“èšç„¦" : $link=10;break;
+									case "ä¸šåŠ¡é¢†åŸŸ" : $link=11;break;
+									case "æ°´åŠ¡æŠ•èµ„é¡¹ç›®" : $link=12;break;
+									case "è¡Œä¸šåŠ¨æ€" : $link=13;break;
+									case "ä¸šåŠ¡è§†é‡Ž" : $link=14;break;
+									case "å…¬å¸ç®€ä»‹" : $link=20;break;
+									case "è‘£äº‹é•¿è‡´è¾ž" : $link=21;break;
+									case "ç®¡ç†å›¢é˜Ÿ" : $link=22;break;
+									case "ç»„ç»‡æœºæž„" : $link=23;break;
+									case "å…¬å¸æˆ˜ç•¥" : $link=24;break;
+									case "è£èª‰ä¸Žå¥–åŠ±" : $link=25;break;
+									case "ä¼ä¸šæ–‡åŒ–" : $link=26;break;
 									default:$link=2;break;
 						          }
 							?>
