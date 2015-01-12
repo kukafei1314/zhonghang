@@ -3,7 +3,7 @@
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">		
 		<div class="row">
 			<ol class="breadcrumb">
-				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li><a href="<?php echo base_url('admin/index');?>" target="_top"><span class="glyphicon glyphicon-home"></span></a></li>
                 <li class="active">公司概况</li>
 			</ol>
 		</div><!--/.row-->
@@ -32,9 +32,9 @@
 						<td><?php echo $about['add_date']; ?></td>
 						<td><?php echo $about['add_user']; ?></td>
 						<td>
-							<a href="<?php echo base_url('about/?aid=' . $about['aid']); ?>" target="_blank">查看</a>
-							<a href="<?php echo base_url('admin/about/edit_new?aid='.$about['aid']);?>" target="main">编辑</a>
-							<a onclick="return del_alert()" href="index.php?d=admin&c=about&m=del&aid=<?php echo $about['aid']; ?>">删除</a>
+						    <a href="<?php echo base_url('admin/about/edit_new?aid='.$about['aid']);?>"  title="编辑" target="main"><span class="glyphicon glyphicon-pencil"></span></a>
+							<a href="<?php echo base_url('about/?aid=' . $about['aid']); ?>"  title="查看" target="_blank"><span class="glyphicon glyphicon-file"></span></a>
+							<a onclick="return del_alert()" href="index.php?d=admin&c=about&m=del&aid=<?php echo $about['aid']; ?>" title="删除" ><span class="glyphicon glyphicon-trash"></span></a>
 						</td>
 					</tr>
 			  <?php endforeach;?>
