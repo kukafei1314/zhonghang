@@ -17,7 +17,7 @@ class Navigation extends CI_Controller
 
 	/**
 	 * 首页
-*/
+	*/
 	public function index() 
 	{
 		$tid = (int) $this->input->get('tid');

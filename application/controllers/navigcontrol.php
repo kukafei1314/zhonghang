@@ -17,8 +17,8 @@ class Navigcontrol extends CI_Controller
 
 	/**
 	 * 首页
-*/
-	public function index() 
+	*/
+	public function index()
 	{
 		$tid = (int) $this->input->get('tid');
 		$row = $this->article_m->get_tid($tid);   //通过tid得到包含tid的所有内容
@@ -28,7 +28,7 @@ class Navigcontrol extends CI_Controller
 		if($row['pid'] == 0){
 			$data['title'] = $row['name'];
 			$data['en_title'] = $row['en_name'];
-			$row_second = $this -> article_m->get_pid($tid);   //通过pid得到包含pid的所有内容，传入一级tid，即二级pid
+			$row_second = $this->article_m->get_pid($tid);   //通过pid得到包含pid的所有内容，传入一级tid，即二级pid
 			$array_secondtitle = array();
 			if(!empty($row_second)){
 				foreach ($row_second as $row_second_name){
