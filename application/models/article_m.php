@@ -100,23 +100,28 @@ class Article_m extends CI_Model
 	 * @param integer $type
 	 * @param string $order
 	 */
-	public function search($keywords,$limit, $offset = 0, $type = 0, $order = 'type ASC,ord DESC,aid DESC,add_date DESC,add_time DESC')
+	public function search($keywords,$limit, $offset = 0)
 	{
 		$i = 0;
 		$return = array();
-		if($type > 0) {
-			$this->db->where('type', (int) $type);
-		}
-		$this->db->select('aid, ord,type, title, add_time, add_date, add_user');
-		$this->db->order_by($order);
 		$this->db->like('title', $keywords);
-		$query = $this->db->get('article', $limit, $offset);
+		$this->db->order_by('aid desc,type asc');
+		$query = $this->db->get('zh_articles', $limit, $offset);
 		foreach ($query->result_array() as $row) {
 			$return[$i] = $row;
-			$return[$i]['type_name'] = $this->article_type_m->get_name($row['type']);
+			$return[$i]['type_name2'] = $this->article_type_m->get_name($row['type']);
+			$return[$i]['type_name1'] = $this->article_type_m->get_name_parent($row['type']);
 			++$i;
 		}
 		return $return;
+	}
+	
+	public function count_all($keywords)
+	{
+		$this->db->like('title', $keywords);
+		$query = $this->db->get('zh_articles');
+		$num = $query->num_rows();
+		return $num;
 	}
 	
 	public function get_list($limit, $offset = 0, $type = 0, $order = 'type ASC,ord DESC,aid DESC,add_date DESC')

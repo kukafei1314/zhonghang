@@ -71,6 +71,15 @@ class Article_type_m extends CI_Model
 		return '';
 	}
 	
+	public function get_name_parent($tid)
+	{
+		if(isset($this->tids[$tid])) {
+			$pid = $this->get_parent($tid);
+			return $this->tids[$pid]['name'];
+		}
+		return '';
+	}
+	
 	public function add_type($name, $pid = 0) 
 	{
 		$pid = (int) $pid;
