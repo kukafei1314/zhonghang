@@ -10,7 +10,7 @@ class Navigation extends CI_Controller
 		parent::__construct();
 		$this->load->model('article_m');
 		$this->load->model('about_m');
-		$this->load->model('article_list_m');
+		$this->load->model('article_list_model');
 		$this->load->model('article_type_m');
 		$this->load->helper('url');
 	}
@@ -22,6 +22,7 @@ class Navigation extends CI_Controller
 	{
 		$tid = (int) $this->input->get('tid');
 		$row = $this->article_m->get_tid($tid);   //通过tid得到包含tid的所有内容
+		$data['en_title'] = $row['en_name'];
 		if($row['pid'] == 0){
 			$pid=5;
 			$tidd=15;
@@ -32,7 +33,7 @@ class Navigation extends CI_Controller
 			$this->load->view('navigation',$data);
 			$data['tid'] = $tidd;
 			$data['pid'] = $pid;
-		    $News = $this->article_list_m->query_article($pid,$tidd);
+		    $News = $this->article_list_model->query_article($pid,$tidd);
 			$data['News'] = $News;
 	        $data['name'] = $this->article_type_m->get_name($tidd);
 		    $this->load->view('nav_list',$data);
@@ -54,7 +55,7 @@ class Navigation extends CI_Controller
 			$data['title2'] = $title2;
 			$data['tid'] = $tidd;
 			$data['pid'] = $pid;
-			$News = $this->article_list_m->query_article($pid,$tidd);
+			$News = $this->article_list_model->query_article($pid,$tidd);
 			$data['News'] = $News;
 	        $data['name'] = $this->article_type_m->get_name($tidd);
 			$this->load->view('second_header');
@@ -73,7 +74,7 @@ class Navigation extends CI_Controller
 		$data['tid'] = $tid;
 	    $data['aid'] = (int) $this->input->get('aid');
 		$article = array();
-	    $article = $this->article_list_m->get_article($data['aid']);
+	    $article = $this->article_list_model->get_article($data['aid']);
 		$data['tit'] = $article['title'];
 		$data['content'] = $article['content'];
 		$data['add_date'] = $article['add_time'];

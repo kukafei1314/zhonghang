@@ -3,7 +3,7 @@
         	<p><a href="<?php echo base_url('index');?>">首页</a>&nbsp;><a href=""><?php echo $title;?></a>&nbsp;><a href=""><?php echo $title2;?></a></p>
         </div>
         <div id="right_title">
-        	<p>企业动态</p>
+        	<p><?php echo $title2;?></p>
         </div>
         <div id="right_content">
             <ul>
