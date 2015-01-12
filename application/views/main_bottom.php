@@ -82,9 +82,13 @@
             	<img src="<?php echo base_url('static/image/logo3.png');?>"/>
             </div>
             <div class="main_search">
-            	<form action="#">
-                    <input class="main_search_input" type="text" value=""  name="keyword" placeholder="请输入关键字" />
-                    <input class="main_search_button" type="button" size="30" value="搜索" />
+            	<form action="<?php echo base_url('navigcontrol/search');?>" method=get>
+            	<?php if (isset($keyword)){?>
+                    <input class="main_search_input" type="text" value="<?php echo $keyword;?>"  name="keyword"/>
+                <?php }else{?>
+                	<input class="main_search_input" type="text" value=""  name="keyword" placeholder="请输入关键字" />
+                <?php }?>
+                    <input class="main_search_button" type="submit" size="30" value="搜索" />
                 </form>
             </div>
             <div class="main_search2">
