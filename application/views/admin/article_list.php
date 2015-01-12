@@ -12,6 +12,11 @@
 			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
+						<form role="search" class="my_search" action="#" method="post">
+                            <div class="form-group">
+                                <input type="text" name="search" class="form-control" placeholder="请输入关键字搜索">
+                            </div>
+                        </form>
                         <button onclick="{location.href=''}" target="main" type="submit" class="btn btn-primary my_botton">搜索文章</button>
 
                     </div>
