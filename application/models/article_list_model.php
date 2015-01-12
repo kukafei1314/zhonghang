@@ -11,15 +11,19 @@ class Article_list_model extends CI_Model
        $this->load->model('article_list_m');
    }
    
-   public function query_article($tid,$limit = NULL)
+   public function query_article($tid,$limit, $offset = 0)
    {
 		$this->db->where('type',$tid);
-		if(!empty($limit)) {
-			$this->db->limit($limit,0);
-		}
 		$this->db->order_by('add_time','desc');
-       $query = $this->db->get('zh_articles');
+       $query = $this->db->get('zh_articles',$limit, $offset);
        return $query->result_array();
+   }
+   
+   public function query_article_num($tid)
+   {
+   	$this->db->where('type',$tid);
+   	$query = $this->db->get('zh_articles');
+   	return $query->num_rows();
    }
    /**
     * 图片新闻读取
