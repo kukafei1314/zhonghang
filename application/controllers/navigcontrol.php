@@ -37,7 +37,7 @@ class Navigcontrol extends CI_Controller
 		else
 		{
 			$tid = $row['pid'];
-			redirect('/navigcontrol/?tid='.$tid, 'refresh');
+			redirect('/navigcontrol?tid='.$tid, 'refresh');
 		}
 			$this->load->view('nav_content');
 			$this->load->view('main_bottom');
