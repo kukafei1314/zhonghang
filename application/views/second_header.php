@@ -16,19 +16,19 @@
             <div class="top_nav">
             	<ul>
                     <li>
-                     	<a href="<?php echo base_url('navigcontrol/?tid=7');?>">公司概况</a>
+                     	<a href="<?php echo base_url('about?aid=1');?>">公司概况</a>
                     </li>
                     <li>
-                    	<a href="<?php echo base_url('navigcontrol/?tid=2');?>">新闻动态</a>
+                    	<a href="<?php echo base_url('navigcontrol/?tid=8');?>">新闻动态</a>
                     </li>
                     <li>
-                    	<a href="<?php echo base_url('navigcontrol/?tid=3');?>">业绩案例</a>
+                    	<a href="<?php echo base_url('navigcontrol/?tid=11');?>">业绩案例</a>
                     </li>
                     <li>
                     	<a  href="<?php echo base_url('navigcontrol/?tid=4');?>">研发中心</a>
                     </li>
                     <li>
-                    	<a  href="<?php echo base_url('navigation/?tid=5');?>">人力资源</a>
+                    	<a  href="<?php echo base_url('navigcontrol/?tid=15');?>">人力资源</a>
                     </li>
                     <li>
                     	<a  href="<?php echo base_url('navigcontrol/?tid=6');?>">下载中心</a>

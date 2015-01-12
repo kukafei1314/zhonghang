@@ -9,28 +9,14 @@ class Index extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->helper('url');
+		$this->load->model('article_list_model');
 	}
 	
 	public function index()
 	{
+		$data['active_news'] = $this->article_list_model->query_article('13');
 		$this->load->view('main_nav');
-		$this->load->view('main_middle');
-		$this->load->view('main_bottom');
-		$this->load->view('footer');
-	}
-	public function middle()
-	{
-		$this->load->view('second_header');
-		$this->load->view('navigation');
-		$this->load->view('nav_content');
-		$this->load->view('main_bottom');
-		$this->load->view('footer');
-	}
-	public function listpage()
-	{
-		$this->load->view('second_header');
-		$this->load->view('navigation');
-		$this->load->view('nav_list');
+		$this->load->view('main_middle',$data);
 		$this->load->view('main_bottom');
 		$this->load->view('footer');
 	}

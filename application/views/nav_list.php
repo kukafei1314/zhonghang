@@ -7,22 +7,22 @@
         </div>
         <div id="right_content">
             <ul>
-				<?php foreach ($News as $singleNews): ?>
+				<?php foreach ($News as $news): ?>
 					<li>
                 		<span class="content2">
-                    		>&nbsp <?php $aid = $singleNews['aid'];?>
-                        		<a href="<?php echo base_url('navigcontrol/news?aid='.$aid.'&pid='.$pid.'&tid='.$tid);?>"><?php echo $singleNews['title']?></a>
+                    		>&nbsp
+                        	<a href="<?php echo base_url('navigcontrol/news?aid='. $news['aid'].'&tid='.$tid);?>"><?php echo $news['title']?></a>
 						</span>
-                		<span class="time"><?php echo $singleNews['add_time']?></span>                
+                		<span class="time"><?php echo $news['add_time']?></span>                
 					</li>
 				<?php endforeach;?>  
             </ul>
-            <div id="page" style="text-align:center; font-size:14px;";>
+            <!-- <div id="page" style="text-align:center; font-size:14px;";>
             	&nbsp;<strong>1</strong>&nbsp;<a href="">2</a>
                 &nbsp;<a href="">3</a>
                 &nbsp;<a href="">下一页</a>
                 &nbsp;            
-            </div>
+            </div> -->
         </div>
     </div>
 	<div class="clear"></div>

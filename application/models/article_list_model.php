@@ -10,7 +10,7 @@ class Article_list_model extends CI_Model
        $this->load->database();
    }
    
-   public function query_article($pid,$tid)
+   public function query_article($tid)
    {
        $sql = "SELECT * FROM `zh_articles` WHERE `type` = $tid";
        $query = $this->db->query($sql);

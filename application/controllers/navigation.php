@@ -21,50 +21,22 @@ class Navigation extends CI_Controller
 	public function index() 
 	{
 		$tid = (int) $this->input->get('tid');
-		$row = $this->article_m->get_tid($tid);   //通过tid得到包含tid的所有内容
+		$row = $this->article_m->get_tid($tid);   //通过tid得到包含tid的所有内容  
+		$data['title2'] = $row['name'];
+		$pid = $row['pid'];
+		$row = $this->article_m->get_tid($pid);   //通过pid得到父类的名称与英文名称
+        $data['title'] = $row['name'];
 		$data['en_title'] = $row['en_name'];
-		if($row['pid'] == 0){
-			$pid=5;
-			$tidd=15;
-			$title2="人才理念";
-			$data['title'] = "人力资源";
-			$data['title2'] = $title2;
-			$this->load->view('second_header');
-			$this->load->view('navigation',$data);
-			$data['tid'] = $tidd;
-			$data['pid'] = $pid;
-		    $News = $this->article_list_model->query_article($pid,$tidd);
-			$data['News'] = $News;
-	        $data['name'] = $this->article_type_m->get_name($tidd);
-		    $this->load->view('nav_list',$data);
-		}
-		else
-		{   
-			$tidd=$tid;
-			$tid = $row['pid'];
-            $pid=$tid; 
-            switch($tidd){
-			case 15:$title2="人才理念";break;
-			case 16:$title2="人才现状";break;
-			case 17:$title2="人才政策";break;
-			case 18:$title2="招聘信息";break;
-			case 19:$title2="澄清公告";break;
-			default:$title2="";break;
-			}
-            $data['title'] = "人力资源";
-			$data['title2'] = $title2;
-			$data['tid'] = $tidd;
-			$data['pid'] = $pid;
-			$News = $this->article_list_model->query_article($pid,$tidd);
-			$data['News'] = $News;
-	        $data['name'] = $this->article_type_m->get_name($tidd);
-			$this->load->view('second_header');
-			$this->load->view('navigation',$data);
-			$this->load->view('nav_list',$data);
-		}  
-			$this->load->view('main_bottom');
-			$this->load->view('footer');
-
+		$row_second = $this->article_m->get_pid($pid);   //通过pid得到包含pid的所有内容，传入一级tid，即二级pid
+		$data['title_second'] = $this->article_m->get_pid($pid);
+		$data['tid'] = $tid;
+		$data['News'] = $this->article_list_model->query_article($tid);
+        $data['name'] = $this->article_type_m->get_name($tid);
+		$this->load->view('second_header');
+		$this->load->view('navigation_about',$data);
+		$this->load->view('nav_list',$data);
+		$this->load->view('main_bottom');
+		$this->load->view('footer');
     }
 
 	public function news()

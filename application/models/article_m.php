@@ -48,20 +48,27 @@ class Article_m extends CI_Model
 		$pid = intval($tid);
 		$this->db->where('tid', $tid);
 		$query = $this->db->get('articles_type');
-		if($query->num_rows() == 1){
+		if($query->num_rows() != 0){
 			$row = $query->row_array();
 			return $row;
 		}
 	}
 	/*通过tid找到pid*/
-	public function get_pid($tid){
-		$pid = intval($tid);
-		$this->db->where('pid', $tid);
+	public function get_pid($pid){
+		$pid = intval($pid);
+		$this->db->where('pid', $pid);
 		$query = $this->db->get('articles_type');
+		$result = array();
+		$i = 0;
 		if($query->num_rows() > 0 ){
 			$row = $query->result_array();
-			return $row;
+			foreach ($row as $row_second_name){
+				$result[$i]['title'] = $row_second_name['name'];
+				$result[$i]['tid'] = $row_second_name['tid'];
+				$i++;
+			}
 		}
+		return $result;
 	}
 	
 	public function get_type($type)

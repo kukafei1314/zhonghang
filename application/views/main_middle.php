@@ -40,62 +40,22 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right" style="padding-right:5%;">
-					<a href="<?php echo base_url('index/listpage');?>">查看更多></a>
+					<a href="<?php echo base_url('navigcontrol/?tid=13');?>">查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
             <div class="middle_border">
 			<div class="middle_list">
 				<ul>
+				<?php foreach ($active_news as $news): ?>
 					<li class="news_list">
 						<div class="news_middle_title">
-                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        	<a href="<?php echo base_url('navigcontrol/news?aid='. $news['aid'].'&tid=13');?>"><?php echo $news['title']?></a>
                         </div>
-						<div class="news_time">2014-02-14</div>
+						<div class="news_time"><?php echo $news['add_time']?></div>
 						<div class="cl"></div>
 					</li>
-					<li class="news_list">
-						<div class="news_middle_title">
-                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
-                        </div>
-						<div class="news_time">2014-02-14</div>
-						<div class="cl"></div>
-					</li>
-					<li class="news_list">
-						<div class="news_middle_title">
-                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
-                        </div>
-						<div class="news_time">2014-02-14</div>
-						<div class="cl"></div>
-					</li>
-					<li class="news_list">
-						<div class="news_middle_title">
-                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
-                        </div>
-						<div class="news_time">2014-02-14</div>
-						<div class="cl"></div>
-					</li>
-					<li class="news_list">
-						<div class="news_middle_title">
-                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
-                        </div>
-						<div class="news_time">2014-02-14</div>
-						<div class="cl"></div>
-					</li>
-					<li class="news_list">
-						<div class="news_middle_title">
-                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
-                        </div>
-						<div class="news_time">2014-02-14</div>
-						<div class="cl"></div>
-					</li>
-					<li class="news_list">
-						<div class="news_middle_title">
-                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
-                        </div>
-						<div class="news_time">2014-02-14</div>
-						<div class="cl"></div>
-					</li>
+				<?php endforeach;?>
 				</ul>
 			</div>
             </div>

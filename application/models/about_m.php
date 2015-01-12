@@ -38,12 +38,10 @@ class About_m extends CI_Model
    public function get($aid)
 	{
 		$aid = intval($aid);
-		//var_dump($aid);
 		$this->db->where('aid', $aid);
 		$query = $this->db->get('zh_about');
-		if($query->num_rows() == 1) {
+		if($query->num_rows() != 0) {
 			$row = $query->row_array();
-//			$query->free_result();
 			return array(
 						'aid'		=>	$aid,
 						'title'		=>	$row['title'],
@@ -60,13 +58,10 @@ class About_m extends CI_Model
 
  public function title_get($title)
 	{
-		//$aid = intval($aid);
-		//var_dump($aid);
 		$this->db->where('title', $title);
 		$query = $this->db->get('zh_about');
 		if($query->num_rows() == 1) {
 			$row = $query->row_array();
-//			$query->free_result();
 			return array(
 						'title'		=>	$row['title'],
 						'content'	=>	$row['content'],
