@@ -56,9 +56,9 @@
 				<?php foreach ($active_news as $news): ?>
 					<li class="news_list">
 						<div class="news_middle_title">
-                        	<a href="<?php echo base_url('navigcontrol/news?aid='. $news['aid'].'&tid=13');?>"><?php echo $news['title']?></a>
+                        	<a href="<?php echo base_url('navigcontrol/news?aid='. $news['aid'].'&tid=13');?>"><?php echo $news['title'];?></a>
                         </div>
-						<div class="news_time"><?php echo $news['add_time']?></div>
+						<div class="news_time"><?php echo date('Y-m-d',$news['add_time']);?></div>
 						<div class="cl"></div>
 					</li>
 				<?php endforeach;?>

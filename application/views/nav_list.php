@@ -13,7 +13,7 @@
                     		>&nbsp
                         	<a href="<?php echo base_url('navigcontrol/news?aid='. $news['aid'].'&tid='.$tid);?>"><?php echo $news['title']?></a>
 						</span>
-                		<span class="time"><?php echo $news['add_time']?></span>                
+                		<span class="time"><?php echo date('Y-m-d',$news['add_time']);?></span>                
 					</li>
 				<?php endforeach;?>  
             </ul>
