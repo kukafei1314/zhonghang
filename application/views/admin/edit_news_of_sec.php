@@ -13,7 +13,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 编辑文章<button onclick="{location.href='index.php?d=admin&c=subtitle&m=listNews&pid='+<?php echo $pid;?>+'&tid='+<?php echo $tid;?>}" target="main" type="submit" class="btn btn-primary my_back">返回</button></div>
 					<div class="panel-body">
-						<form class="form-horizontal" action="<?php echo base_url('admin/subtitle/updateNews?aid='.$aid.'&pid='.$pid.'&tid='.$tid);?>" method="post" enctype="multipart/form-data">
+						<form class="form-horizontal" action="<?php echo base_url('admin/subtitle/updateNews?aid='.$aid.'&tid='.$tid);?>" method="post" enctype="multipart/form-data">
 							<fieldset>
 								<!-- Name input-->
 								<div class="form-group">
@@ -28,11 +28,7 @@
 									<label class="col-md-3 control-label" for="type">文章类别</label>
 									<div class="col-md-9">
 										<select id="type" name="type" class="form-control add-width">
-										    <?php foreach ($types as $type): ?>
-    											<?php if($type['level'] < 3): ?>
-    											<option <?php if($tid == $type['tid']) echo 'selected="selected"';?> value="<?php echo $type['tid'];?>"><?php echo $type['name']?></option>
-    											<?php endif; ?>
-											<?php endforeach; ?>
+    										<option  value="<?php echo $tid;?>"><?php echo $name;?></option>
 										</select>
 									</div>
 								</div>

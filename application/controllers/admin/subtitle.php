@@ -62,7 +62,6 @@ class Subtitle extends CI_Controller
 	    $data['tid'] = $_GET['tid'];
 	    $data['aid'] = $_GET['aid'];
 	    $data['name'] = $this->article_type_m->get_name($data['tid']);
-	    $data['types'] = $this->article_type_m->get_children();
 	    $data['article'] = $this->article_list_m->get_article($data['aid']);
 	    if($data['tid'] == 9) {
 	    	 $data['img'] = $this->article_list_m->get_pic($data['aid']);
@@ -107,13 +106,14 @@ class Subtitle extends CI_Controller
 	    $article['username'] = $this->admin_user_m->user->username;
 	    $article['add_time'] = time();
 	    $aid = $this->article_list_m->add_article($article); 
-	    $this->article_list_m->add_pic($aid,$goods_pic);
+	    if($tid == 9) {
+	   		$this->article_list_m->add_pic($aid,$goods_pic);
+	    }
 	    Header("Location:listNews?pid=".$pid."&tid=".$tid);
 	}
 	
 	public function updateNews()
 	{
-	    $pid = $_GET['pid'];
 	    $tid = $_GET['tid'];
 	    $article['aid'] = $_GET['aid'];
 	    $article['title'] = $_POST['title'];
@@ -135,9 +135,12 @@ class Subtitle extends CI_Controller
 	    	 }
 	    }
 	    $article['username'] = $this->admin_user_m->user->username;
+	  
 	    $article['add_time'] = time();
 	    $this->article_list_m->update_article($article);
-	    $this->article_list_m->update_pic($article['aid'],$goods_pic);
+	    if($tid == 9) {
+	    	$this->article_list_m->update_pic($article['aid'],$goods_pic);
+	    }
 	    Header("Location:listNews?pid=".$pid."&tid=".$tid);
 	}
 	
