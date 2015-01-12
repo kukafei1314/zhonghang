@@ -135,7 +135,7 @@ class Subtitle extends CI_Controller
 	    	 }
 	    }
 	    $article['username'] = $this->admin_user_m->user->username;
-	    $article['add_time'] = date();
+	    $article['add_time'] = time();
 	    $this->article_list_m->update_article($article);
 	    $this->article_list_m->update_pic($article['aid'],$goods_pic);
 	    Header("Location:listNews?pid=".$pid."&tid=".$tid);

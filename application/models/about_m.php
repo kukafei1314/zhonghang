@@ -73,13 +73,6 @@ class About_m extends CI_Model
 		return FALSE;
 	}
 
-
-
-
-
-
-
-
 	/**
 	 * 获取文章列表，不包括文章内容字段
 	 * 

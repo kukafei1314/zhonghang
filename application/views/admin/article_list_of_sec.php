@@ -33,7 +33,7 @@
                             <?php foreach ($News as $singleNews): ?>
             				    <tr>
                                     <td><?php echo $singleNews['title']?></td>
-                                    <td><?php echo $singleNews['add_time']?></td>
+                                    <td><?php echo date("Y-m-d",$singleNews['add_time']);?></td>
                                     <td><?php echo $singleNews['username']?></td>
                                     <td>
                                         <?php $aid = $singleNews['aid'];?>
