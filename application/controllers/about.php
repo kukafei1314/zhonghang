@@ -62,7 +62,7 @@ public function edit_new()
 	{
 		$aid = (int) $this->input->get('aid');
 		//var_dump($aid);
-		//$data['title'] = $this->input->post('title');
+		$data['title'] = $this->input->post('title');
 		$data['content'] = $this->input->post('ue_content');
         $data['add_date'] = date('Y-m-d', time());
 		$data['add_time'] = time();

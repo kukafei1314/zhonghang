@@ -2,7 +2,7 @@
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">		
 		<div class="row">
 			<ol class="breadcrumb">
-				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li><a href="<?php echo base_url('admin/index');?>" target="_top"><span class="glyphicon glyphicon-home"></span></a></li>
 				<li class="active">企业概况</li>
 			</ol>
 		</div><!--/.row-->
@@ -17,9 +17,11 @@
 							<fieldset>
 								<!-- Name input-->
 								<div class="form-group">
-									<label class="col-md-3 control-label" for="name">文章标题</label>
 									<div class="col-md-9">
-									<input id="name" name="title" type="text"  value="<?php echo $title;?>" class="form-control add-width">
+									文章标题
+									</div>									
+									<div class="col-md-9">
+									<?php echo $title;?>									
 									</div>
 								</div>
 							

@@ -73,6 +73,38 @@ class Login extends CI_Controller
 			redirect('d=admin&c=index');
 		}
 	}
+	public function login_change_password(){
+		if($this->admin_user_m->check_login() === FALSE){
+			$this->load->view('admin/login.php');
+		}else{
+			$data['error'] ='';
+			$uid = $this->admin_user_m->check_login();
+			$_SESSION['uid'] = $uid;
+			$this->load->view('admin/change_adminpassword.php',$data);
+		}
+	}
+	
+	public function change_password(){
+
+		$re_password = $this->input->post('re_password');
+		$re_con_password = $this->input->post('re_con_password');
+		$usercheck = $this->input->post('usercheck');
+		$data_password['password'] = $re_password;
+		$data['error'] ='';
+		$uid = $_SESSION['uid'];
+		$check = $_SESSION['check'];
+		unset($_SESSION['check']);
+		if($check != $usercheck) {
+			$data['error'] = '验证码错误';
+			$this->load->view('admin/change_adminpassword.php', $data);
+		}else if($re_password != $re_con_password){
+			$data['error'] = '两次输入的更改密码要相同';
+			$this->load->view('admin/change_adminpassword.php', $data);
+		}else{
+			$this->admin_user_m->edit_user($uid, $data_password);
+			$this->load->view('admin/login.php', $data);
+		}
+	}
 	public function ajax_check()
 	{
 		$email = $this->input->post('username');

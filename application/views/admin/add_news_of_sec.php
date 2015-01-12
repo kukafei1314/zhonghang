@@ -45,6 +45,7 @@
 								<div class="form-group">
 									<div class="col-md-12 widget-right admin-pull-center">
 										<button onclick="return is_empty()" type="submit" class="btn btn-primary">提&nbsp;交</button>
+										<span class="depart"></span>
 										<button type="button" onclick="{location.href='index.php?d=admin&c=subtitle&m=addNews&pid='+<?php echo $pid;?>+'&tid='+<?php echo $tid;?>}" class="btn btn-primary">重&nbsp;置</button>
 									</div>
 								</div>
@@ -60,11 +61,6 @@
 
 				function is_empty(){
 					if ($("#title").val() == "") {
-						alert("文章标题不能为空！");
-						return false;
-					}
-					
-					if ($(window.frames["ueditor_0"].document).find(":p").val() == "") {
 						alert("文章标题不能为空！");
 						return false;
 					}
