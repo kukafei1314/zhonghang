@@ -55,7 +55,7 @@
 				</a>
 			</li>
 			<li class="parent"  id="widgets">
-				<a href="">
+				<a>
 					<span class="glyphicon glyphicon-list-alt"></span> 新闻动态
 					<span data-toggle="collapse" href="#sub-item-1" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus parent_none"></em>
@@ -80,7 +80,7 @@
 				</ul>
 			</li>
 			<li class="parent" id="charts">
-				<a href="">
+				<a>
 					<span class="glyphicon glyphicon-stats"></span> 业绩案例
 					<span data-toggle="collapse" href="#sub-item-2" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus parent_none"></em>
