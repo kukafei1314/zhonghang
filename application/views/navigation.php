@@ -5,11 +5,11 @@
 				<div class="naviTitleEn">Corporate Culture</div>
 			</div>
 			<div class="leftNaviMenu">
-				<div class="naviMenuButton"><a href="">> 人才理念</a></div>
-				<div class="naviMenuButton"><a href="">> 人才现状</a></div>
-				<div class="naviMenuButton"><a href="">> 人才政策</a></div>
-				<div class="naviMenuButton"><a href="">> 招聘信息</a></div>
-				<div class="naviMenuButton"><a href="">> 澄清广告</a></div>
+				<div class="naviMenuButton"><a href="<?php echo base_url('navigation/?tid=15');?>">> 人才理念</a></div>
+				<div class="naviMenuButton"><a href="<?php echo base_url('navigation/?tid=16');?>">> 人才现状</a></div>
+				<div class="naviMenuButton"><a href="<?php echo base_url('navigation/?tid=17');?>">> 人才政策</a></div>
+				<div class="naviMenuButton"><a href="<?php echo base_url('navigation/?tid=18');?>">> 招聘信息</a></div>
+				<div class="naviMenuButton"><a href="<?php echo base_url('navigation/?tid=19');?>">> 澄清广告</a></div>
 			</div>
 			<div class="leftNaviSearch">
 				<div class="naviSearchTitle">职位搜索</div>

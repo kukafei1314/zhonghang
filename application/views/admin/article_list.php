@@ -12,7 +12,7 @@
 			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-                        <button onclick="{location.href='index.php?d=admin&c=about&m=add_new'}" target="main" type="submit" class="btn btn-primary my_botton">添加文章</button>
+                        <button onclick="{location.href=''}" target="main" type="submit" class="btn btn-primary my_botton">搜索文章</button>
 
                     </div>
 					<div class="panel-body">	
@@ -32,9 +32,23 @@
 						<td><?php echo $about['add_date']; ?></td>
 						<td><?php echo $about['add_user']; ?></td>
 						<td>
-							<a href="<?php echo base_url('about/?aid=' . $about['aid']); ?>" target="_blank">查看</a>
+							<a href="<?php
+							            $aid=$about['aid'];
+										switch($aid){
+											case 1:echo base_url('navigcontrol/?tid=21');break;
+                                            case 2:echo base_url('navigcontrol/?tid=22');break;
+											case 3:echo base_url('navigcontrol/?tid=20');break;
+											case 4:echo base_url('navigcontrol/?tid=23');break;
+											case 5:echo base_url('navigcontrol/?tid=24');break;
+											case 6:echo base_url('navigcontrol/?tid=25');break;
+											case 7:echo base_url('navigcontrol/?tid=26');break;
+											default:;
+											}
+							 ?>" target="_blank">
+							
+								查看
+							</a>
 							<a href="<?php echo base_url('admin/about/edit_new?aid='.$about['aid']);?>" target="main">编辑</a>
-							<a onclick="return del_alert()" href="index.php?d=admin&c=about&m=del&aid=<?php echo $about['aid']; ?>">删除</a>
 						</td>
 					</tr>
 			  <?php endforeach;?>

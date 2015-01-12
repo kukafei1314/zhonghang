@@ -1,95 +1,21 @@
 	<div class="list_right">
     	<div id="right_head">
-        	<p><a href="<?php echo base_url('index');?>">首页</a>&nbsp;><a href="">人力资源</a>&nbsp;><a href="">企业动态</a></p>
+        	<p><a href="<?php echo base_url('index');?>">首页</a>&nbsp;><a href=""><?php echo $title;?></a>&nbsp;><a href=""><?php echo $title2;?></a></p>
         </div>
         <div id="right_title">
         	<p>企业动态</p>
         </div>
         <div id="right_content">
             <ul>
-            	<li>
-                	<span class="content2">
-                    	>&nbsp
-                        	<a href="">北京市安全生产科学技术研究院贾秋霞院长一行来重点实验室参观调研</a>
-                    </span>
-                	<span class="time">2014-09-22</span>                
-                </li>
-                <li>
-                	<span class="content2">
-                    	>&nbsp
-                        	<a href="">北京市安全生产科学技术研究院贾秋霞院长一行来重点实验室参观调研</a>
-                    </span>
-                	<span class="time">2014-09-22</span>                
-                </li>
-                <li>
-                	<span class="content2">
-                    	>&nbsp
-                        	<a href="">北京市安全生产科学技术研究院贾秋霞院长一行来重点实验室参观调研</a>
-                    </span>
-                	<span class="time">2014-09-22</span>                
-                </li>
-                <li>
-                	<span class="content2">
-                    	>&nbsp
-                        	<a href="">北京市安全生产科学技术研究院贾秋霞院长一行来重点实验室参观调研</a>
-                    </span>
-                	<span class="time">2014-09-22</span>                
-                </li><li>
-                	<span class="content2">
-                    	>&nbsp
-                        	<a href="">北京市安全生产科学技术研究院贾秋霞院长一行来重点实验室参观调研</a>
-                    </span>
-                	<span class="time">2014-09-22</span>                
-                </li>
-                <li>
-                	<span class="content2">
-                    	>&nbsp
-                        	<a href="">北京市安全生产科学技术研究院贾秋霞院长一行来重点实验室参观调研</a>
-                    </span>
-                	<span class="time">2014-09-22</span>                
-                </li>   
-                <li>
-                	<span class="content2">
-                    	>&nbsp
-                        	<a href="">北京市安全生产科学技术研究院贾秋霞院长一行来重点实验室参观调研</a>
-                    </span>
-                	<span class="time">2014-09-22</span>                
-                </li>
-                <li>
-                	<span class="content2">
-                    	>&nbsp
-                        	<a href="">北京市安全生产科学技术研究院贾秋霞院长一行来重点实验室参观调研</a>
-                    </span>
-                	<span class="time">2014-09-22</span>                
-                </li> 
-                <li>
-                	<span class="content2">
-                    	>&nbsp
-                        	<a href="">北京市安全生产科学技术研究院贾秋霞院长一行来重点实验室参观调研</a>
-                    </span>
-                	<span class="time">2014-09-22</span>                
-                </li>
-                <li>
-                	<span class="content2">
-                    	>&nbsp
-                        	<a href="">北京市安全生产科学技术研究院贾秋霞院长一行来重点实验室参观调研</a>
-                    </span>
-                	<span class="time">2014-09-22</span>                
-                </li>
-                <li>
-                	<span class="content2">
-                    	>&nbsp
-                        	<a href="">北京市安全生产科学技术研究院贾秋霞院长一行来重点实验室参观调研</a>
-                    </span>
-                	<span class="time">2014-09-22</span>                
-                </li>
-                <li>
-                	<span class="content2">
-                    	>&nbsp
-                        	<a href="">北京市安全生产科学技术研究院贾秋霞院长一行来重点实验室参观调研</a>
-                    </span>
-                	<span class="time">2014-09-22</span>                
-                </li>   
+				<?php foreach ($News as $singleNews): ?>
+					<li>
+                		<span class="content2">
+                    		>&nbsp <?php $aid = $singleNews['aid'];?>
+                        		<a href="<?php echo base_url('navigcontrol/news?aid='.$aid.'&pid='.$pid.'&tid='.$tid);?>"><?php echo $singleNews['title']?></a>
+						</span>
+                		<span class="time"><?php echo $singleNews['add_time']?></span>                
+					</li>
+				<?php endforeach;?>  
             </ul>
             <div id="page" style="text-align:center; font-size:14px;";>
             	&nbsp;<strong>1</strong>&nbsp;<a href="">2</a>

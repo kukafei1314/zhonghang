@@ -58,6 +58,33 @@ class About_m extends CI_Model
 
 
 
+ public function title_get($title)
+	{
+		//$aid = intval($aid);
+		//var_dump($aid);
+		$this->db->where('title', $title);
+		$query = $this->db->get('zh_about');
+		if($query->num_rows() == 1) {
+			$row = $query->row_array();
+//			$query->free_result();
+			return array(
+						'title'		=>	$row['title'],
+						'content'	=>	$row['content'],
+						'add_date'	=>	$row['add_date'],
+						'add_time'	=>	$row['add_time'],
+						'add_user'	=>	$row['add_user'],
+					);
+		}
+		return FALSE;
+	}
+
+
+
+
+
+
+
+
 	/**
 	 * 获取文章列表，不包括文章内容字段
 	 * 
@@ -113,7 +140,7 @@ class About_m extends CI_Model
 		$aid = (int) $aid;
 		$array= array(
 			   'aid'		=>	$aid,
-               'title' => $data['title'] ,
+              // 'title' => $data['title'] ,
                'content' =>$data['content'],
                'add_date' =>$data['add_date'],
 		       'add_time' =>$data['add_time'],
