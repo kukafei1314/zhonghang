@@ -15,6 +15,7 @@ class Subtitle extends CI_Controller
 		}
 		$this->load->model('article_list_m');
 		$this->load->model('article_type_m');
+		$this->load->library('uploader_ue', 'session');
 	}
 	
 	public function index() 
@@ -63,6 +64,9 @@ class Subtitle extends CI_Controller
 	    $data['name'] = $this->article_type_m->get_name($data['tid']);
 	    $data['types'] = $this->article_type_m->get_children();
 	    $data['article'] = $this->article_list_m->get_article($data['aid']);
+	    if($data['tid'] == 9) {
+	    	 $data['img'] = $this->article_list_m->get_pic($data['aid']);
+	    }
 	    $this->load->view('admin/edit_news_of_sec',$data);
 	}
 	
@@ -86,9 +90,24 @@ class Subtitle extends CI_Controller
 	    {
 	        $article['content'] = $_POST['ue_content'];
 	    }
+	    if($tid == 9) {
+	    	$config = array(
+	    			"pathFormat" => "upload/{yyyy}{mm}{dd}/{time}{ss}" ,
+	    			"maxSize" => 100000 , //单位KB
+	    			"allowFiles" => array( ".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"  )
+	    	);
+	    	$pic = new Uploader_ue( "pic" , $config);
+    		$info = $pic->getFileInfo();
+    		if($info['state'] == 'SUCCESS') {
+    			$goods_pic = $info['url'];
+    		} else {
+    			$goods_pic = '';
+    		}
+	    }
 	    $article['username'] = $this->admin_user_m->user->username;
-	    $article['add_time'] = date("Y/m/d");
-	    $this->article_list_m->add_article($article); 
+	    $article['add_time'] = time();
+	    $aid = $this->article_list_m->add_article($article); 
+	    $this->article_list_m->add_pic($aid,$goods_pic);
 	    Header("Location:listNews?pid=".$pid."&tid=".$tid);
 	}
 	
@@ -100,9 +119,25 @@ class Subtitle extends CI_Controller
 	    $article['title'] = $_POST['title'];
 	    $article['type'] = $_POST['type'];
 	    $article['content'] = $_POST['ue_content'];
+	    if($tid == 9) {
+	    	 $img = $this->article_list_m->get_pic($article['aid']);		// 获取图片信息
+	    	 $config = array(
+	    	 		"pathFormat" => "upload/{yyyy}{mm}{dd}/{time}{ss}" ,
+	    	 		"maxSize" => 100000 , //单位KB
+	    	 		"allowFiles" => array( ".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"  )
+	    	 );
+	    	 $pic = new Uploader_ue( "pic" , $config);
+	    	 $info = $pic->getFileInfo();
+	    	 if($info['state'] == 'SUCCESS') {
+	    	 	$goods_pic = $info['url'];
+	    	 } else {
+	    	 	$goods_pic = $img;
+	    	 }
+	    }
 	    $article['username'] = $this->admin_user_m->user->username;
 	    $article['add_time'] = date("Y/m/d");
 	    $this->article_list_m->update_article($article);
+	    $this->article_list_m->update_pic($article['aid'],$goods_pic);
 	    Header("Location:listNews?pid=".$pid."&tid=".$tid);
 	}
 	

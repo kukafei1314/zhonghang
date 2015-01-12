@@ -13,13 +13,13 @@
 				<div class="panel panel-default">
 					<div class="panel-heading"><span class="glyphicon glyphicon-pencil"></span> 添加文章 <button onclick="{location.href='index.php?d=admin&c=subtitle&m=listNews&pid='+<?php echo $pid;?>+'&tid='+<?php echo $tid;?>}" target="main" type="submit" class="btn btn-primary my_back">返回</button></div>
 					<div class="panel-body">
-						<form id = "my_form" class="form-horizontal" action="<?php echo base_url('admin/subtitle/insertNews?pid='.$pid.'&tid='.$tid);?>" method="post">
+						<form id = "my_form" class="form-horizontal" action="<?php echo base_url('admin/subtitle/insertNews?pid='.$pid.'&tid='.$tid);?>" method="post" enctype="multipart/form-data">
 							<fieldset>
 								<!-- Name input-->
 								<div class="form-group">
 									<label class="col-md-3 control-label" for="title">文章标题</label>
 									<div class="col-md-9">
-									<input id="title" name="title" type="text" placeholder="标题" class="form-control add-width">
+									<input id="title" name="title" type="text" placeholder="标题" class="form-control add-width" />
 									</div>
 								</div>
 							
@@ -32,7 +32,14 @@
 										</select>
 									</div>
 								</div>
-								
+								<?php if($tid == 9):?>
+								<div class="form-group">
+									<label class="col-md-3 control-label" for="type">首页图片</label>
+									<div class="col-md-9">
+										<input id="pic1" name="pic" type="file" value="" size="5" />
+									</div>
+								</div>
+								<?php endif;?>
 								<!-- Message body -->
 								<div class="form-group">
 									<label class="col-md-3 control-label" for="ue_content">文章内容</label>

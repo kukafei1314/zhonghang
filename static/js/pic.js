@@ -26,8 +26,10 @@ function scrollMove(m){
 	var xsrl = Math.ceil((p.width()*(m-1)-srl)/5);
 	if(srl > p.width()*(m-1)){
 		$("#pic").scrollLeft(srl + dsrl);
+		$("#word").scrollLeft(srl + dsrl);
 	}else if(srl < p.width()*(m-1)){
 		$("#pic").scrollLeft(srl + xsrl);
+		$("#word").scrollLeft(srl + xsrl);
 	}else{
 		clearInterval(scrollmove);
 	}

@@ -14,10 +14,16 @@
 			<div class="focus">
 				<div id="pic">
 					<ul>
-						<li><a href=""><img width="250" height="180" src="<?php echo base_url('static/image/1.jpg')?>" /></a></li>
-						<li><a href=""><img width="250" height="180" src="<?php echo base_url('static/image/2.jpg')?>" /></a></li>
-						<li><a href=""><img width="250" height="180" src="<?php echo base_url('static/image/3.jpg')?>" /></a></li>
-						<li><a href=""><img width="250" height="180" src="<?php echo base_url('static/image/4.jpg')?>" /></a></li>
+					<?php foreach ($pic_news as $row):?>
+						<li><a href="<?php echo base_url('navigcontrol/news?aid='. $row['aid'].'&tid=9');?>"><img width="250" height="180" src="<?php echo base_url($row['path'])?>" /></a></li>
+					<?php endforeach;?>
+					</ul>
+				</div>
+				<div id="word">
+					<ul>
+					<?php foreach ($pic_news as $row):?>
+						<li><?php echo $row['title'];?></li>
+					<?php endforeach;?>
 					</ul>
 				</div>
 				<div id="tip">
@@ -30,7 +36,7 @@
 				</div>
 			</div>
 			<div class="cl"></div>
-			<div class="news_title">集团总经理调研中</div>
+			
 		</div>
 		<div class="content_middle">
 			<div class="content_title">
@@ -75,41 +81,13 @@
 			</div>
 			<div class="middle_list">
 				<ul>
+				<?php foreach ($notice as $row):?>
 					<li class="news_list">
 						<div class="news_right_title">
-                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
+                        	<a href="<?php echo base_url('navigcontrol/news?aid='. $row['aid'].'&tid=7');?>"><?php echo $row['title'];?></a>
                         </div>
 					</li>
-					<li class="news_list">
-						<div class="news_right_title">
-                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
-                        </div>
-					</li>
-					<li class="news_list">
-						<div class="news_right_title">
-                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
-                        </div>
-					</li>
-					<li class="news_list">
-						<div class="news_right_title">
-                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
-                        </div>
-					</li>
-					<li class="news_list">
-						<div class="news_right_title">
-                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
-                        </div>
-					</li>
-					<li class="news_list">
-						<div class="news_right_title">
-                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
-                        </div>
-					</li>
-					<li class="news_list">
-						<div class="news_right_title">
-                        	<a href="<?php echo base_url('index/middle');?>">放假的拉开稿件天为借口了后桑德菲更健康辣椒疯狂拉上非的金卡了</a>
-                        </div>
-					</li>
+				<?php endforeach;?>
 				</ul>
 			</div>
 		</div>

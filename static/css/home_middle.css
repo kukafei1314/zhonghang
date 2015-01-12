@@ -72,11 +72,12 @@ li {
 	color:#555;
 }
 .news_title {
-	height:30px;
+	position:absolute;
+	top:215px;
 	line-height:30px;
 	font-weight:bold;
 	font-size:14px;
-	text-align:center;
+	left:10px;
 }
 .middle_list {
 	margin-top:10px;
@@ -136,6 +137,23 @@ li {
 	height:210px;
 	float:left;
 }
+.focus #word{
+	width:100%;
+	overflow:hidden;
+}
+.focus #word ul{
+	width:4216px;
+	float:left;
+	padding:0;
+	margin:0;
+}
+.focus #word li{
+	width:286px;
+	float:left;
+	text-align:center;
+	margin-top:8px;
+	font-size:14px;
+}
 .focus #pic li img{
 	width:100%;
 	height:210px;
@@ -146,7 +164,7 @@ li {
 	height:14px;
 	position:absolute;
 	left:74%;
-	margin:-20px 0 0;
+	margin:-50px 0 0;
 	z-index:14;
 }
 .focus #tip ul li{
@@ -154,10 +172,11 @@ li {
 	height:12px;
 	float:left;
 	margin:0 2px;
-	background:url(../image/nocurrent.jpg) no-repeat;
+	background:#d9d9d9;
+	border-radius:20px;
 }
 .focus #tip ul li.current{
-	background:url(../image/current.jpg) no-repeat;
+	background:#fc104a;
 }
 .focus .show{
 	display:block!important;

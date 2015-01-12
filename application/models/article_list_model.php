@@ -8,15 +8,37 @@ class Article_list_model extends CI_Model
    {
        parent::__construct();
        $this->load->database();
+       $this->load->model('article_list_m');
    }
    
-   public function query_article($tid)
+   public function query_article($tid,$limit = NULL)
    {
-       $sql = "SELECT * FROM `zh_articles` WHERE `type` = $tid";
-       $query = $this->db->query($sql);
+		$this->db->where('type',$tid);
+		if(!empty($limit)) {
+			$this->db->limit($limit,0);
+		}
+		$this->db->order_by('add_time','desc');
+       $query = $this->db->get('zh_articles');
        return $query->result_array();
    }
-   
+   /**
+    * 图片新闻读取
+    * @param unknown $article
+    */
+   public function pic_list() {
+   		$this->db->where('type',9);
+   		$this->db->limit(4,0);
+   		$this->db->order_by('add_time','desc');
+   		$query = $this->db->get('zh_articles');
+   		$i = 0;
+   		foreach ($query->result_array() as $row) {
+   			$result[$i]['aid'] = $row['aid'];
+   			$result[$i]['title'] = $row['title'];
+   			$result[$i]['path'] = $this->article_list_m->get_pic($row['aid']);
+   			$i++;
+   		}
+   		return $result;
+   }
    public function add_article($article)
    {
        $this->db->insert('zh_articles', $article);

@@ -21,8 +21,19 @@ class Article_list_m extends CI_Model
    public function add_article($article)
    {
        $this->db->insert('zh_articles', $article);
+       $aid = $this->aid_get($article['add_time']);
+       return $aid;
    }
-   
+   public function aid_get($add_time) {
+	   	$this->db->where('add_time',$add_time);
+	   	$query = $this->db->get('zh_articles');
+	   	if($query->num_rows != 0) {
+	   		foreach ($query->result_array() as $row) {
+	   			$aid = $row['aid'];
+	   		}
+	   	}
+	   	return $aid;
+   }
    public function delete_article($aid)
    {
        $this->db->where('aid',$aid);
@@ -70,5 +81,39 @@ class Article_list_m extends CI_Model
        $config['cur_tag_open'] = '<b>';
        $config['cur_tag_close'] = '</b>';
        $this->pagination->initialize($config);
+   }
+   
+   /**
+    * 将图片存入表pic_news中
+    */
+   public function add_pic($aid,$goods_pic) {
+   		$data = array(
+   			'aid' => $aid,
+   			'path' => $goods_pic
+   		);
+   	$this->db->insert('zh_pic_news',$data);
+   }
+   /**
+    * 根据aid读取图片
+    */
+   public function get_pic($aid) {
+	   	$this->db->where('aid',$aid);
+	   	$query = $this->db->get('zh_pic_news');
+	   	if($query->num_rows != 0) {
+	   		foreach ($query->result_array() as $row) {
+	   			$path = $row['path'];
+	   		}
+	   	}
+	   	return $path;
+   }
+   /**
+    * 更新表pic_news
+    */
+   public function update_pic($aid,$goods_pic) {
+   	$data = array(
+   			'aid' => $aid,
+   			'path' => $goods_pic
+   	);
+   	$this->db->update('zh_pic_news',$data);
    }
 }
