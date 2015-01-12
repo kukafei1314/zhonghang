@@ -30,4 +30,10 @@ class Index extends CI_Controller
 		$data['username'] = $this->admin_user_m->user->username;
 		$this->load->view('admin/admin_header', $data);
 	}
+	
+	public function index_image()
+	{
+	    $data['username'] = $this->admin_user_m->user->username;
+	    $this->load->view('admin/index_image', $data);
+	}
 }
