@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /*
- * 功能：动态要闻
+ * 功能：后台二级标题
  * 作者：LZZ
  * 日期：2015.1.2
  */
@@ -26,8 +26,18 @@ class Subtitle extends CI_Controller
 	{
 	    $pid = $_GET['pid'];
 	    $tid = $_GET['tid'];
+	    $per_page = 1;
+	    if(isset($_GET['per_page']) && $_GET['per_page'] != ''){
+	        $start_page = ((int)$_GET['per_page'] - 1) * 10;
+	    } else {
+	        $start_page = ($per_page - 1) * 10;
+	    }
+	    $count = $this->article_list_m->num_articles($tid);
+	    $temp['base_url'] = base_url('admin/subtitle/listNews?pid='.$pid.'&tid='.$tid);
+	    $temp['total_rows'] = (int)$count;
+	    $this->article_list_m->pageConfig($temp);
 	    $data['username'] = $this->admin_user_m->user->username;
-	    $News = $this->article_list_m->query_article($pid,$tid);
+	    $News = $this->article_list_m->query_article($pid,$tid,$start_page);
 	    $data['name'] = $this->article_type_m->get_name($tid);
 	    $data['News'] = $News;
 	    $data['pid'] = $pid;
@@ -94,5 +104,18 @@ class Subtitle extends CI_Controller
 	    $article['add_time'] = date("Y/m/d");
 	    $this->article_list_m->update_article($article);
 	    Header("Location:listNews?pid=".$pid."&tid=".$tid);
+	}
+	
+	public function searchNews()
+	{
+	    $search = $_POST["search"];
+	    $pid = $_GET['pid'];
+	    $tid = $_GET['tid'];
+	    $data['username'] = $this->admin_user_m->user->username;
+	    $data['name'] = $this->article_type_m->get_name($tid);
+	    $data['pid'] = $pid;
+	    $data['tid'] = $tid;
+	    $data["News"] = $this->article_list_m->search_article($tid,$search);
+	    $this->load->view('admin/article_list_of_sec',$data);
 	}
 }

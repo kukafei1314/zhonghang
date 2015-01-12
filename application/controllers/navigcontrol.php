@@ -65,7 +65,11 @@ class Navigcontrol extends CI_Controller
 			$data['title2'] = $title2;
 			$data['tid'] = $tidd;
 			$this->load->view('second_header');
-			$this->load->view('navigation_about',$data);
+			if($tid != 5){		//5是人力资源，他下面有个导航，所以要单独判定下
+				$this->load->view('navigation_about',$data);
+			}else{
+				$this->load->view('navigation',$data);
+			}
 			if($pid==7){
 				$tit="公司简介";
                 $array = $this->about_m->title_get($tit); 

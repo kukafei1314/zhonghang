@@ -1,8 +1,8 @@
 <div class="second_content">
 		<div class="leftNavi">
 			<div class="leftNaviTitle">
-				<div class="naviTitleCh">人力资源</div>
-				<div class="naviTitleEn">Corporate Culture</div>
+				<div class="naviTitleCh"><?php echo $title; ?></div>
+				<div class="naviTitleEn"><?php echo $en_title; ?></div>
 			</div>
 			<div class="leftNaviMenu">
 				<div class="naviMenuButton"><a href="<?php echo base_url('navigation/?tid=15');?>">> 人才理念</a></div>
