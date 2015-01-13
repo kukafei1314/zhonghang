@@ -12,7 +12,9 @@
 <body>
 	<div class="top_second">
 		<div class="top_title">
-			<img src="<?php echo base_url('/static/image/logo.png');?>" width="170" height="45" class="top_logo"/>
+			<a href="<?php echo base_url('index');?>">
+				<img src="<?php echo base_url('/static/image/logo.png');?>" width="170" height="45" class="top_logo"/>
+			</a>
             <div class="top_nav">
             	<ul>
                     <li>
