@@ -204,7 +204,7 @@ class Article_type_m extends CI_Model
 	}
 	public function get_children()
 	{
-	    $sql = "SELECT * FROM `zh_articles_type` WHERE `pid` != 0";
+	    $sql = "SELECT * FROM `zh_articles_type` WHERE `pid` != 0 AND `pid` != 7";
 	    $query = $this->db->query($sql);
 	    return $query->result_array();
 	}
