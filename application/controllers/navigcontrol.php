@@ -78,12 +78,12 @@ class Navigcontrol extends CI_Controller
 	
 	public function search()
 	{
-		$per_page		  =	20;
-		$p				  =	(int) page_cur();	// 获取当前页码
-		$data['p']        = $p;
-		$keyword = $this->input->get('keyword');
+		$per_page  = 20;
+		$p	       = (int) page_cur();	// 获取当前页码
+		$data['p'] = $p;
+		$keyword   = $this->input->get('keyword');
 		$data['News'] = $this->article_m->search($keyword,$per_page,$per_page*($p-1));
-		$data['page_html']	  =	page($this->article_m->count_all($keyword), $per_page);
+		$data['page_html'] = page($this->article_m->count_all($keyword), $per_page);
 		$data['keyword'] = $keyword;
 		$this->load->view('search_result',$data);	
 	}
