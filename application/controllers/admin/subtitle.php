@@ -62,6 +62,7 @@ class Subtitle extends CI_Controller
 	    $data['tid'] = $_GET['tid'];
 	    $data['aid'] = $_GET['aid'];
 	    $data['name'] = $this->article_type_m->get_name($data['tid']);
+	    $data['types'] = $this->article_type_m->get_children();
 	    $data['article'] = $this->article_list_m->get_article($data['aid']);
 	    if($data['tid'] == 9) {
 	    	 $data['img'] = $this->article_list_m->get_pic($data['aid']);
