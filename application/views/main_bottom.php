@@ -68,11 +68,11 @@
             <div class="bottom_na">
             	<div class="bottom_nav_left2">
                 	<ul>
-                    	<li><a href="<?php echo base_url('navigation/?tid=15');?>">人才理念</a></li>
-                        <li><a href="<?php echo base_url('navigation/?tid=16');?>">人才现状</a></li>
-                        <li><a href="<?php echo base_url('navigation/?tid=17');?>">人才政策</a></li>
-                        <li><a href="<?php echo base_url('navigation/?tid=18');?>">招聘信息</a></li>
-                        <li><a href="<?php echo base_url('navigation/?tid=19');?>">澄清公告</a></li>
+                    	<li><a href="<?php echo base_url('navigcontrol/?tid=15');?>">人才理念</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=16');?>">人才现状</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=17');?>">人才政策</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=18');?>">招聘信息</a></li>
+                        <li><a href="<?php echo base_url('navigcontrol/?tid=19');?>">澄清公告</a></li>
                     </ul>
                 </div>
             </div>

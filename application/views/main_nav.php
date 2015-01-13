@@ -25,7 +25,9 @@
 	</div>
 	<div class="top">
 		<div class="top_title">
-			<img src="<?php echo base_url('static/image/logo.png'); ?>" width="170" height="45" class="top_logo"/>
+		    <a href="<?php echo base_url('index');?>">
+				<img src="<?php echo base_url('static/image/logo.png'); ?>" width="170" height="45" class="top_logo" />
+			</a>
             <div class="top_nav">
             	<ul>
                     <li>
@@ -56,12 +58,12 @@
 		</div>
         <div class="top_bottom">
         	<div class="top_bottom1">
-            	<div class="top_word1">企业文化</div>
+            	<div class="top_word1"><a href="<?php echo base_url('about?aid=7');?>">企业文化</div>
                 <div class="top_word2">Corporate Culture</div>
                 <div class="cl"></div>
             </div>
             <div class="top_bottom2">
-            	<div class="top_word21">典型案例</div>
+            	<div class="top_word21"><a href="<?php echo base_url('navigcontrol/?tid=11');?>">典型案例</div>
                 <div class="top_word22">Typical Case</div>
                 <div class="cl"></div>
             </div>

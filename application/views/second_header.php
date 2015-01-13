@@ -7,12 +7,14 @@
 <link rel="stylesheet" href="<?php echo base_url('static/css/home_middle.css'); ?>"/>
 <link rel="stylesheet" href="<?php echo base_url('static/css/nav_content.css'); ?>"/>
 <script type="text/javascript" src="<?php echo base_url('static/js/jquery-1.8.0.js'); ?>"></script>
-<title>主页</title>
+<title>中航泰达</title>
 </head>
 <body>
 	<div class="top_second">
 		<div class="top_title">
-			<img src="<?php echo base_url('/static/image/logo.png');?>" width="170" height="45" class="top_logo"/>
+			<a href="<?php echo base_url('index');?>">
+				<img src="<?php echo base_url('/static/image/logo.png');?>" width="170" height="45" class="top_logo"/>
+			</a>
             <div class="top_nav">
             	<ul>
                     <li>
