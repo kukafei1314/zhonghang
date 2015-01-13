@@ -65,9 +65,8 @@ class Article_list_m extends CI_Model
    
    public function num_articles($type)
    {
-       $sql = "SELECT COUNT(*) FROM `zh_articles` WHERE `type` = $type";
-       $query = $this->db->query($sql);
-       return $query->row_array()['COUNT(*)'];
+	   $this->db->where('type',$type);
+       return $this->db->count_all_results('zh_articles');;
    }
    
    public function pageConfig($temp)

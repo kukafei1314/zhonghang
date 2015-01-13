@@ -7,15 +7,15 @@
 	padding:23px 10px 0 45px;
 }
 .user {
-	top:115px;
+	top:215px;
 	left:58%;
 }
 .pass {
-	top:165px;
+	top:265px;
 	left:58%;
 }
 .check {
-	top:215px;
+	top:315px;
 	left:9%;
 	z-index:10;
 }
