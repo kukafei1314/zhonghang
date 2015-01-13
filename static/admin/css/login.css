@@ -4,7 +4,7 @@
 	height:100px;
 	background:url(../../image/error.png) no-repeat;
 	position:absolute;
-	padding:23px 10px 0 45px;
+	padding:23px 10px 0 40px;
 }
 .user {
 	top:115px;
@@ -19,6 +19,25 @@
 	left:9%;
 	z-index:10;
 }
+
+.check2 {
+	top: 200px;
+	left: 55%;
+	z-index: 10;
+}
+
+.check3 {
+	top: 250px;
+	left: 55%;
+	z-index: 10;
+}
+
+.check4 {
+	top: 300px;
+	left: 55%;
+	z-index: 10;
+}
+
 .row {
 	margin:0 !important;
 }
@@ -26,4 +45,16 @@
 
 .my_login{
 	margin-top:20%;
+}
+
+.login_submit{
+	background:#309cfe; 
+	border:none; 
+	border-radius:5px; 
+	color:#FFFFFF; 
+	width:20%; 
+	height:30px; 
+	font-family:Microsoft Yahei;
+	font-size:16px;
+	margin-left:20%;
 }

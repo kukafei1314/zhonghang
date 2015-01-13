@@ -95,10 +95,31 @@ class Admin_user_m extends CI_Model
 		//$this->user->power = $row['power'];
 		
 		$data = array(
-					'uid'	=>	$this->user->uid
+					'uid'	=>	$this->user->uid,
+					'username' => $this->user->username,
 				);
 		$this->session->set_userdata($data);
 		return $this->user->uid;
+	}
+	
+	public function change_pw($uid,$old_password,$new_password)
+	{
+		$this->db->where('uid', $uid);
+		$query = $this->db->get($this->table);
+		if($query->num_rows() < 1) {
+			return false;
+		}
+		$row = $query->row_array();
+		$password = $this->_make_password($old_password, $row['salt']);
+		if ($password != $row['password']) {
+			return false;
+		} else {
+			$data['salt'] = $this->_make_salt();
+			$data['password'] = $this->_make_password($new_password, $data['salt']);
+			$this->db->where('uid', $uid);
+			$this->db->update($this->table,$data);
+			return true;
+		}
 	}
 	
 	public function logout() 
