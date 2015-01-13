@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="<?php echo base_url('static/css/home_middle.css'); ?>"/>
 <link rel="stylesheet" href="<?php echo base_url('static/css/nav_content.css'); ?>"/>
 <script type="text/javascript" src="<?php echo base_url('static/js/jquery-1.8.0.js'); ?>"></script>
-<title>主页</title>
+<title>中航泰达</title>
 </head>
 <body>
 	<div class="top_second">
