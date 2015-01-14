@@ -12,13 +12,14 @@
 			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
+<!--
 						<form role="search" class="my_search" action="#" method="post">
                             <div class="form-group">
                                 <input type="text" name="search" class="form-control" placeholder="请输入关键字搜索">
                             </div>
                         </form>
                         <button onclick="{location.href=''}" target="main" type="submit" class="btn btn-primary my_botton">搜索文章</button>
-
+-->
                     </div>
 					<div class="panel-body">	
         	
@@ -49,11 +50,10 @@
 											case 7:echo base_url('navigcontrol/?tid=26');break;
 											default:;
 											}
-							 ?>" target="_blank">
-							
-								查看
+							 ?>" target="_blank" title="查看">
+							 <span class="glyphicon glyphicon-file"></span>
 							</a>
-							<a href="<?php echo base_url('admin/about/edit_new?aid='.$about['aid']);?>" target="main">编辑</a>
+							<a href="<?php echo base_url('admin/about/edit_new?aid='.$about['aid']);?>" title="编辑" target="main"><span class="glyphicon glyphicon-pencil"></span></a>
 						</td>
 					</tr>
 			  <?php endforeach;?>
