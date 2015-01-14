@@ -113,6 +113,7 @@ class Article_list_m extends CI_Model
    			'aid' => $aid,
    			'path_pic' => $goods_pic
    	);
+	$this->db->where('aid',$aid);
    	$this->db->update('zh_pic_news',$data);
    }
 }
