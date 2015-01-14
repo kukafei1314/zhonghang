@@ -93,7 +93,7 @@ class Subtitle extends CI_Controller
 	    if($tid == 9) {
 	    	$config = array(
 	    			"pathFormat" => "upload/{yyyy}{mm}{dd}/{time}{ss}" ,
-	    			"maxSize" => 100000 , //单位KB
+	    			"maxSize" => 50000000 , //单位KB
 	    			"allowFiles" => array( ".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"  )
 	    	);
 	    	$pic = new Uploader_ue( "pic" , $config);
@@ -124,11 +124,12 @@ class Subtitle extends CI_Controller
 	    	 $img = $this->article_list_m->get_pic($article['aid']);		// 获取图片信息
 	    	 $config = array(
 	    	 		"pathFormat" => "upload/{yyyy}{mm}{dd}/{time}{ss}" ,
-	    	 		"maxSize" => 100000 , //单位KB
+	    	 		"maxSize" => 50000000 , //单位KB
 	    	 		"allowFiles" => array( ".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"  )
 	    	 );
 	    	 $pic = new Uploader_ue( "pic" , $config);
 	    	 $info = $pic->getFileInfo();
+			 var_dump($info);
 	    	 if($info['state'] == 'SUCCESS') {
 	    	 	$goods_pic = $info['url'];
 	    	 } else {
@@ -142,7 +143,7 @@ class Subtitle extends CI_Controller
 	    if($tid == 9) {
 	    	$this->article_list_m->update_pic($article['aid'],$goods_pic);
 	    }
-	    Header("Location:listNews?pid=".$pid."&tid=".$tid);
+	   // Header("Location:listNews?pid=".$pid."&tid=".$tid);
 	}
 	
 	public function searchNews()
