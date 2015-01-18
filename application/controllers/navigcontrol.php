@@ -13,14 +13,15 @@ class Navigcontrol extends CI_Controller
 		$this->load->model('article_list_model');
 		$this->load->model('article_type_m');
 		$this->load->helper('url');
+		$this->load->model('upload_m');
 	}
 
 	/**
-	 * 首页
+	 * 列表页面
 	*/
 	public function index()
 	{
-		$per_page		  =	5;
+		$per_page		  =	10;
 		$p				  =	(int) page_cur();	// 获取当前页码
 		$data['p']        = $p;
 		$tid = (int) $this->input->get('tid');
@@ -36,8 +37,13 @@ class Navigcontrol extends CI_Controller
 		$data['title'] = $row['name'];
 		$data['en_title'] = $row['en_name'];
 		$data['tid'] = $tid;
-		$data['News'] = $this->article_list_model->query_article($tid,$per_page,$per_page*($p-1));
-		$data['page_html']	  =	page($this->article_list_model->query_article_num($tid), $per_page);
+		if($tid==6) {
+			$data['News']      = $this->upload_m->upload_list($per_page,($p - 1) * $per_page);
+			$data['page_html'] = page($this->upload_m->count_all());
+		} else {
+			$data['News']      = $this->article_list_model->query_article($tid,$per_page,$per_page*($p-1));
+			$data['page_html'] =	page($this->article_list_model->query_article_num($tid), $per_page);
+		}
 		$this->load->view('second_header');
 		if($pid == 5) {
 			$this->load->view('navigation');
@@ -48,7 +54,9 @@ class Navigcontrol extends CI_Controller
 		$this->load->view('main_bottom');
 		$this->load->view('footer');
     }
-
+	/*
+	 * 详情页面
+	 */
 	public function news()
 	{
 	    $tid = (int)$this->input->get('tid');
@@ -75,7 +83,9 @@ class Navigcontrol extends CI_Controller
 		$this->load->view('main_bottom');
 		$this->load->view('footer');
 	}
-	
+	/*
+	 * 搜索页面
+	 */
 	public function search()
 	{
 		$per_page  = 20;

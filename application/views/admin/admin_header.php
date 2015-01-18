@@ -150,7 +150,7 @@
 				</ul>
 			</li>
 			<li class="parent" id="tables">
-				<a id="parent_3" onclick="parent_hold(3)" href="<?php echo base_url('admin/subtitle/listNews?pid=0&tid=6');?>" target="main">
+				<a id="parent_3" onclick="parent_hold(3)" href="<?php echo base_url('admin/upload_file/listFile?tid=6');?>" target="main">
 					<span class="glyphicon glyphicon-download-alt"></span> 下载中心
 				</a>
 			</li>

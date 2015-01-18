@@ -18,12 +18,8 @@ class Upload extends CI_Controller
 		if($this->admin_user_m->check_login(FALSE) === FALSE) {
 			exit;
 		}
-		
-		header("Content-Type: text/html; charset=utf-8");
-		
 		// 加载UE上传库
 		$this->load->library('Uploader_ue');
-		
 		// 加载上传配置文件
 		$this->ue_config = json_decode(preg_replace("/\/\*[\s\S]+?\*\//", "", file_get_contents(__DIR__ . "/ue_config.json")), true);
 	}

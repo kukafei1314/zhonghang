@@ -11,7 +11,11 @@
 					<li>
                 		<span class="content2">
                     		>&nbsp
-                        	<a href="<?php echo base_url('navigcontrol/news?aid='. $news['aid'].'&tid='.$tid);?>"><?php echo $news['title']?></a>
+                    		<?php if($tid==6):?>
+                    			<a href="<?php echo base_url($news['url']);?>" target="_self"><?php echo $news['title'];?></a>
+                    		<?php else:?>
+                    			<a href="<?php echo base_url('navigcontrol/news?aid='. $news['aid'].'&tid='.$tid);?>"><?php echo $news['title']?></a>
+                    		<?php endif;?>
 						</span>
                 		<span class="time"><?php echo date('Y-m-d',$news['add_time']);?></span>                
 					</li>

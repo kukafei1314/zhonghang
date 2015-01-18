@@ -342,7 +342,7 @@ class Uploader_ue
         return array(
             "state" => $this->stateInfo,
             "url" => $this->fullName,
-            "title" => $this->fileName,
+            "title" => $this->oriName,
             "original" => $this->oriName,
             "type" => $this->fileType,
             "size" => $this->fileSize

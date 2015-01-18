@@ -195,3 +195,23 @@ td a{
 	background-repeat:no-repeat;
 	background-position:center !important;
 }
+
+#file_up {
+	position:absolute;
+	top:200px;
+	left:500px;
+	width:500px;
+	background:#fff;
+	box-shadow:#CCC 0px 2px 5px;
+	padding-top:20px;
+}
+.up_word {
+	width:30%;
+	padding-left:5%;
+	float:left;
+}
+.up_input {
+	width:60%;
+	padding-left:5%;
+	float:left;
+}
