@@ -1,8 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /*
- * 功能：后台二级标题
- * 作者：LZZ
- * 日期：2015.1.2
+ * 功能：后台上传附件
+ * 作者：mm
+ * 日期：2015.1.18
  */
 class Upload_file extends CI_Controller 
 {
@@ -15,7 +15,6 @@ class Upload_file extends CI_Controller
 		}
 		$this->load->model('upload_m');
 		$this->load->model('article_type_m');
-		$this->load->library('session');
 		$this->load->helper('page_helper');
 		$this->load->library('uploader_ue', 'session');
 	}
@@ -41,7 +40,7 @@ class Upload_file extends CI_Controller
 		$config = array(
 				"pathFormat" => "upload/{yyyy}{mm}{dd}/{time}{ss}" ,
 				"maxSize" => 50000000, //单位KB
-				"allowFiles" => array( ".txt" , ".doc" , ".pdf" , ".zip" )
+				"allowFiles" => array( ".txt" , ".doc" , ".docx", ".xlsx" ,".xls", ".pdf" , ".zip")
 		);
 		$pic = new Uploader_ue( "pic" , $config);
 		$info = $pic->getFileInfo();

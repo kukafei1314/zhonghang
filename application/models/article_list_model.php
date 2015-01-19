@@ -43,6 +43,15 @@ class Article_list_model extends CI_Model
    		}
    		return $result;
    }
+   
+     /**
+    * 首页大图
+    */
+   public function pic_home() {
+   		$this->db->order_by('order','asc');
+   		$query = $this->db->get('zh_home_pic');
+   		return $query->result_array();
+   }
    public function add_article($article)
    {
        $this->db->insert('zh_articles', $article);

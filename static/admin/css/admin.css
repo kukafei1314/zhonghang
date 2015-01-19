@@ -155,7 +155,7 @@ td a{
 	font-size:16px;
 }
 #mainframe {
-	height:90%;
+	height:95%;
 }
 .navbar-fixed-top, .navbar-fixed-bottom {
 	position: relative!important;
@@ -196,6 +196,7 @@ td a{
 	background-position:center !important;
 }
 
+
 #file_up {
 	position:absolute;
 	top:200px;
@@ -214,4 +215,7 @@ td a{
 	width:60%;
 	padding-left:5%;
 	float:left;
+}
+.pic_div {
+	padding:10px 10px 10px 10px;
 }

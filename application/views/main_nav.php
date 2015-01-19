@@ -9,11 +9,12 @@
 <title>中航泰达</title>
 </head>
 <body>
-	<div id="pic1"></div>
-    <div id="pic2"></div>
-    <div id="pic3"></div>
-    <div id="pic4"></div>
-    <div id="pic5"></div>
+<div id="pic">
+	<div id="pic1"><img src="<?php echo base_url($pic[0]['url']);?>" width=1440 height=400/></div>
+    <div id="pic2"><img src="<?php echo base_url($pic[1]['url']);?>" width=1440 height=400/></div>
+    <div id="pic3"><img src="<?php echo base_url($pic[2]['url']);?>" width=1440 height=400/></div>
+    <div id="pic4"><img src="<?php echo base_url($pic[3]['url']);?>" width=1440 height=400/></div>
+    <div id="pic5"><img src="<?php echo base_url($pic[4]['url']);?>" width=1440 height=400/></div>
     <div id="tip_top">
 		<ul>
 			<li id="fading_1" onclick="fadetop(1)" class="fading_top"></li>
@@ -23,6 +24,7 @@
 			<li id="fading_5" onclick="fadetop(5)"></li>
 		</ul>
 	</div>
+</div>
 	<div class="top">
 		<div class="top_title">
 		    <a href="<?php echo base_url('index');?>">
