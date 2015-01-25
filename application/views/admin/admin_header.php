@@ -155,7 +155,7 @@
 				</a>
 			</li>
 			<li class="parent" id="tables">
-				<a id="parent_4" onclick="parent_hold(4)" href="<?php echo base_url('admin/subtitle/listNews?pid=0&tid=7');?>" target="main">
+				<a id="parent_4" onclick="parent_hold(4)" href="<?php echo base_url('admin/subtitle/listNews?pid=0&tid=1');?>" target="main">
 					<span class="glyphicon glyphicon-comment"></span> 公司公告
 				</a>
 			</li>
