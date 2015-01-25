@@ -231,3 +231,9 @@ td a{
 	position:absolute;
 	top:0;
 }
+.row_index {
+	padding-left:12%;
+}
+.index_top {
+	margin-right:6% !important;
+}
