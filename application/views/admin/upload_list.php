@@ -8,7 +8,6 @@
 				<li class="active">下载中心</li>
 			</ol>
 		</div><!--/.row-->
-		
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
@@ -43,6 +42,7 @@
 				</div>
 			</div>
 		</div><!--/.row-->
+        
         <div id="file_up" style="display:none;">
         	<form class="form-horizontal" action="<?php echo base_url('admin/upload_file/insertFiles');?>" method="post" enctype="multipart/form-data">						
                 <span class="up_word">上传附件</span>
