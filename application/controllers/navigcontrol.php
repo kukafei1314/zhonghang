@@ -8,12 +8,8 @@ class Navigcontrol extends CI_Controller
 	public function __construct() 
 	{
 		parent::__construct();
-		$this->load->model('article_m');
-		$this->load->model('about_m');
-		$this->load->model('article_list_model');
-		$this->load->model('article_type_m');
+		$this->load->model(array('article_m','about_m','article_list_model','article_type_m','upload_m','statistics_m'));
 		$this->load->helper('url');
-		$this->load->model('upload_m');
 	}
 
 	/**
@@ -37,8 +33,9 @@ class Navigcontrol extends CI_Controller
 		$data['title'] = $row['name'];
 		$data['en_title'] = $row['en_name'];
 		$data['tid'] = $tid;
-		if($tid==6) {
-			$data['News']      = $this->upload_m->upload_list($per_page,($p - 1) * $per_page);
+		$data['pid'] = $pid;
+		if($pid == 6) {
+			$data['News']      = $this->upload_m->upload_list($per_page,($p - 1) * $per_page,$tid);
 			$data['page_html'] = page($this->upload_m->count_all());
 		} else {
 			$data['News']      = $this->article_list_model->query_article($tid,$per_page,$per_page*($p-1));
@@ -61,6 +58,7 @@ class Navigcontrol extends CI_Controller
 	{
 	    $tid = (int)$this->input->get('tid');
 	    $aid = (int)$this->input->get('aid');
+		$this->statistics_m->update_click($tid,$aid);
 	    $data['article'] = $this->article_list_model->get_article($aid);
 	    $row = $this->article_m->get_tid($tid);   //通过tid得到包含tid的所有内容
 	    $pid = $row['pid'];
@@ -96,6 +94,16 @@ class Navigcontrol extends CI_Controller
 		$data['page_html'] = page($this->article_m->count_all($keyword), $per_page);
 		$data['keyword'] = $keyword;
 		$this->load->view('search_result',$data);	
+	}
+	/*
+	* 统计下载量
+	*/
+	public function upload_count()
+	{
+		$uid = $this->input->post('uid');
+		$tid = $this->input->post('tid');
+		$this->statistics_m->update_click($tid,$uid);
+		echo 1;
 	}
 }
 

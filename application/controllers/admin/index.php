@@ -19,7 +19,7 @@ class Index extends CI_Controller
 		parent::__construct();
 		$this->load->database();
 		$this->load->helper('form');
-		$this->load->model('admin_user_m');
+		$this->load->model(array('admin_user_m','statistics_m'));
 		if($this->admin_user_m->check_login() === FALSE) {
 			redirect('d=admin&c=login');
 		}
@@ -34,6 +34,8 @@ class Index extends CI_Controller
 	public function index_image()
 	{
 	    $data['username'] = $this->admin_user_m->user->username;
+		$data['upload']   = $this->statistics_m->get_upload();
+		$data['article']  = $this->statistics_m->get_articles();
 	    $this->load->view('admin/index_image', $data);
 	}
 }

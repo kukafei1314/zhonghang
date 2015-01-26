@@ -11,9 +11,9 @@ class Upload_m extends CI_Model
        $this->load->library('pagination');
    }
    
-   public function upload_list($per_page,$start_page)
+   public function upload_list($per_page,$start_page,$tid)
    {
-       $sql = "SELECT * FROM `zh_uploads` ORDER BY `add_time` DESC LIMIT $start_page , $per_page";
+       $sql = "SELECT * FROM `zh_uploads` WHERE `tid`=$tid ORDER BY `add_time` DESC LIMIT $start_page , $per_page";
        $query = $this->db->query($sql);
        return $query->result_array();
    }
@@ -23,13 +23,13 @@ class Upload_m extends CI_Model
    		return $this->db->count_all_results('zh_uploads');
    }
    
-    public function add_file($article)
+   public function add_file($article)
    {
        $this->db->insert('zh_uploads', $article);
        return TRUE;
    }
    
-      public function delete_file($uid)
+   public function delete_file($uid)
    {
        $this->db->where('uid',$uid);
        $query = $this->db->get('zh_uploads');
@@ -40,5 +40,12 @@ class Upload_m extends CI_Model
        $this->db->where('uid',$uid);
        $this->db->delete('zh_uploads');
        return TRUE;
+   }
+   
+   public function getby_uid($uid)
+   {
+	   $this->db->where('uid',$uid);
+	   $query = $this->db->get('zh_uploads');
+	   return $query->row_array();
    }
 }

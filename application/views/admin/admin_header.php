@@ -150,9 +150,29 @@
 				</ul>
 			</li>
 			<li class="parent" id="tables">
-				<a id="parent_3" onclick="parent_hold(3)" href="<?php echo base_url('admin/upload_file/listFile?tid=6');?>" target="main">
+                <a>
 					<span class="glyphicon glyphicon-download-alt"></span> 下载中心
+					<span data-toggle="collapse" href="#sub-item-5" class="icon pull-right">
+						<em class="glyphicon glyphicon-s glyphicon-plus parent_none"></em>
+					</span> 
 				</a>
+				<ul class="children collapse" id="sub-item-5">
+					<li>
+						<a id = "child_13" onclick="child_hold(13)" class="" href="<?php echo base_url('admin/upload_file/listFile?tid=27');?>" target="main">
+							<span class="glyphicon glyphicon-tree-conifer"></span> 工作通知
+						</a>
+					</li>
+					<li>
+						<a id = "child_14" onclick="child_hold(14)" class="" href="<?php echo base_url('admin/upload_file/listFile?tid=28');?>" target="main">
+							<span class="glyphicon glyphicon-tree-conifer"></span> 说明材料
+						</a>
+					</li>
+					<li>
+						<a id = "child_15" onclick="child_hold(15)" class="" href="<?php echo base_url('admin/upload_file/listFile?tid=29');?>" target="main">
+							<span class="glyphicon glyphicon-tree-conifer"></span> 合同文件
+						</a>
+					</li>
+				</ul>
 			</li>
 			<li class="parent" id="tables">
 				<a id="parent_4" onclick="parent_hold(4)" href="<?php echo base_url('admin/subtitle/listNews?pid=0&tid=1');?>" target="main">
@@ -162,7 +182,7 @@
 			<li role="presentation" class="divider"></li>
 <!--		
             <li>
-				<a href="<?php echo base_url('admin/article_type');?>" id="index" target="main">
+				<a href="<?php //echo base_url('admin/article_type');?>" id="index" target="main">
 					<span class="glyphicon glyphicon-th-large"></span> 类别管理
 				</a>
 			</li>
@@ -185,12 +205,4 @@
             }); 
             $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
         }(window.jQuery);
-
-        $(window).on('resize', function () {
-          if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
-        })
-        $(window).on('resize', function () {
-          if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
-        })
-        
     </script>	

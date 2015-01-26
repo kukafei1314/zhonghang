@@ -47,6 +47,14 @@
         	<form class="form-horizontal" action="<?php echo base_url('admin/upload_file/insertFiles');?>" method="post" enctype="multipart/form-data">						
                 <span class="up_word">上传附件</span>
                 <span class="up_input"><input id="pic1" name="pic" type="file" value="" size="5" /></span>
+                <span class="up_word">上传类别</span>
+                <span class="up_input">
+                	<select name="type_id" id="type">
+                    	<option value="27" <?php if($tid==27): echo 'selected=selected'; endif;?>>工作通知</option>
+                        <option value="28" <?php if($tid==28): echo 'selected=selected'; endif;?>>说明材料</option>
+                        <option value="29" <?php if($tid==29): echo 'selected=selected'; endif;?>>合同文件</option>
+                    </select>
+                </span>
                 <div class="cl"></div>
                 <div class="col-md-12 widget-right admin-pull-center">
                     <button onclick="return is_empty()" type="submit" class="btn btn-primary">提&nbsp;交</button>
@@ -60,7 +68,7 @@
     function del_alert(){
     	return confirm('删除操作不可恢复，确定删除么？');
     }
-	function up_button() {
+	function up_button(tid) {
 		$("#file_up").show();
 	}
 	function close_button() {

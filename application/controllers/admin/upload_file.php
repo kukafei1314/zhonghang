@@ -23,8 +23,10 @@ class Upload_file extends CI_Controller
 	{
 	    $p = page_cur();
 	    $per_page = 10;
-	    $data['upload'] = $this->upload_m->upload_list($per_page,($p - 1) * $per_page);
+		$tid = $this->input->get('tid');
+	    $data['upload'] = $this->upload_m->upload_list($per_page,($p - 1) * $per_page, $tid);
 	    $data['page_html'] = page($this->upload_m->count_all());
+		$data['tid'] = $tid;
 	    $this->load->view('admin/upload_list',$data);
 	}
 	
@@ -53,6 +55,7 @@ class Upload_file extends CI_Controller
 	    $article['username'] = $this->admin_user_m->user->username;
 	    $article['add_time'] = time();
 		$article['url']      = $file_url;
+		$article['tid']      = $this->input->post('type_id');
 	    $this->upload_m->add_file($article); 
 	    redirect('d=admin&c=upload_file&m=listFile');
 	}
