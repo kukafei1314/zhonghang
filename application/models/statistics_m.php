@@ -63,4 +63,22 @@ class Statistics_m extends CI_Model
 		}
 		return $result;
 	}
+	
+	public function get_articles_num()
+	{
+		return $this->db->count_all_results('zh_articles');
+	}
+	public function get_upload_all()
+	{
+		return $this->db->count_all_results('zh_uploads');
+	}
+	public function get_click_count()
+	{
+		$this->db->select_sum('click_amount');
+		$query = $this->db->get('zh_statistics');
+		foreach($query->result_array() as $row) {
+			$result = $row['click_amount'];
+		}
+		return $result;
+	}
 }

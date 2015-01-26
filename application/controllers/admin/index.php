@@ -36,6 +36,9 @@ class Index extends CI_Controller
 	    $data['username'] = $this->admin_user_m->user->username;
 		$data['upload']   = $this->statistics_m->get_upload();
 		$data['article']  = $this->statistics_m->get_articles();
+		$data['article_num'] = $this->statistics_m->get_articles_num();
+		$data['click_all'] = $this->statistics_m->get_click_count();
+		$data['upload_num'] = $this->statistics_m->get_upload_all();
 	    $this->load->view('admin/index_image', $data);
 	}
 }

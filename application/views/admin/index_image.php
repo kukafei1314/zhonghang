@@ -16,7 +16,7 @@
 							文章
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">120</div>
+							<div class="large"><?php echo $article_num; ?></div>
 						</div>
 					</div>
 				</div>
@@ -28,7 +28,7 @@
 							共计访问
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">52</div>
+							<div class="large"><?php echo $click_all; ?></div>
 						</div>
 					</div>
 				</div>
@@ -40,7 +40,7 @@
 							文件下载
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">24</div>
+							<div class="large"><?php echo $upload_num; ?></div>
 						</div>
 					</div>
 				</div>
