@@ -5,7 +5,7 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a target="_top" href="<?php echo base_url('admin/index');?>"><span class="glyphicon glyphicon-home"></span></a></li>
-				<li class="active">下载中心</li>
+				<li class="active"><?php echo $type_name; ?></li>
 			</ol>
 		</div><!--/.row-->
 		<div class="row">

@@ -27,6 +27,7 @@ class Upload_file extends CI_Controller
 	    $data['upload'] = $this->upload_m->upload_list($per_page,($p - 1) * $per_page, $tid);
 	    $data['page_html'] = page($this->upload_m->count_all());
 		$data['tid'] = $tid;
+		$data['type_name'] = $this->article_type_m->get_name($tid);
 	    $this->load->view('admin/upload_list',$data);
 	}
 	
