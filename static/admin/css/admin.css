@@ -178,7 +178,6 @@ td a{
 }
 .fixed-table-body {
 	height:auto !important;
-	margin-bottom:30px;
 }
 .current {
 	background:#30a5ff !important;
@@ -244,4 +243,7 @@ td a{
 }
 .large {
 	line-height:40px;
+}
+.bootstrap-table {
+	margin-bottom:30px;
 }
