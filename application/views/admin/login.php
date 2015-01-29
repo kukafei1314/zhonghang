@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Forms</title>
+<title>中航泰达后台管理系统</title>
 
 
 <link href="<?php echo base_url('/static/admin/css/bootstrap.min.css');?>" rel="stylesheet">

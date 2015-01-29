@@ -23,17 +23,16 @@ body {
 	margin: 0 auto;
 	background-color:#fff;
 	font-family:Microsoft YaHei;
+	width:1440px;
 }
 #pic1 {
-	background:url(../image/top.png) no-repeat center;
 	position:absolute;
-  	top:0;
+	top:0;
 	width:100%;
 	height:400px;
 	z-index:-10;
 }
 #pic2 {
-	background:url(../image/top1.jpg) no-repeat center;
 	position:absolute;
   	top:0;
 	width:100%;
@@ -43,7 +42,6 @@ body {
 	filter:alpha(opacity=0); 
 }
 #pic3 {
-	background:url(../image/top2.jpg) no-repeat center;
 	position:absolute;
   	top:0;
 	width:100%;
@@ -53,7 +51,6 @@ body {
 	filter:alpha(opacity=0); 
 }
 #pic4 {
-	background:url(../image/top3.jpg) no-repeat center;
 	position:absolute;
   	top:0;
 	width:100%;
@@ -63,7 +60,6 @@ body {
 	filter:alpha(opacity=0); 
 }
 #pic5 {
-	background:url(../image/top4.jpg) no-repeat center;
 	position:absolute;
   	top:0;
 	width:100%;
@@ -192,6 +188,7 @@ body {
 }
 
 .top_word2{
+	color:#fff;
 	float:left;
 	font-size:16px;
 	line-height:65px;
@@ -211,6 +208,7 @@ body {
 }
 
 .top_word22{
+	color:#fff;
 	float:left;
 	font-size:16px;
 	line-height:65px;

@@ -45,7 +45,6 @@ class Article_m extends CI_Model
 	}
 	
 	public function get_tid($tid){
-		$pid = intval($tid);
 		$this->db->where('tid', $tid);
 		$query = $this->db->get('articles_type');
 		if($query->num_rows() != 0){
@@ -75,7 +74,7 @@ class Article_m extends CI_Model
 	{
 		$type = intval($type);
 		$this->db->where('type', $type);
-		$query = $this->db->get('article');
+		$query = $this->db->get('articles');
 		if($query->num_rows() == 1) {
 			$row = $query->row_array();
 			$query->free_result();

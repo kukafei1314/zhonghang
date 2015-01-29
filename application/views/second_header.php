@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="<?php echo base_url('static/css/home_middle.css'); ?>"/>
 <link rel="stylesheet" href="<?php echo base_url('static/css/nav_content.css'); ?>"/>
 <script type="text/javascript" src="<?php echo base_url('static/js/jquery-1.8.0.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('static/js/home.js'); ?>"></script>
 <title>中航泰达</title>
 </head>
 <body>
@@ -33,7 +34,7 @@
                     	<a  href="<?php echo base_url('navigcontrol/?tid=15');?>">人力资源</a>
                     </li>
                     <li>
-                    	<a  href="<?php echo base_url('navigcontrol/?tid=6');?>">下载中心</a>
+                    	<a  href="<?php echo base_url('navigcontrol/?tid=27');?>">下载中心</a>
                     </li>
                     <div class="cl"></div>
                 </ul>

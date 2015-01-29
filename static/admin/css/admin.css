@@ -155,7 +155,7 @@ td a{
 	font-size:16px;
 }
 #mainframe {
-	height:90%;
+	height:95%;
 }
 .navbar-fixed-top, .navbar-fixed-bottom {
 	position: relative!important;
@@ -167,7 +167,8 @@ td a{
 	position: relative!important;
 	float:left;
 	top:0;
-	padding-bottom:50px!important;
+	min-height:710px;
+	width:17% !important;
 }
 .col-lg-offset-2 {
 	margin-left: 0;
@@ -176,7 +177,7 @@ td a{
 	width: 100%;
 }
 .fixed-table-body {
-	height:75%;
+	height:auto !important;
 }
 .current {
 	background:#30a5ff !important;
@@ -187,11 +188,62 @@ td a{
 	margin:0 10px 0 10px;
 }
 
-.my_index_image{
+#file_up {
+	position:absolute;
+	top:200px;
+	left:25%;
+	width:500px;
+	background:#fff !important;
+	box-shadow:#CCC 0px 2px 5px;
+	padding-top:20px;
+	z-index:30;
+	opacity:1 !important;
+}
+.up_word {
+	width:30%;
+	padding-left:5%;
+	float:left;
+	padding-top:20px;
+}
+.up_input {
+	width:60%;
+	padding-left:5%;
+	float:left;
+	padding-top:20px;
+}
+.pic_div {
+	padding:10px 10px 10px 10px;
+}
+
+.bgfloat {
 	width:100%;
 	height:100%;
-	text-align:center;
-	background-image:url('../../image/admin_background_1104.png');
-	background-repeat:no-repeat;
-	background-position:center !important;
+	background:#CCC;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+	position:absolute;
+	top:0;
+}
+.row_index {
+	padding-left:12%;
+	margin-top:30px;
+	margin-bottom:10px;
+}
+.index_top {
+	margin-right:6% !important;
+	width:25%;
+}
+.widget-right {
+	width:40% !important;
+}
+.widget-left {
+	width:60% !important;
+	font-size:22px;
+	line-height:50px;
+}
+.large {
+	line-height:40px;
+}
+.bootstrap-table {
+	margin-bottom:30px;
 }
