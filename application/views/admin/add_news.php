@@ -26,9 +26,9 @@
 							
 								<!-- Message body -->
 								<div class="form-group">
-									<label class="col-md-3 control-label" for="message">文章内容</label>
+									<label class="col-md-3 control-label" for="type">首页图片</label>
 									<div class="col-md-9">
-										<script id="ue_content" name="ue_content" type="text/plain" ></script>
+										<input type="file" name="pic" />
 									</div>
 								</div>
 								
