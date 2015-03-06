@@ -11,18 +11,15 @@
 </head>
 <body>
 <div id="pic">
-	<div id="pic1"><img src="<?php echo base_url($pic[0]['url']);?>" width=1440 height=400/></div>
-    <div id="pic2"><img src="<?php echo base_url($pic[1]['url']);?>" width=1440 height=400/></div>
-    <div id="pic3"><img src="<?php echo base_url($pic[2]['url']);?>" width=1440 height=400/></div>
-    <div id="pic4"><img src="<?php echo base_url($pic[3]['url']);?>" width=1440 height=400/></div>
-    <div id="pic5"><img src="<?php echo base_url($pic[4]['url']);?>" width=1440 height=400/></div>
+	<?php $pic_num = count($pic); ?>
+    <?php for ($i = 1; $i <= $pic_num; ++$i): ?>
+	<div id="pic<?php echo $i;?>" style="background: #FFF url(<?php echo base_url($pic[$i-1]['url']);?>) no-repeat center center;width:100%;height:400px;"></div>
+    <?php endfor; ?>
     <div id="tip_top">
 		<ul>
-			<li id="fading_1" onclick="fadetop(1)" class="fading_top"></li>
-			<li id="fading_2" onclick="fadetop(2)"></li>
-			<li id="fading_3" onclick="fadetop(3)"></li>
-            <li id="fading_4" onclick="fadetop(4)"></li>
-			<li id="fading_5" onclick="fadetop(5)"></li>
+    		<?php for ($i = 1; $i <= $pic_num; ++$i): ?>
+			<li id="fading_<?php echo $i;?>" onclick="fadetop(<?php echo $i;?>)" <?php if ($i == 1) :?> class="fading_top" <?php endif; ?>></li>
+			<?php endfor; ?>
 		</ul>
 	</div>
 </div>
