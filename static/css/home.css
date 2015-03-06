@@ -23,7 +23,9 @@ body {
 	margin: 0 auto;
 	background-color:#fff;
 	font-family:Microsoft YaHei;
-	width:1440px;
+}
+#pic div {
+	overflow: hidden;
 }
 #pic1 {
 	position:absolute;
