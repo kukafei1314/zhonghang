@@ -42,7 +42,6 @@ class Home_pic extends CI_Controller
 		}
 	    $article['order'] = $this->input->post('order');
 		$article['url']   = $file_url;
-		var_dump($article);
 	    $this->home_pic_m->update_pic($pid,$article); 
 	    redirect('d=admin&c=home_pic');
 	}

@@ -15,13 +15,16 @@ function change(id){
 	}
 	if ((next = id + 1) > 4){
 		next = 1;
-	}	
+	}
+	focus_cur = id;	
 	scrollmove = setInterval("scrollMove("+id+")",masktime);
-	focus_cur = id;
+	
 }
 function scrollMove(m){
+	//alert(m);
 	var p = $("#pic li");
 	var srl = $("#pic").scrollLeft();
+	//alert(srl);
 	var dsrl = Math.floor((p.width()*(m-1)-srl)/5);
 	var xsrl = Math.ceil((p.width()*(m-1)-srl)/5);
 	if(srl > p.width()*(m-1)){

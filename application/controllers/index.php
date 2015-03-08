@@ -15,7 +15,7 @@ class Index extends CI_Controller {
 	public function index()
 	{
 		$data['active_news'] = $this->article_list_model->query_article('13',7);
-		$data['notice'] 	 = $this->article_list_model->query_article('7',7);
+		$data['notice'] 	 = $this->article_list_model->query_article('1',7);
 		$data['pic_news'] 	 = $this->article_list_model->pic_list();
 		$data['pic']    	 = $this->article_list_model->pic_home();
 		$this->load->view('main_nav',$data);

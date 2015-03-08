@@ -74,14 +74,14 @@
 					</li>
 					<li>
 						<a id = "child_3" onclick="child_hold(3)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=2&tid=10');?>" target="main">
-							<span class="glyphicon glyphicon-tree-conifer"></span> 媒体聚焦
+							<span class="glyphicon glyphicon-tree-conifer"></span> 行业动态
 						</a>
 					</li>
 				</ul>
 			</li>
 			<li class="parent" id="charts">
 				<a>
-					<span class="glyphicon glyphicon-stats"></span> 业绩案例
+					<span class="glyphicon glyphicon-stats"></span> 业务介绍
 					<span data-toggle="collapse" href="#sub-item-2" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus parent_none"></em>
 					</span> 
@@ -94,12 +94,12 @@
 					</li>
 					<li>
 						<a id = "child_5" onclick="child_hold(5)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=12');?>" target="main">
-							<span class="glyphicon glyphicon-tree-conifer"></span> 水务投资项目
+							<span class="glyphicon glyphicon-tree-conifer"></span> 业绩案例
 						</a>
 					</li>
 					<li>
 						<a id = "child_6" onclick="child_hold(6)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=3&tid=13');?>" target="main">
-							<span class="glyphicon glyphicon-tree-conifer"></span> 行业动态
+							<span class="glyphicon glyphicon-tree-conifer"></span> 核心技术
 						</a>
 					</li>
 					<li>
@@ -111,7 +111,7 @@
 			</li>
 			<li class="parent" id="tables">
 				<a id="parent_2" onclick="parent_hold(2)" href="<?php echo base_url('admin/subtitle/listNews?pid=0&tid=4');?>" target="main">
-					<span class="glyphicon glyphicon-eye-close"></span> 研发中心
+					<span class="glyphicon glyphicon-eye-close"></span> 专利技术
 				</a>
 			</li>
 			<li class="parent" id="forms">
@@ -142,11 +142,11 @@
 							<span class="glyphicon glyphicon-tree-conifer"></span> 招聘信息
 						</a>
 					</li>
-					<li>
+					<!-- <li>
 						<a id = "child_12" onclick="child_hold(12)" class="" href="<?php echo base_url('admin/subtitle/listNews?pid=5&tid=19');?>" target="main">
 							<span class="glyphicon glyphicon-tree-conifer"></span> 澄清公告
 						</a>
-					</li>
+					</li> -->
 				</ul>
 			</li>
 			<li class="parent" id="tables">

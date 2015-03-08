@@ -25,10 +25,10 @@
                     	<a href="<?php echo base_url('navigcontrol/?tid=8');?>">新闻动态</a>
                     </li>
                     <li>
-                    	<a href="<?php echo base_url('navigcontrol/?tid=11');?>">业绩案例</a>
+                    	<a href="<?php echo base_url('navigcontrol/?tid=11');?>">业务介绍</a>
                     </li>
                     <li>
-                    	<a  href="<?php echo base_url('navigcontrol/?tid=4');?>">研发中心</a>
+                    	<a  href="<?php echo base_url('navigcontrol/?tid=4');?>">专利技术</a>
                     </li>
                     <li>
                     	<a  href="<?php echo base_url('navigcontrol/?tid=15');?>">人力资源</a>
