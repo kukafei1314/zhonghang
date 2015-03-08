@@ -48,11 +48,18 @@ class Subtitle extends CI_Controller
 	
 	public function addNews()
 	{
-	    $data['pid'] = $_GET['pid'];
-	    $data['tid'] = $_GET['tid'];
+	    $data['pid'] = $this->input->get('pid');
+	    $data['tid'] = $this->input->get('tid');
 	    $data['name'] = $this->article_type_m->get_name($data['tid']);
 	    $data['username'] = $this->admin_user_m->user->username;
-	    $this->load->view('admin/add_news_of_sec',$data);
+	    $data['types'] = '';
+	    $data['article'] = '';
+	    if ($data['tid'] == 18)
+	    {
+	    	$this->load->view('admin/add_news_of_job',$data);
+	    } else {
+	    	$this->load->view('admin/add_news_of_sec',$data);
+	    }
 	}
 	
 	public function editNews()
@@ -67,7 +74,12 @@ class Subtitle extends CI_Controller
 	    if($data['tid'] == 9) {
 	    	 $data['img'] = $this->article_list_m->get_pic($data['aid']);
 	    }
-	    $this->load->view('admin/edit_news_of_sec',$data);
+	    if ($data['tid'] == 18)
+	    {
+	    	$this->load->view('admin/add_news_of_job',$data);
+	    } else {
+	    	$this->load->view('admin/edit_news_of_sec',$data);
+	    }
 	}
 	
 	public function deleteNews()
@@ -83,12 +95,12 @@ class Subtitle extends CI_Controller
 	{
 	    $pid = $_GET['pid'];
 	    $tid = $_GET['tid'];
-	    $article['title'] = $_POST['title'];
-	    $article['type'] = $_POST['type'];
+	    $article['title'] = $this->input->post('title');
+	    $article['type'] = $this->input->post('type');
 	    $article['content'] = "";
 	    if(isset($_POST['ue_content']))
 	    {
-	        $article['content'] = $_POST['ue_content'];
+	        $article['content'] = $this->input->post('ue_content');
 	    }
 	    if($tid == 9) {
 	    	$config = array(
@@ -106,6 +118,10 @@ class Subtitle extends CI_Controller
 	    }
 	    $article['username'] = $this->admin_user_m->user->username;
 	    $article['add_time'] = time();
+	    if($tid == 18) {
+	    	$article['address'] = $this->input->post('address');
+	    	$article['number'] = $this->input->post('number');
+	    }
 	    $aid = $this->article_list_m->add_article($article); 
 	    if($tid == 9) {
 	   		$this->article_list_m->add_pic($aid,$goods_pic);

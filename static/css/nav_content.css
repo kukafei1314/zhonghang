@@ -97,3 +97,50 @@
 }
 /* CSS Document */
 
+.joblist_top{
+	height:45px !important;
+	line-height:45px;
+	background-color:#99D1FF;
+}
+
+.title_job {
+	width: 40%;
+	display: block;
+	overflow: hidden;
+	font-size: 14px;
+	text-overflow: ellipsis;
+	float: left;
+}
+
+.address_job {
+	width: 25%;
+	display: block;
+	overflow: hidden;
+	font-size: 14px;
+	text-overflow: ellipsis;
+	float: left;
+}
+
+.number_job {
+	width: 25%;
+	display: block;
+	overflow: hidden;
+	font-size: 14px;
+	text-overflow: ellipsis;
+	float: left;
+}
+
+.time_job {
+	width: 10%;
+	float: right;
+	display: block;
+	height: 20px;
+	font-size: 14px;
+	color: #666;
+}
+
+.job_content_time{
+	text-align:left;
+	padding-left:10px;
+}
+

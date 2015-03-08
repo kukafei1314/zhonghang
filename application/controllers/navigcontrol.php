@@ -47,7 +47,11 @@ class Navigcontrol extends CI_Controller
 		} else {
 			$this->load->view('navigation_about',$data);
 		}
-		$this->load->view('nav_list',$data);
+		if ($tid == 18) {
+			$this->load->view('job_list',$data);   //招聘信息列表
+		} else {
+			$this->load->view('nav_list',$data);
+		}
 		$this->load->view('main_bottom');
 		$this->load->view('footer');
     }
@@ -77,7 +81,12 @@ class Navigcontrol extends CI_Controller
 		} else {
 			$this->load->view('navigation_about',$data);
 		}
-		$this->load->view('nav_content',$data);
+		if ($tid == 18) {
+			$this->load->view('job_content',$data);   //招聘信息列表
+		} else {
+			$this->load->view('nav_content',$data);
+		}
+		
 		$this->load->view('main_bottom');
 		$this->load->view('footer');
 	}
