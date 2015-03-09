@@ -21,18 +21,17 @@ function change(id){
 	
 }
 function scrollMove(m){
-	//alert(m);
-	var p = $("#pic li");
-	var srl = $("#pic").scrollLeft();
-	//alert(srl);
-	var dsrl = Math.floor((p.width()*(m-1)-srl)/5);
-	var xsrl = Math.ceil((p.width()*(m-1)-srl)/5);
-	if(srl > p.width()*(m-1)){
-		$("#pic").scrollLeft(srl + dsrl);
-		$("#word").scrollLeft(srl + dsrl);
-	}else if(srl < p.width()*(m-1)){
-		$("#pic").scrollLeft(srl + xsrl);
-		$("#word").scrollLeft(srl + xsrl);
+	var p = $("#pic_news li");
+	var srl = $("#pic_news").scrollLeft();
+	var wrl = $("#word").scrollLeft();
+	var dsrl = Math.floor((286*(m-1)-wrl)/5);
+	var xsrl = Math.ceil((286*(m-1)-wrl)/5);
+	if(wrl > 286*(m-1)){
+		$("#pic_news").scrollLeft(srl + dsrl);
+		$("#word").scrollLeft(wrl + dsrl);
+	}else if(wrl < 286*(m-1)){
+		$("#pic_news").scrollLeft(srl + xsrl);
+		$("#word").scrollLeft(wrl + xsrl);
 	}else{
 		clearInterval(scrollmove);
 	}
