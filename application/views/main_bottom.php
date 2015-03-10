@@ -81,7 +81,7 @@
         	<div class="bottom_logo">
             	<img src="<?php echo base_url('static/image/logo3.png');?>"/>
             </div>
-            <div class="main_search">
+<!--        <div class="main_search">
             	<form action="<?php echo base_url('navigcontrol/search');?>" method=get>
             	<?php if (isset($keyword)){?>
                     <input class="main_search_input" type="text" value="<?php echo $keyword;?>"  name="keyword"/>
@@ -102,7 +102,14 @@
             	<p>地址：北京市朝阳区北三环东路8号静安中心3层</p>
                 <p>电话：010-64689035&nbsp;&nbsp;传真：010-64689030</p>
                 <p>E-mail:securities@capitalwater.cn</p>
-            </div>
+            </div> 
+-->			<div class="bottom_right_info">
+				中航泰达官方微信已经正式开通，及时获取中航泰达最新动态、行业资讯和信息查询服务，还可以参加不定期开展的趣味活动，赢取惊喜好礼。
+				<p>微信名称：中航泰达   微信帐号：cnzhtd</p>
+			</div>
+			<div class="bottom_right_pic">
+				<img src="<?php echo base_url('static/image/2vcode.png');?>" alt="" class = "bottom_right_pic_2v">
+			</div>
         </div>
         <div class="cl"></div>
     </div>
