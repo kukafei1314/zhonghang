@@ -49,7 +49,11 @@ class Navigcontrol extends CI_Controller
 		}
 		if ($tid == 18) {
 			$this->load->view('job_list',$data);   //招聘信息列表
-		} else {
+		} else if ($tid == 15 || $tid == 16 || $tid == 17){
+			$array= $this->article_list_model->get($tid);
+			$data['content']  =  $array['content'];
+			$this->load->view('nav_content_about',$data);
+		}  else {
 			$this->load->view('nav_list',$data);
 		}
 		$this->load->view('main_bottom');

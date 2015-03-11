@@ -43,7 +43,11 @@ class Subtitle extends CI_Controller
 	    $data['News'] = $News;
 	    $data['pid'] = $pid;
 	    $data['tid'] = $tid;
-	    $this->load->view('admin/article_list_of_sec',$data);
+		if ($tid == 15 || $tid == 16 || $tid == 17){
+	      $this->load->view('admin/article_list_of_sec1',$data);
+		}else{
+	      $this->load->view('admin/article_list_of_sec',$data);
+		};
 	}
 	
 	public function addNews()
@@ -77,7 +81,9 @@ class Subtitle extends CI_Controller
 	    if ($data['tid'] == 18)
 	    {
 	    	$this->load->view('admin/add_news_of_job',$data);
-	    } else {
+	    } else if ($data['tid'] == 15 || $data['tid'] == 16 || $data['tid'] == 17){
+	    	$this->load->view('admin/edit_news_of_sec1',$data);
+	    }else {
 	    	$this->load->view('admin/edit_news_of_sec',$data);
 	    }
 	}
