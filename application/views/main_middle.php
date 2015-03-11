@@ -46,7 +46,7 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right" style="padding-right:5%;">
-					<a href="<?php echo base_url('navigcontrol/?tid=13');?>">查看更多></a>
+					<a href="<?php echo base_url('navigcontrol/?tid=11');?>">查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
