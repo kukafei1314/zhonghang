@@ -55,9 +55,9 @@
 				</a>
 			</li>
 			<li class="parent"  id="widgets">
-				<a>
+				<a data-toggle="collapse" href="#sub-item-1">
 					<span class="glyphicon glyphicon-list-alt"></span> 新闻动态
-					<span data-toggle="collapse" href="#sub-item-1" class="icon pull-right">
+					<span class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus parent_none"></em>
 					</span> 
 				</a>
@@ -80,7 +80,7 @@
 				</ul>
 			</li>
 			<li class="parent" id="charts">
-				<a>
+				<a data-toggle="collapse" href="#sub-item-2">
 					<span class="glyphicon glyphicon-stats"></span> 业务介绍
 					<span data-toggle="collapse" href="#sub-item-2" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus parent_none"></em>
@@ -115,7 +115,7 @@
 				</a>
 			</li>
 			<li class="parent" id="forms">
-				<a>
+				<a data-toggle="collapse" href="#sub-item-4">
 					<span class="glyphicon glyphicon-globe"></span> 人力资源
 					<span data-toggle="collapse" href="#sub-item-4" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus parent_none"></em>
@@ -150,7 +150,7 @@
 				</ul>
 			</li>
 			<li class="parent" id="tables">
-                <a>
+                <a data-toggle="collapse" href="#sub-item-5">
 					<span class="glyphicon glyphicon-download-alt"></span> 下载中心
 					<span data-toggle="collapse" href="#sub-item-5" class="icon pull-right">
 						<em class="glyphicon glyphicon-s glyphicon-plus parent_none"></em>
@@ -200,7 +200,7 @@
 	</div>
 	<script>
         !function ($) {
-            $(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
+            $(document).on("click","ul.nav li.parent > a", function(){		  
                 $(this).find('em:first').toggleClass("glyphicon-minus");	  
             }); 
             $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
