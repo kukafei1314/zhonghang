@@ -78,4 +78,23 @@ class Article_list_model extends CI_Model
        $this->db->where('aid',$article['aid']);
        $this->db->update('zh_articles',$article);
    }
+   /**
+	 * 获取单个文章内容
+	 * 
+	 * @param integer $aid
+	 */
+	public function get($tid)
+	{
+		$tid = intval($tid);
+		$this->db->where('type', $tid);
+		$query = $this->db->get('zh_articles');
+		if($query->num_rows() == 1) {
+			$row = $query->row_array();
+			$query->free_result();
+			return array(
+						'content'	=>	$row['content']
+					);
+		}
+		return FALSE;
+	}
 }

@@ -41,13 +41,13 @@
 							<a href="<?php
 							            $aid=$about['aid'];
 										switch($aid){
-											case 1:echo base_url('navigcontrol/?tid=21');break;
-                                            case 2:echo base_url('navigcontrol/?tid=22');break;
-											case 3:echo base_url('navigcontrol/?tid=20');break;
-											case 4:echo base_url('navigcontrol/?tid=23');break;
-											case 5:echo base_url('navigcontrol/?tid=24');break;
-											case 6:echo base_url('navigcontrol/?tid=25');break;
-											case 7:echo base_url('navigcontrol/?tid=26');break;
+											case 1:echo base_url('about/?aid=1');break;
+                                            case 2:echo base_url('about/?aid=2');break;
+											case 3:echo base_url('about/?aid=3');break;
+											case 4:echo base_url('about/?aid=4');break;
+											case 5:echo base_url('about/?aid=5');break;
+											case 6:echo base_url('about/?aid=6');break;
+											case 7:echo base_url('about/?aid=7');break;
 											default:;
 											}
 							 ?>" target="_blank" title="查看">
