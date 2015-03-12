@@ -84,7 +84,7 @@
 				<?php foreach ($notice as $row):?>
 					<li class="news_list">
 						<div class="news_right_title">
-                        	<a href="<?php echo base_url('navigcontrol/news?aid='. $row['aid'].'&tid=7');?>"><?php echo $row['title'];?></a>
+                        	<a href="<?php echo base_url('navigcontrol/news?aid='. $row['aid'].'&tid=1');?>"><?php echo $row['title'];?></a>
                         </div>
 					</li>
 				<?php endforeach;?>
