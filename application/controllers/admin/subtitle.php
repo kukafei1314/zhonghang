@@ -9,12 +9,10 @@ class Subtitle extends CI_Controller
 	public function __construct() 
 	{
 		parent::__construct();
-		$this->load->model('admin_user_m');
+		$this->load->model(array('admin_user_m','article_list_m','article_type_m','statistics_m'));
 		if($this->admin_user_m->check_login() === FALSE) {
 		    redirect('d=admin&c=login');
 		}
-		$this->load->model('article_list_m');
-		$this->load->model('article_type_m');
 		$this->load->library('uploader_ue', 'session');
 	}
 	
@@ -94,6 +92,7 @@ class Subtitle extends CI_Controller
 	    $tid = $_GET['tid'];
 	    $aid = $_GET['aid'];
 	    $this->article_list_m->delete_article($aid);
+		$this->statistics_m->del_byaid($aid);
 	    Header("Location:listNews?pid=".$pid."&tid=".$tid);
 	}
 	

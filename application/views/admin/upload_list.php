@@ -31,7 +31,7 @@
                                     <td><?php echo date("Y-m-d",$singleNews['add_time']);?></td>
                                     <td>
                                         <div class="action-buttons">
-                                            <a onclick="return del_alert()" href="<?php echo base_url('admin/upload_file/deleteFile?uid='.$singleNews['uid']);?>" title="删除" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                            <a onclick="return del_alert()" href="<?php echo base_url('admin/upload_file/deleteFile?uid='.$singleNews['uid'].'&tid='.$tid);?>" title="删除" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
                                     	</div>
                                     </td>
                                 </tr>
@@ -57,7 +57,7 @@
                 </span>
                 <div class="cl"></div>
                 <div class="col-md-12 widget-right admin-pull-center">
-                    <button onclick="return is_empty()" type="submit" class="btn btn-primary">提&nbsp;交</button>
+                    <button type="submit" class="btn btn-primary">提&nbsp;交</button>
                     <button onclick="return close_button()" class="btn btn-primary">关&nbsp;闭</button>
                 </div>
             </form>

@@ -38,12 +38,16 @@ class Statistics_m extends CI_Model
 		$this->db->order_by('click_amount','DESC');
 		$query = $this->db->get('zh_statistics',4,0);
 		$i = 0;
-		foreach($query->result_array() as $row) {
-			$result[$i] = $this->upload_m->getby_uid($row['aid']);
-			$result[$i]['type_name'] = $this->article_type_m->get_name($row['tid']);
-			$result[$i]['add_date']  = date('Y-m-d',$result[$i]['add_time']);
-			$result[$i]['click_amount'] = $row['click_amount'];
-			$i++;
+		if($query->num_rows >0) {
+			foreach($query->result_array() as $row) {
+				$result[$i] = $this->upload_m->getby_uid($row['aid']);
+				$result[$i]['type_name'] = $this->article_type_m->get_name($row['tid']);
+				$result[$i]['add_date']  = date('Y-m-d',$result[$i]['add_time']);
+				$result[$i]['click_amount'] = $row['click_amount'];
+				$i++;
+			}
+		} else {
+			$result = $query->result_array();
 		}
 		return $result;
 	}
@@ -54,12 +58,16 @@ class Statistics_m extends CI_Model
 		$this->db->order_by('click_amount','DESC');
 		$query = $this->db->get('zh_statistics',4,0);
 		$i = 0;
-		foreach($query->result_array() as $row) {
-			$result[$i] = $this->article_list_model->get_article($row['aid']);
-			$result[$i]['type_name'] = $this->article_type_m->get_name($row['tid']);
-			$result[$i]['add_date']  = date('Y-m-d',$result[$i]['add_time']);
-			$result[$i]['click_amount'] = $row['click_amount'];
-			$i++;
+		if($query->num_rows >0) {
+			foreach($query->result_array() as $row) {
+				$result[$i] = $this->article_list_model->get_article($row['aid']);
+				$result[$i]['type_name'] = $this->article_type_m->get_name($row['tid']);
+				$result[$i]['add_date']  = date('Y-m-d',$result[$i]['add_time']);
+				$result[$i]['click_amount'] = $row['click_amount'];
+				$i++;
+			}
+		} else {
+			$result = $query->result_array();
 		}
 		return $result;
 	}
@@ -86,5 +94,11 @@ class Statistics_m extends CI_Model
 			$result = $row['click_amount'];
 		}
 		return $result;
+	}
+	public function del_byaid($aid)
+	{
+		$this->db->where('aid',$aid);
+		$this->db->delete('zh_statistics');
+		return TRUE;
 	}
 }

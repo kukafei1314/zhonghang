@@ -9,12 +9,10 @@ class Upload_file extends CI_Controller
 	public function __construct() 
 	{
 		parent::__construct();
-		$this->load->model('admin_user_m');
+		$this->load->model(array('admin_user_m','statistics_m','upload_m','article_type_m'));
 		if($this->admin_user_m->check_login() === FALSE) {
 		    redirect('d=admin&c=login');
 		}
-		$this->load->model('upload_m');
-		$this->load->model('article_type_m');
 		$this->load->helper('page_helper');
 		$this->load->library('uploader_ue', 'session');
 	}
@@ -34,8 +32,10 @@ class Upload_file extends CI_Controller
 	public function deleteFile()
 	{
 	    $uid = $_GET['uid'];
+		$tid = $_GET['tid'];
 	    $this->upload_m->delete_file($uid);
-	    redirect('d=admin&c=upload_file&m=listFile');
+		$this->statistics_m->del_byaid($uid);
+	    redirect('d=admin&c=upload_file&m=listFile&tid='.$tid);
 	}
 	
 	public function insertFiles()
@@ -58,6 +58,6 @@ class Upload_file extends CI_Controller
 		$article['url']      = $file_url;
 		$article['tid']      = $this->input->post('type_id');
 	    $this->upload_m->add_file($article); 
-	    redirect('d=admin&c=upload_file&m=listFile');
+	    redirect('d=admin&c=upload_file&m=listFile&tid='.$article['tid']);
 	}
 }

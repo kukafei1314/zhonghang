@@ -20,21 +20,21 @@ class About extends CI_Controller
 	}
 
 
-   public function index() 
+    public function index() 
 	{
 		$data['about'] = $this->about_m->get_list(); 	
 		$data['username'] = $this->admin_user_m->user->username;
 		$this->load->view('admin/article_list.php', $data);
 	}
     
- public function add_new() 
+    public function add_new() 
 	{
 		$data['about'] = $this->about_m->get_list(); 	
 		$data['username'] = $this->admin_user_m->user->username;
 		$this->load->view('admin/add_news.php', $data);
 	}
 
-public function edit_new() 
+	public function edit_new() 
 	{
         $aid = $this->input->get('aid');
 		$array = $this->about_m->get($aid); 

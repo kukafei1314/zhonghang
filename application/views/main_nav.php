@@ -64,7 +64,7 @@
                 <div class="cl"></div>
             </div>
             <div class="top_bottom2">
-            	<div class="top_word21"><a href="<?php echo base_url('navigcontrol/?tid=11');?>">典型案例</div>
+            	<div class="top_word21"><a href="<?php echo base_url('navigcontrol/?tid=12');?>">典型案例</div>
                 <div class="top_word22">Typical Case</div>
                 <div class="cl"></div>
             </div>
