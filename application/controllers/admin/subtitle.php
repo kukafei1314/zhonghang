@@ -139,8 +139,10 @@ class Subtitle extends CI_Controller
 	{
 	    $tid = $_GET['tid'];
 	    $article['aid'] = $_GET['aid'];
-	    $article['title'] = $_POST['title'];
-	    $article['type'] = $_POST['type'];
+		if( $tid != '15' && $tid != '16' && $tid != '17') {
+			$article['title'] = $_POST['title'];
+			$article['type'] = $_POST['type'];
+		}
 	    $article['content'] = $_POST['ue_content'];
 	    if($tid == 9) {
 	    	 $img = $this->article_list_m->get_pic($article['aid']);		// 获取图片信息

@@ -35,7 +35,7 @@ class Statistics_m extends CI_Model
  	public function get_upload()
 	{
 		$this->db->where_in('tid',array('27','28','29'));
-		$this->db->order_by('click_amount');
+		$this->db->order_by('click_amount','DESC');
 		$query = $this->db->get('zh_statistics',4,0);
 		$i = 0;
 		foreach($query->result_array() as $row) {
@@ -51,7 +51,7 @@ class Statistics_m extends CI_Model
 	public function get_articles()
 	{
 		$this->db->where_not_in('tid',array('27','28','29'));
-		$this->db->order_by('click_amount');
+		$this->db->order_by('click_amount','DESC');
 		$query = $this->db->get('zh_statistics',4,0);
 		$i = 0;
 		foreach($query->result_array() as $row) {
@@ -70,7 +70,13 @@ class Statistics_m extends CI_Model
 	}
 	public function get_upload_all()
 	{
-		return $this->db->count_all_results('zh_uploads');
+		$this->db->where_in('tid',array('27','28','29'));
+		$this->db->select_sum('click_amount');
+		$query = $this->db->get('zh_statistics');
+		foreach($query->result_array() as $row) {
+			$result = $row['click_amount'];
+		}
+		return $result;
 	}
 	public function get_click_count()
 	{

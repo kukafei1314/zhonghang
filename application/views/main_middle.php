@@ -46,7 +46,7 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right" style="padding-right:5%;">
-					<a href="<?php echo base_url('navigcontrol/?tid=11');?>">查看更多></a>
+					<a href="<?php echo base_url('navigcontrol/?tid=10');?>">查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
@@ -56,7 +56,7 @@
 				<?php foreach ($active_news as $news): ?>
 					<li class="news_list">
 						<div class="news_middle_title">
-                        	<a href="<?php echo base_url('navigcontrol/news?aid='. $news['aid'].'&tid=13');?>"><?php echo $news['title'];?></a>
+                        	<a href="<?php echo base_url('navigcontrol/news?aid='. $news['aid'].'&tid=10');?>"><?php echo $news['title'];?></a>
                         </div>
 						<div class="news_time"><?php echo date('Y-m-d',$news['add_time']);?></div>
 						<div class="cl"></div>
