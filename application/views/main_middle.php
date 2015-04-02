@@ -15,7 +15,7 @@
 				<div id="pic_news">
 					<ul>
 					<?php foreach ($pic_news as $row):?>
-						<li><a href="<?php echo base_url('navigcontrol/news?aid='. $row['aid'].'&tid=9');?>"><img width="80%" src="<?php echo base_url($row['path'])?>" /></a></li>
+						<li><a href="<?php echo base_url('navigcontrol/news?aid='. $row['aid'].'&tid=9');?>"><img width="250" height="180" src="<?php echo base_url($row['path'])?>" /></a></li>
 					<?php endforeach;?>
 					</ul>
 				</div>
