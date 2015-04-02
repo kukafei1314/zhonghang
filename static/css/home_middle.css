@@ -45,6 +45,12 @@ li {
 	width:50%;
 	height:50px;
 }
+.title_middle_left {
+	padding-left:5%;
+}
+.title_middle_right {
+	padding-right:5%;
+}
 .title_font {
 	font-size:20px;
 	font-weight:bold;

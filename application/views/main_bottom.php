@@ -79,7 +79,7 @@
         </div>
         <div class="bottom_right">
         	<div class="bottom_logo">
-            	<img src="<?php echo base_url('static/image/logo3.png');?>" width="300px;" />
+            	<img src="<?php echo base_url('static/image/logo3.png');?>" width="100%" />
             </div>
 <!--        <div class="main_search">
             	<form action="<?php echo base_url('navigcontrol/search');?>" method=get>
@@ -108,7 +108,7 @@
 				<p>微信名称：中航泰达   微信帐号：cnzhtd</p>
 			</div>
 			<div class="bottom_right_pic">
-				<img src="<?php echo base_url('static/image/2vcode.png');?>" alt="" class = "bottom_right_pic_2v">
+				<img src="<?php echo base_url('static/image/2vcode.png');?>" alt="" class = "bottom_right_pic_2v"">
 			</div>
         </div>
         <div class="cl"></div>

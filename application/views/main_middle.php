@@ -15,7 +15,7 @@
 				<div id="pic_news">
 					<ul>
 					<?php foreach ($pic_news as $row):?>
-						<li><a href="<?php echo base_url('navigcontrol/news?aid='. $row['aid'].'&tid=9');?>"><img width="250" height="180" src="<?php echo base_url($row['path'])?>" /></a></li>
+						<li><a href="<?php echo base_url('navigcontrol/news?aid='. $row['aid'].'&tid=9');?>"><img width="80%" src="<?php echo base_url($row['path'])?>" /></a></li>
 					<?php endforeach;?>
 					</ul>
 				</div>
@@ -40,12 +40,12 @@
 		</div>
 		<div class="content_middle">
 			<div class="content_title">
-				<div class="title_left" style="padding-left:5%;">
+				<div class="title_left title_middle_left">
 					<div class="title_img"><img src="<?php echo base_url('static/image/title1.jpg')?>"></img></div>
 					<div class="title_font">行业动态</div>
 					<div class="cl"></div>
 				</div>
-				<div class="title_right" style="padding-right:5%;">
+				<div class="title_right title_middle_right">
 					<a href="<?php echo base_url('navigcontrol/?tid=10');?>">查看更多></a>
 				</div>
 				<div class="cl"></div>
