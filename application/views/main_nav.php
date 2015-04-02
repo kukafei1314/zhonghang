@@ -66,14 +66,14 @@
             <div class="cl"></div>
         </div>
         <div class="top_bottom">
-        	<a class="top_bottom1" href="<?php echo base_url('about?aid=7');?>">
+        	<div class="top_bottom1" href="<?php echo base_url('about?aid=7');?>">
             	<div class="top_word1">企业文化</div>
                 <div class="top_word2">Corporate Culture</div>
-            </a>
-            <a class="top_bottom2" href="<?php echo base_url('navigcontrol/?tid=12');?>">
+            </div>
+            <div class="top_bottom2" href="<?php echo base_url('navigcontrol/?tid=12');?>">
             	<div class="top_word1">典型案例</div>
                 <div class="top_word2">Typical Case</div>
-            </a>
+            </div>
             <div class="cl"></div>
         </div>
         <div class="top_small_nav">
