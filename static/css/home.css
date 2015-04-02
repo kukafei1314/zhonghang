@@ -168,7 +168,9 @@ body {
 .top_bottom div div a{
 	color:#FFF !important;
 }
-
+.top_bottom a {
+	color:#fff !important;
+}
 .top_bottom1{
 	float:left;
 	background:url(../image/top2.png) repeat;
@@ -424,4 +426,7 @@ body {
 
 #page a{
 	padding:0 5px 0 5px;
+}
+.top_small_nav{
+	display:none;
 }

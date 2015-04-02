@@ -2,8 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"/>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="<?php echo base_url('static/css/home.css'); ?>"/>
-<link rel="stylesheet" href="<?php echo base_url('static/css/home_middle.css'); ?>"/>
+<link rel="stylesheet"  media="screen and (min-width:600px)" href="<?php echo base_url('static/css/home.css'); ?>"/>
+<link rel="stylesheet"  media="screen and (min-width:600px)" href="<?php echo base_url('static/css/home_middle.css'); ?>"/>
+<link rel="stylesheet" media="screen and (max-width:600px)" href="<?php echo base_url('static/css/small.css'); ?>" type="text/css" />
 <script type="text/javascript" src="<?php echo base_url('static/js/jquery-1.8.0.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/pic.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/home.js'); ?>"></script>
@@ -13,7 +14,7 @@
 <div id="pic">
 	<?php $pic_num = count($pic); ?>
     <?php for ($i = 1; $i <= $pic_num; ++$i): ?>
-	<div id="pic<?php echo $i;?>" style="background: #FFF url(<?php echo base_url($pic[$i-1]['url']);?>) no-repeat center center;width:100%;height:400px;"></div>
+	<div id="pic<?php echo $i;?>" style="background: #FFF url(<?php echo base_url($pic[$i-1]['url']);?>) no-repeat center center;"></div>
     <?php endfor; ?>
     <div id="tip_top">
 		<ul>
@@ -57,17 +58,27 @@
             </div>
             <div class="cl"></div>
 		</div>
+        <div class="top_small_nav" style="margin-top:250px;">
+            <a href="<?php echo base_url('about?aid=1');?>">公司概况</a>
+            <a href="<?php echo base_url('navigcontrol/?tid=8');?>">新闻动态</a>
+            <a href="<?php echo base_url('navigcontrol/?tid=11');?>">业务介绍</a>  	
+            <div class="cl"></div>
+        </div>
         <div class="top_bottom">
-        	<div class="top_bottom1">
-            	<div class="top_word1"><a href="<?php echo base_url('about?aid=7');?>">企业文化</div>
+        	<a class="top_bottom1" href="<?php echo base_url('about?aid=7');?>">
+            	<div class="top_word1">企业文化</div>
                 <div class="top_word2">Corporate Culture</div>
-                <div class="cl"></div>
-            </div>
-            <div class="top_bottom2">
-            	<div class="top_word21"><a href="<?php echo base_url('navigcontrol/?tid=12');?>">典型案例</div>
-                <div class="top_word22">Typical Case</div>
-                <div class="cl"></div>
-            </div>
+            </a>
+            <a class="top_bottom2" href="<?php echo base_url('navigcontrol/?tid=12');?>">
+            	<div class="top_word1">典型案例</div>
+                <div class="top_word2">Typical Case</div>
+            </a>
+            <div class="cl"></div>
+        </div>
+        <div class="top_small_nav">
+        	<a href="<?php echo base_url('navigcontrol/?tid=4');?>">专利技术</a>
+            <a href="<?php echo base_url('navigcontrol/?tid=15');?>">人力资源</a>
+            <a href="<?php echo base_url('navigcontrol/?tid=27');?>">下载中心</a>
             <div class="cl"></div>
         </div>
 	</div>
