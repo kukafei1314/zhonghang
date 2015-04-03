@@ -255,6 +255,7 @@ body {
 	width:94%;
 	margin-left:3%;
 	margin-right:3%;
+	margin-top:30px;
 }
 .content_right {
 	width:94%;
@@ -262,7 +263,7 @@ body {
 	margin-right:3%;
 }
 .content_title {
-	margin-top:20px;
+	margin-top:15px;
 }
 .title_left {
 	float:left;
