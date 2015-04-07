@@ -14,3 +14,29 @@ function upload_ajax($obj) {
         }            
     });
 }
+$(document).ready(function() {
+	$("#top_nav_out").toggle(
+	  function () {
+			$(".leftNavi").animate({left: '+0px'}, "fast");
+			$(".list_right").animate({left: '+200px'}, "fast");
+			$(".top_title").animate({left: '+200px'}, "fast");
+			$("#bottom_div").animate({left: '+200px'}, "fast");
+	  },
+	  function () {
+			$(".leftNavi").animate({left: '-200px'}, "fast");
+			$(".list_right").animate({left: '0px'}, "fast");
+			$(".top_title").animate({left: '0px'}, "fast");
+			$("#bottom_div").animate({left: '0px'}, "fast");
+	  }
+	);
+	$("#popmenu").click (function() {
+			$(".top_nav").show();
+		}
+	)
+	$(document).bind("click",function(e){ 
+		var target = $(e.target); 
+		if(target.closest("#popmenu").length == 0){ 
+			$(".top_nav").hide(); 
+		} 
+	});
+});

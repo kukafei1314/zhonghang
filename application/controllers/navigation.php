@@ -32,7 +32,7 @@ class Navigation extends CI_Controller
 		$data['tid'] = $tid;
 		$data['News'] = $this->article_list_model->query_article($tid);
         $data['name'] = $this->article_type_m->get_name($tid);
-		$this->load->view('second_header');
+		$this->load->view('second_header',$data);
 		$this->load->view('navigation_about',$data);
 		$this->load->view('nav_list',$data);
 		$this->load->view('main_bottom');
@@ -65,7 +65,7 @@ class Navigation extends CI_Controller
 	    
 	    
 	    $data['title2']='';
-		$this->load->view('second_header');
+		$this->load->view('second_header',$data);
 		$this->load->view('navigation',$data);
 		$this->load->view('nav_content',$data);
 		$this->load->view('main_bottom');

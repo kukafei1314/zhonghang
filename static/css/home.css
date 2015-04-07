@@ -430,3 +430,9 @@ body {
 .top_small_nav{
 	display:none;
 }
+.bottom_logo img {
+	width:100%;
+}
+#popmenu {
+	display:none;
+}

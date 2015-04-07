@@ -41,7 +41,7 @@ class Navigcontrol extends CI_Controller
 			$data['News']      = $this->article_list_model->query_article($tid,$per_page,$per_page*($p-1));
 			$data['page_html'] =	page($this->article_list_model->query_article_num($tid), $per_page);
 		}
-		$this->load->view('second_header');
+		$this->load->view('second_header',$data);
 		if($pid == 5) {
 			$this->load->view('navigation');
 		} else {
@@ -79,7 +79,7 @@ class Navigcontrol extends CI_Controller
 	    }
 	    $data['title'] = $row['name'];
 	    $data['en_title'] = $row['en_name'];
-		$this->load->view('second_header');
+		$this->load->view('second_header',$data);
 		if($pid == 5) {
 			$this->load->view('navigation');
 		} else {

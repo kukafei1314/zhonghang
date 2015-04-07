@@ -10,7 +10,7 @@
 				<?php foreach ($News as $news): ?>
 					<li>
                 		<span class="content2">
-                    		>&nbsp
+                    		<span class="list_li">>&nbsp</span>
                     		<?php if($pid==6):?>
                     			<a onclick="return upload_ajax($(this))" href="<?php echo base_url($news['url']);?>" target="_self"><?php echo $news['title'];?></a>
                                 <input type="hidden" value="<?php echo $news['uid'];?>" class="uid"/>

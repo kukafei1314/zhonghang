@@ -26,7 +26,7 @@ class About extends CI_Controller
 		$data['title'] = "公司概况";
 		$data['add_date'] = $array['add_date'];
 		$data['content'] = $array['content'];
-		$this->load->view('second_header');
+		$this->load->view('second_header',$data);
 		$this->load->view('nav_about');
 		$this->load->view('nav_content_about',$data);
 		$this->load->view('main_bottom');
