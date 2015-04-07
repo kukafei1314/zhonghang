@@ -23,6 +23,7 @@ body {
 	margin: 0 auto;
 	background-color:#fff;
 	font-family:Microsoft YaHei;
+	z-index:-2;
 }
 #pic div {
 	overflow: hidden;
