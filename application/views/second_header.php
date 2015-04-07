@@ -20,7 +20,7 @@
 			</a>
             <a id="popmenu"><?php echo $title;?></a>
             <a id="top_nav_out"></a>
-            <a id="top_home" href=""></a>
+            <a id="top_home" href="<?php echo base_url("index");?>"></a>
             <div class="top_nav">
             	<ul class="top_ul">
                     <li>
