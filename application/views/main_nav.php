@@ -30,7 +30,7 @@
 		    <a href="<?php echo base_url('index');?>">
 				<img src="<?php echo base_url('static/image/logo.png'); ?>" width="170" height="45" class="top_logo" />
 			</a>
-            <div class="top_nav">
+            <div id="top_nav">
             	<ul>
                     <li>
                     	<a href="<?php echo base_url('about?aid=1');?>">公司概况</a>

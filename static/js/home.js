@@ -29,6 +29,25 @@ $(document).ready(function() {
 			$("#bottom_div").animate({left: '0px'}, "fast");
 	  }
 	);
+	
+	var mouseDownPosiX;
+	var tempX = 0;
+	$("#contentall").mousedown(function (e) {
+	  //当鼠标按下时捕获鼠标位置以及对象的当前位置
+	  mouseDownPosiX = e.pageX;
+	  
+	  $("#contentall").mousemove(function (e) {//这个地方改成$(document).mousemove貌似可以避免因鼠标移动太快而失去焦点的问题
+		  //貌似只有IE支持这个判断，Chrome和Firefox还没想到好的办法
+		  //if ($(this).is(":focus")) {
+			  var tempX = tempX + parseInt(e.pageX) - parseInt(mouseDownPosiX);
+			  alert(tempX);
+			  
+		  //};
+		  //当鼠标弹起或者离开元素时，将鼠标弹起置为false，不移动对象
+	  }).mouseup(function () {
+		  $("#contentall").unbind("mousemove");
+	  })
+	})
 
 	$("#popmenu").click(function(e) {
 		if(!$("#top_nav").attr("class","hide_div")) {
