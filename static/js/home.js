@@ -33,11 +33,14 @@ $(document).ready(function() {
 	var mouseDownPosiX;
 	var tempX = 0;
 	$("#contentall").bind('touchstart',function (e) {
+		e.preventDefault();
+		alert("click");
+        if (! e.touches.length) return;
 	  //当鼠标按下时捕获鼠标位置以及对象的当前位置
 	  var touch = e.touches[0];
 	  mouseDownPosiX = touch.pageX;
-	  alert("click");
-	  alert(mouseDownPosiX);
+	  
+	  alert(touch);
 	  $("#contentall").bind('touchmove', function(e) {
 			  tempX = tempX + parseInt(touch.pageX) - parseInt(mouseDownPosiX);
 			  if(tempX > 20 && device_width<900) {
