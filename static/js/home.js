@@ -32,12 +32,12 @@ $(document).ready(function() {
 	
 	var mouseDownPosiX;
 	var tempX = 0;
-	$("#contentall").bind('touchstart',function (e) {
-		e.preventDefault();
-		alert(e.touches.length);
-        if (! e.touches.length) return;
+	$("#contentall").bind('touchstart',function (event) {
+		event.preventDefault();
+		alert(event.touches.length);
+        if (! event.touches.length) return;
 	  //当鼠标按下时捕获鼠标位置以及对象的当前位置
-	  var touch = e.touches[0];
+	  var touch = event.touches[0];
 	  mouseDownPosiX = touch.pageX;
 	  
 	  alert(touch);
