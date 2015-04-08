@@ -121,7 +121,7 @@ body {
 	margin:24px 0 20px 60px;	
 }
 
-.top_nav{
+#top_nav{
 	float:left;
 	margin:30px 0 18px 4%;
 	padding:0 68px 0 4%;
@@ -131,16 +131,16 @@ body {
 	_width:550px;
 }
 
-.top_nav li {
+#top_nav li {
 	float: left;
 	padding: 0 10px 0 10px !important;
 }
 
-.top_nav li a{
+#top_nav li a{
 	color: #0000ff;
 }
 
-.top_nav li a:hover{
+#top_nav li a:hover{
 	color: #000000;
 }
 

@@ -21,7 +21,7 @@
             <a id="popmenu"><?php echo $title;?></a>
             <a id="top_nav_out"></a>
             <a id="top_home" href="<?php echo base_url("index");?>"></a>
-            <div class="top_nav">
+            <div class="hide_div" id="top_nav">
             	<ul class="top_ul">
                     <li>
                      	<a href="<?php echo base_url('about?aid=1');?>">公司概况</a>

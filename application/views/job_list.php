@@ -7,8 +7,8 @@
         </div>
         <div id="right_content">
             <ul>
-            	<li class="joblist_top">
-            		<span class="title_job" style="padding-left: 18px; width:36%;">职位名称</span>
+            	<li class="joblist_top" style="background:#99D1FF; ">
+            		<span class="title_job" style="padding-left: 5%; width:30%;">职位名称</span>
             		<span class="address_job">工作地点</span>
             		<span class="number_job">招聘人数</span>
                 	<span class="time_job" style="color:#000;">发布时间</span>

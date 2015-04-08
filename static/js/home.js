@@ -19,24 +19,28 @@ $(document).ready(function() {
 	  function () {
 			$(".leftNavi").animate({left: '+0px'}, "fast");
 			$(".list_right").animate({left: '+200px'}, "fast");
-			$(".top_title").animate({left: '+200px'}, "fast");
+			$(".top_second").animate({left: '+200px'}, "fast");
 			$("#bottom_div").animate({left: '+200px'}, "fast");
 	  },
 	  function () {
 			$(".leftNavi").animate({left: '-200px'}, "fast");
 			$(".list_right").animate({left: '0px'}, "fast");
-			$(".top_title").animate({left: '0px'}, "fast");
+			$(".top_second").animate({left: '0px'}, "fast");
 			$("#bottom_div").animate({left: '0px'}, "fast");
 	  }
 	);
-	$("#popmenu").click (function() {
-			$(".top_nav").show();
+
+	$("#popmenu").click(function(e) {
+		if(!$("#top_nav").attr("class","hide_div")) {
+			$("#top_nav").addClass("hide_div");
+		} else {
+			$("#top_nav").removeClass("hide_div");
 		}
-	)
-	$(document).bind("click",function(e){ 
-		var target = $(e.target); 
-		if(target.closest("#popmenu").length == 0){ 
-			$(".top_nav").hide(); 
-		} 
+		e.stopPropagation();
+	});
+	$("#contentall").click(function() {
+		if(!$("#top_nav").attr("class","hide_div")) {
+			$("#top_nav").addClass("hide_div");
+		}
 	});
 });
