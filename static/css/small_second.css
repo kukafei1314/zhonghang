@@ -15,6 +15,7 @@ body {
 }
 img {
 	border:none;
+	width:80%;
 }
 
 .cl{
@@ -450,6 +451,10 @@ img {
 	font-size: 14px;
 	text-overflow: ellipsis;
 	float: left;
+}
+.title_job a {
+	text-decoration:none;
+	color:#222;
 }
 #table_top {
 	padding-left:5%;
