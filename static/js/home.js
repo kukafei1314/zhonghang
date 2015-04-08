@@ -36,9 +36,7 @@ $(document).ready(function() {
 	  //当鼠标按下时捕获鼠标位置以及对象的当前位置
 	  mouseDownPosiX = e.pageX;
 	  
-	  $("#contentall").mousemove(function (e) {//这个地方改成$(document).mousemove貌似可以避免因鼠标移动太快而失去焦点的问题
-		  //貌似只有IE支持这个判断，Chrome和Firefox还没想到好的办法
-		  //if ($(this).is(":focus")) {
+	  $("#contentall").mousemove(function (e) {
 			  tempX = tempX + parseInt(e.pageX) - parseInt(mouseDownPosiX);
 			  if(tempX > 20 && device_width<900) {
 					$(".leftNavi").animate({left: '+0px'}, "fast");
@@ -51,9 +49,6 @@ $(document).ready(function() {
 					$(".top_second").animate({left: '0px'}, "fast");
 					$("#bottom_div").animate({left: '0px'}, "fast");
 			  }
-			  
-		  //};
-		  //当鼠标弹起或者离开元素时，将鼠标弹起置为false，不移动对象
 	  }).mouseup(function () {
 		  $("#contentall").unbind("mousemove");
 		  tempX = 0;
