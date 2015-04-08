@@ -32,7 +32,7 @@ $(document).ready(function() {
 	
 	var mouseDownPosiX;
 	var tempX = 0;
-	$("#contentall").touchstart(function (e) {
+	$("#contentall").bind('touchstart',function (e) {
 	  //当鼠标按下时捕获鼠标位置以及对象的当前位置
 	  mouseDownPosiX = e.pageX;
 	  
