@@ -34,9 +34,9 @@ $(document).ready(function() {
 	var tempX = 0;
 	$("#contentall").bind('touchstart',function (e) {
 	  //当鼠标按下时捕获鼠标位置以及对象的当前位置
-	  alert("click");
-	  mouseDownPosiX = e.pageX;
 	  
+	  mouseDownPosiX = e.pageX;
+	  alert(mouseDownPosiX);
 	  $("#contentall").bind('touchmove', function(e) {
 			  tempX = tempX + parseInt(e.pageX) - parseInt(mouseDownPosiX);
 			  if(tempX > 20 && device_width<900) {
