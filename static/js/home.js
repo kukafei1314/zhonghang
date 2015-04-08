@@ -36,6 +36,7 @@ $(document).ready(function() {
 	  //当鼠标按下时捕获鼠标位置以及对象的当前位置
 	  var touch = e.touches[0];
 	  mouseDownPosiX = touch.pageX;
+	  alert("click");
 	  alert(mouseDownPosiX);
 	  $("#contentall").bind('touchmove', function(e) {
 			  tempX = tempX + parseInt(touch.pageX) - parseInt(mouseDownPosiX);
