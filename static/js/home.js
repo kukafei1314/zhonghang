@@ -34,11 +34,11 @@ $(document).ready(function() {
 	var tempX = 0;
 	$("#contentall").bind('touchstart',function (e) {
 	  //当鼠标按下时捕获鼠标位置以及对象的当前位置
-	  
-	  mouseDownPosiX = e.pageX;
+	  var touch = e.touches[0];
+	  mouseDownPosiX = touch.pageX;
 	  alert(mouseDownPosiX);
 	  $("#contentall").bind('touchmove', function(e) {
-			  tempX = tempX + parseInt(e.pageX) - parseInt(mouseDownPosiX);
+			  tempX = tempX + parseInt(touch.pageX) - parseInt(mouseDownPosiX);
 			  if(tempX > 20 && device_width<900) {
 					$(".leftNavi").animate({left: '+0px'}, "fast");
 					$(".list_right").animate({left: '+200px'}, "fast");
