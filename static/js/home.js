@@ -34,7 +34,7 @@ $(document).ready(function() {
 	var tempX = 0;
 	$("#contentall").bind('touchstart',function (e) {
 		e.preventDefault();
-		alert("click");
+		alert(e.touches.length);
         if (! e.touches.length) return;
 	  //当鼠标按下时捕获鼠标位置以及对象的当前位置
 	  var touch = e.touches[0];
