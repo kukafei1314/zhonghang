@@ -29,7 +29,7 @@ $(document).ready(function() {
 			$("#bottom_div").animate({left: '0px'}, "fast");
 	  }
 	);
-	/*
+	
 	var mouseDownPosiX;
 	var tempX = 0;
 	$("#contentall").mousedown(function (e) {
@@ -59,7 +59,7 @@ $(document).ready(function() {
 		  tempX = 0;
 	  })
 	})
-*/
+
 	$("#popmenu").click(function(e) {
 		if(!$("#top_nav").attr("class","hide_div")) {
 			$("#top_nav").addClass("hide_div");
