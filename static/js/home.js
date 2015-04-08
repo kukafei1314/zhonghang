@@ -32,11 +32,11 @@ $(document).ready(function() {
 	
 	var mouseDownPosiX;
 	var tempX = 0;
-	$("#contentall").mousedown(function (e) {
+	$("#contentall").touchstart(function (e) {
 	  //当鼠标按下时捕获鼠标位置以及对象的当前位置
 	  mouseDownPosiX = e.pageX;
 	  
-	  $("#contentall").mousemove(function (e) {
+	  $("#contentall").bind('touchmove', function(e) {
 			  tempX = tempX + parseInt(e.pageX) - parseInt(mouseDownPosiX);
 			  if(tempX > 20 && device_width<900) {
 					$(".leftNavi").animate({left: '+0px'}, "fast");
@@ -49,8 +49,8 @@ $(document).ready(function() {
 					$(".top_second").animate({left: '0px'}, "fast");
 					$("#bottom_div").animate({left: '0px'}, "fast");
 			  }
-	  }).mouseup(function () {
-		  $("#contentall").unbind("mousemove");
+	  }).bind('touchend',function () {
+		  $("#contentall").unbind("touchmove");
 		  tempX = 0;
 	  })
 	})
