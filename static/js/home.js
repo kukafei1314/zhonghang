@@ -1,5 +1,5 @@
 // JavaScript Document
-
+var device_width = $(window).width();
 function upload_ajax($obj) {
 	var uid = $obj.siblings(".uid").val();
 	var tid = $obj.siblings(".tid").val();
@@ -39,13 +39,24 @@ $(document).ready(function() {
 	  $("#contentall").mousemove(function (e) {//这个地方改成$(document).mousemove貌似可以避免因鼠标移动太快而失去焦点的问题
 		  //貌似只有IE支持这个判断，Chrome和Firefox还没想到好的办法
 		  //if ($(this).is(":focus")) {
-			  var tempX = tempX + parseInt(e.pageX) - parseInt(mouseDownPosiX);
-			  alert(tempX);
+			  tempX = tempX + parseInt(e.pageX) - parseInt(mouseDownPosiX);
+			  if(tempX > 20 && device_width<900) {
+					$(".leftNavi").animate({left: '+0px'}, "fast");
+					$(".list_right").animate({left: '+200px'}, "fast");
+					$(".top_second").animate({left: '+200px'}, "fast");
+					$("#bottom_div").animate({left: '+200px'}, "fast");
+			  } else if(tempX <-20 && device_width<900) {
+					$(".leftNavi").animate({left: '-200px'}, "fast");
+					$(".list_right").animate({left: '0px'}, "fast");
+					$(".top_second").animate({left: '0px'}, "fast");
+					$("#bottom_div").animate({left: '0px'}, "fast");
+			  }
 			  
 		  //};
 		  //当鼠标弹起或者离开元素时，将鼠标弹起置为false，不移动对象
 	  }).mouseup(function () {
 		  $("#contentall").unbind("mousemove");
+		  tempX = 0;
 	  })
 	})
 
