@@ -38,8 +38,9 @@ $(document).ready(function() {
 	$("#contentall").addEventListener('touchend',touchEnd,false);
 	function touchStart(event) {
 		var event = event || window.event;
+		alert(event.originalEvent.targetTouches);
 		event.preventDefault();
-		alert(event.touches.length);
+		
         if (! event.touches.length) return;
 	  //当鼠标按下时捕获鼠标位置以及对象的当前位置
 	  var touch = event.touches[0];
@@ -48,7 +49,6 @@ $(document).ready(function() {
 	function touchMove(event) {
 		var event = event || window.event;
 		event.preventDefault();
-		alert(event.touches.length);
 		
         if (! event.touches.length) return;
 		var touch = event.touches[0];
