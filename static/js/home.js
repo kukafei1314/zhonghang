@@ -37,18 +37,12 @@ $(document).ready(function() {
 	$("#contentall").bind('touchmove',touchMove);
 	$("#contentall").bind('touchend',touchEnd);
 	function touchStart(event) {
-		alert(event.originalEvent.targetTouches[0].pageX);
-		event.preventDefault();
-		
-        if (! event.touches.length) return;
-	  //当鼠标按下时捕获鼠标位置以及对象的当前位置
-	  var touch = event.touches[0];
-	  mouseDownPosiX = touch.pageX;
+		//当鼠标按下时捕获鼠标位置以及对象的当前位置
+		var touch = event.originalEvent.targetTouches[0];
+		mouseDownPosiX = touch.pageX;
 	}
 	function touchMove(event) {
-		event.preventDefault();
-        if (! event.touches.length) return;
-		var touch = event.touches[0];
+		var touch = event.originalEvent.targetTouches[0];
 		  tempX = tempX + parseInt(touch.pageX) - parseInt(mouseDownPosiX);
 		  if(tempX > 20 && device_width<900) {
 				$(".leftNavi").animate({left: '+0px'}, "fast");
