@@ -361,7 +361,7 @@ img {
 	text-align:center;
 }
 .bottom_right_pic img{
-	width:50%;
+	width:45% !important;
 }
 /*中间部分*/
 .list_right {
