@@ -57,7 +57,6 @@ $(document).ready(function() {
 		  }
 	 }
 	 function touchEnd() {
-		 $("#contentall").unbind('touchmove',touchMove);
 		  tempX = 0;
 	}
 
