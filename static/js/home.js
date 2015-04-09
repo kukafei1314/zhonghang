@@ -37,7 +37,7 @@ $(document).ready(function() {
 	$("#contentall").bind('touchmove',touchMove);
 	$("#contentall").bind('touchend',touchEnd);
 	function touchStart(event) {
-		alert(event);
+		alert(event.keys());
 		event.preventDefault();
 		
         if (! event.touches.length) return;
