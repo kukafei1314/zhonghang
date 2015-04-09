@@ -1,3 +1,4 @@
+<div id="contentall">
 <div class="second_content">
 	<div class="leftNavi">
 		<div class="leftNaviTitle">
