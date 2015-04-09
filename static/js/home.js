@@ -43,13 +43,13 @@ $(document).ready(function() {
 	}
 	function touchMove(event) {
 		var touch = event.originalEvent.targetTouches[0];
-		  tempX = tempX + parseInt(touch.pageX) - parseInt(mouseDownPosiX);
-		  if(tempX > 20 && device_width<900) {
+		  tempX = tempX + touch.pageX - mouseDownPosiX;
+		  if(tempX > 30 && device_width<900) {
 				$(".leftNavi").animate({left: '+0px'}, "fast");
 				$(".list_right").animate({left: '+200px'}, "fast");
 				$(".top_second").animate({left: '+200px'}, "fast");
 				$("#bottom_div").animate({left: '+200px'}, "fast");
-		  } else if(tempX <-20 && device_width<900) {
+		  } else if(tempX <-30 && device_width<900) {
 				$(".leftNavi").animate({left: '-200px'}, "fast");
 				$(".list_right").animate({left: '0px'}, "fast");
 				$(".top_second").animate({left: '0px'}, "fast");
