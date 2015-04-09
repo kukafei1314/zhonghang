@@ -37,8 +37,7 @@ $(document).ready(function() {
 	$("#contentall").addEventListener('touchmove',touchMove,false);
 	$("#contentall").addEventListener('touchend',touchEnd,false);
 	function touchStart(event) {
-		var event = event || window.event;
-		alert(event.originalEvent.targetTouches);
+		alert(event);
 		event.preventDefault();
 		
         if (! event.touches.length) return;
@@ -47,9 +46,7 @@ $(document).ready(function() {
 	  mouseDownPosiX = touch.pageX;
 	}
 	function touchMove(event) {
-		var event = event || window.event;
 		event.preventDefault();
-		
         if (! event.touches.length) return;
 		var touch = event.touches[0];
 		  tempX = tempX + parseInt(touch.pageX) - parseInt(mouseDownPosiX);
