@@ -37,7 +37,7 @@ $(document).ready(function() {
 	$("#contentall").bind('touchmove',touchMove);
 	$("#contentall").bind('touchend',touchEnd);
 	function touchStart(event) {
-		alert(event.originalEvent.targetTouches[0].length);
+		alert(event.originalEvent.targetTouches[0].pageX);
 		event.preventDefault();
 		
         if (! event.touches.length) return;
