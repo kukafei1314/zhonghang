@@ -16,6 +16,7 @@ function upload_ajax($obj) {
 }	
 var mouseDownPosiX;
 var tempX = 0;
+var tempY = 0;
 $(document).ready(function() {
 	$("#top_nav_out").toggle(
 	  function () {
@@ -40,16 +41,18 @@ $(document).ready(function() {
 		//当鼠标按下时捕获鼠标位置以及对象的当前位置
 		var touch = event.originalEvent.targetTouches[0];
 		mouseDownPosiX = touch.pageX;
+		mouseDownPosiY = touch.pageY;
 	}
 	function touchMove(event) {
 		var touch = event.originalEvent.targetTouches[0];
 		  tempX = tempX + touch.pageX - mouseDownPosiX;
-		  if(tempX > 40 && device_width<900) {
+		  tempY = tempY + touch.pageY - mouseDownPosiY;
+		  if(tempX > 40 && Math.abs(tempY)<10 && device_width<900) {
 				$(".leftNavi").animate({left: '+0px'}, "fast");
 				$(".list_right").animate({left: '+200px'}, "fast");
 				$(".top_second").animate({left: '+200px'}, "fast");
 				$("#bottom_div").animate({left: '+200px'}, "fast");
-		  } else if(tempX <-30 && device_width<900) {
+		  } else if(tempX <-30 && Math.abs(tempY)<10 && device_width<900) {
 				$(".leftNavi").animate({left: '-200px'}, "fast");
 				$(".list_right").animate({left: '0px'}, "fast");
 				$(".top_second").animate({left: '0px'}, "fast");
@@ -58,6 +61,7 @@ $(document).ready(function() {
 	 }
 	 function touchEnd() {
 		  tempX = 0;
+		  tempY = 0;
 	}
 
 	$("#popmenu").click(function(e) {
