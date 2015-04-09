@@ -33,9 +33,9 @@ $(document).ready(function() {
 	);
 	
 
-	$("#contentall").addEventListener('touchstart', touchStart, false);
-	$("#contentall").addEventListener('touchmove',touchMove,false);
-	$("#contentall").addEventListener('touchend',touchEnd,false);
+	$("#contentall").bind('touchstart', touchStart);
+	$("#contentall").bind('touchmove',touchMove);
+	$("#contentall").bind('touchend',touchEnd);
 	function touchStart(event) {
 		alert(event);
 		event.preventDefault();
@@ -63,6 +63,7 @@ $(document).ready(function() {
 		  }
 	 }
 	 function touchEnd() {
+		 $("#contentall").unbind('touchmove',touchMove);
 		  tempX = 0;
 	}
 
