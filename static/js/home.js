@@ -48,29 +48,28 @@ $(document).ready(function() {
 	}
 	function touchMove(event) {
 		var touch = event.originalEvent.targetTouches[0];
+		$(".leftNavi").animate({left: (touch.pageX - mouseDownPosiX - 200)+'px'}, "fast");
+		$(".list_right").animate({left: (touch.pageX - mouseDownPosiX)+'px'}, "fast");
+		$(".top_second").animate({left: (touch.pageX - mouseDownPosiX)+'px'}, "fast");
+		$("#bottom_div").animate({left: (touch.pageX - mouseDownPosiX)+'px'}, "fast");
 		tempX = tempX + touch.pageX - mouseDownPosiX;
 		tempY = tempY + touch.pageY - mouseDownPosiY;
-		if(tempX < 200 && Math.abs(tempY)<10 && device_width<900) {
-			$(".leftNavi").animate({left: '+'+(tempX-200)+'px'}, "fast");
-			$(".list_right").animate({left: '+'+tempX+'px'}, "fast");
-			$(".top_second").animate({left: '+'+tempX+'px'}, "fast");
-			$("#bottom_div").animate({left: '+'+tempX+'px'}, "fast");
-		}
+		 
 	 }
 	 function touchEnd() {
-		  if(tempX > 40 && Math.abs(tempY)<10 && device_width<900) {
-				$(".leftNavi").animate({left: '+0px'}, "fast");
-				$(".list_right").animate({left: '+200px'}, "fast");
-				$(".top_second").animate({left: '+200px'}, "fast");
-				$("#bottom_div").animate({left: '+200px'}, "fast");
-		  } else if(tempX <-30 && Math.abs(tempY)<10 && device_width<900) {
-				$(".leftNavi").animate({left: '-200px'}, "fast");
-				$(".list_right").animate({left: '0px'}, "fast");
-				$(".top_second").animate({left: '0px'}, "fast");
-				$("#bottom_div").animate({left: '0px'}, "fast");
-		  }
 		  tempX = 0;
 		  tempY = 0;
+		  if(tempX > 40 && Math.abs(tempY)<10 && device_width<900) {
+			$(".leftNavi").animate({left: '+0px'}, "fast");
+			$(".list_right").animate({left: '+200px'}, "fast");
+			$(".top_second").animate({left: '+200px'}, "fast");
+			$("#bottom_div").animate({left: '+200px'}, "fast");
+		} else if(tempX <-30 && Math.abs(tempY)<10 && device_width<900) {
+			$(".leftNavi").animate({left: '-200px'}, "fast");
+			$(".list_right").animate({left: '0px'}, "fast");
+			$(".top_second").animate({left: '0px'}, "fast");
+			$("#bottom_div").animate({left: '0px'}, "fast");
+		}
 	}
 
 	$("#popmenu").click(function() {
