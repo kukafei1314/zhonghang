@@ -48,18 +48,9 @@ $(document).ready(function() {
 	}
 	function touchMove(event) {
 		var touch = event.originalEvent.targetTouches[0];
-		$(".leftNavi").animate({left: (touch.pageX - mouseDownPosiX - 200)+'px'}, "fast");
-		$(".list_right").animate({left: (touch.pageX - mouseDownPosiX)+'px'}, "fast");
-		$(".top_second").animate({left: (touch.pageX - mouseDownPosiX)+'px'}, "fast");
-		$("#bottom_div").animate({left: (touch.pageX - mouseDownPosiX)+'px'}, "fast");
 		tempX = tempX + touch.pageX - mouseDownPosiX;
 		tempY = tempY + touch.pageY - mouseDownPosiY;
-		 
-	 }
-	 function touchEnd() {
-		  tempX = 0;
-		  tempY = 0;
-		  if(tempX > 40 && Math.abs(tempY)<10 && device_width<900) {
+		if(tempX > 30 && Math.abs(tempY)<10 && device_width<900) {
 			$(".leftNavi").animate({left: '+0px'}, "fast");
 			$(".list_right").animate({left: '+200px'}, "fast");
 			$(".top_second").animate({left: '+200px'}, "fast");
@@ -69,7 +60,11 @@ $(document).ready(function() {
 			$(".list_right").animate({left: '0px'}, "fast");
 			$(".top_second").animate({left: '0px'}, "fast");
 			$("#bottom_div").animate({left: '0px'}, "fast");
-		}
+		} 
+	 }
+	 function touchEnd() {
+		  tempX = 0;
+		  tempY = 0;
 	}
 
 	$("#popmenu").click(function() {
