@@ -166,6 +166,7 @@ img {
 	height:100%;
 	position:fixed;
 	background:#99D1FF;
+	z-index:100;
 }
 .leftNaviTitle{
 	width:100%;
