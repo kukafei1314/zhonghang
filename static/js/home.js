@@ -42,6 +42,9 @@ $(document).ready(function() {
 		var touch = event.originalEvent.targetTouches[0];
 		mouseDownPosiX = touch.pageX;
 		mouseDownPosiY = touch.pageY;
+		if(!$("#top_nav").attr("class","hide_div")) {
+			$("#top_nav").addClass("hide_div");
+		}
 	}
 	function touchMove(event) {
 		var touch = event.originalEvent.targetTouches[0];
@@ -64,7 +67,7 @@ $(document).ready(function() {
 		  tempY = 0;
 	}
 
-	$("#popmenu").click(function(e) {
+	$("#popmenu").click(function() {
 		if(!$("#top_nav").attr("class","hide_div")) {
 			$("#top_nav").addClass("hide_div");
 		} else {
