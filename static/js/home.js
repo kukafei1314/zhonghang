@@ -48,8 +48,10 @@ $(document).ready(function() {
 	}
 	function touchMove(event) {
 		var touch = event.originalEvent.targetTouches[0];
-		tempX = tempX + touch.pageX - mouseDownPosiX;
-		tempY = tempY + touch.pageY - mouseDownPosiY;
+		if( Math.abs(tempX) < 30  && Math.abs(tempY) < 10 && device_width<900) {
+			tempX = tempX + touch.pageX - mouseDownPosiX;
+			tempY = tempY + touch.pageY - mouseDownPosiY;
+		}
 		if(tempX > 30 && Math.abs(tempY)<10 && device_width<900) {
 			$(".leftNavi").animate({left: '+0px'}, "fast");
 			$(".list_right").animate({left: '+200px'}, "fast");
