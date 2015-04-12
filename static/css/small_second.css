@@ -10,7 +10,7 @@ body {
 	background:#eee;
 }
 
-.top_ul a:hover {  
+.top_ul li a:hover {  
 	background:#000;
 }
 img {
@@ -30,10 +30,10 @@ img {
 	display:none;
 }
 .top_title {
-	
-	
 	background-image: linear-gradient(#6DACED, #1fc5f5);
-	
+	background-image: -moz-linear-gradient(#6DACED, #1fc5f5);
+	background-image: -ms-linear-gradient(#6DACED, #1fc5f5);
+	background-image: -o-linear-gradient(#6DACED, #1fc5f5);
 }
 #top_nav {
 	position: fixed;
@@ -57,9 +57,6 @@ img {
 	margin: 0 auto;
 	padding: 5px;
 	background-color: rgba(47, 47, 47, 1);
-	background-image: -moz-linear-gradient(#6DACED, #1fc5f5);
-	background-image: -ms-linear-gradient(#6DACED, #1fc5f5);
-	background-image: -o-linear-gradient(#6DACED, #1fc5f5);
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	-o-border-radius: 7px;
@@ -86,17 +83,6 @@ img {
 	border-color: rgba(0,0,0,0.1) transparent;
 }
 
-.top_ul :after {
-	content: "";
-	width: 0;
-	height: 0;
-	position: absolute;
-	bottom: 100%;
-	right: 90px;
-	border-width: 0 6px 6px 6px;
-	border-style: solid;
-	border-color: rgba(47, 47, 47, 0.9) transparent;
-}
 .top_ul li {
 	background-color: rgba(58, 58, 58, 1);
 	display: block;
@@ -104,7 +90,7 @@ img {
 	height: 37px;
 	width: 50%;
 }
-.top_ul a {  
+.top_ul li a {  
 	color:#fff;
 	text-decoration: none;
 	line-height:37px;
@@ -113,7 +99,7 @@ img {
 	height:37px;
 	width:100%;
 }
-.top_ul a:active {  
+.top_ul li  a:active {  
 	background:#000;
 }
 #popmenu {
