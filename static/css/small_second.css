@@ -57,6 +57,9 @@ img {
 	margin: 0 auto;
 	padding: 5px;
 	background-color: rgba(47, 47, 47, 1);
+	background-image: -moz-linear-gradient(#6DACED, #1fc5f5);
+	background-image: -ms-linear-gradient(#6DACED, #1fc5f5);
+	background-image: -o-linear-gradient(#6DACED, #1fc5f5);
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	-o-border-radius: 7px;
