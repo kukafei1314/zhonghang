@@ -113,6 +113,9 @@ img {
 	height:37px;
 	width:100%;
 }
+.top_ul a:active {  
+	background:#000;
+}
 #popmenu {
 	cursor: pointer;
 	display: block;
