@@ -8,7 +8,7 @@
             	<div class="bottom_nav_left">
                 	<ul>
                     	<li><a href="<?php echo base_url('about?aid=1');?>">公司简介</a></li>
-                        <li><a href="<?php echo base_url('about?aid=2');?>">董事长致辞</a></li>
+                        <li><a href="<?php echo base_url('about?aid=7');?>">企业文化</a></li>
                         <li><a href="<?php echo base_url('about?aid=3');?>">管理团队</a></li>
                         <li><a href="<?php echo base_url('about?aid=4');?>">组织机构</a></li>
                     </ul>
@@ -17,7 +17,7 @@
                 	<ul>
                     	<li><a href="<?php echo base_url('about?aid=5');?>">公司战略</a></li>
                         <li><a href="<?php echo base_url('about?aid=6');?>">荣誉与奖励</a></li>
-                        <li><a href="<?php echo base_url('about?aid=7');?>">企业文化</a></li>
+                        <li><a href="<?php echo base_url('about?aid=2');?>">联系我们</a></li>
                     </ul>
                 </div>
                 <div class="cl"></div>
