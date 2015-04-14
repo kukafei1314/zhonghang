@@ -32,8 +32,6 @@ $(document).ready(function() {
 			$("#bottom_div").animate({left: '0px'}, "fast");
 	  }
 	);
-	
-
 	$("#contentall").bind('touchstart', touchStart);
 	$("#contentall").bind('touchmove',touchMove);
 	$("#contentall").bind('touchend',touchEnd);
@@ -42,7 +40,7 @@ $(document).ready(function() {
 		var touch = event.originalEvent.targetTouches[0];
 		mouseDownPosiX = touch.pageX;
 		mouseDownPosiY = touch.pageY;
-		if(!$("#top_nav").attr("class","hide_div")) {
+		if(!$("#top_nav").toggleClass("class","hide_div")) {
 			$("#top_nav").addClass("hide_div");
 		}
 	}
@@ -68,11 +66,7 @@ $(document).ready(function() {
 	}
 
 	$("#popmenu").click(function() {
-		if(!$("#top_nav").attr("class","hide_div")) {
-			$("#top_nav").addClass("hide_div");
-		} else {
-			$("#top_nav").removeClass("hide_div");
-		}
+		$("#top_nav").toggleClass("hide_div");
 		e.stopPropagation();
 	});
 	$("#contentall").click(function() {

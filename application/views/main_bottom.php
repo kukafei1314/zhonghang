@@ -104,7 +104,7 @@
                 <p>E-mail:securities@capitalwater.cn</p>
             </div> 
 -->			<div class="bottom_right_info">
-				中航泰达官方微信已经正式开通，及时获取中航泰达最新动态、行业资讯和信息查询等服务，还可以参加不定期开展的趣味活动，赢取惊喜好礼。
+				中航泰达官方微信已经正式开通，欢迎关注留言咨询，及时获取中航泰达最新动态。
 				<p>微信名称：中航泰达   微信帐号：cnzhtd</p>
 			</div>
 			<div class="bottom_right_pic">
