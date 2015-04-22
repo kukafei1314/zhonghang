@@ -79,7 +79,8 @@
         </div>
         <div class="bottom_right">
         	<div class="bottom_logo">
-            	<img src="<?php echo base_url('static/image/logo3.png');?>"/>
+				<img src="<?php echo base_url('static/image/logo2.png');?>" width="70"/>
+            	<img src="<?php echo base_url('static/image/logo3.png');?>" id="img2"/>
             </div>
 <!--        <div class="main_search">
             	<form action="<?php echo base_url('navigcontrol/search');?>" method=get>

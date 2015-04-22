@@ -59,7 +59,7 @@
             </div>
             <div class="cl"></div>
 		</div>
-        <div class="top_small_nav" style="margin-top:250px;">
+        <div class="top_small_nav" style="margin-top:150px;">
             <a href="<?php echo base_url('about?aid=1');?>">公司概况</a>
             <a href="<?php echo base_url('navigcontrol/?tid=8');?>">新闻动态</a>
             <a href="<?php echo base_url('navigcontrol/?tid=11');?>">业务介绍</a>  	
