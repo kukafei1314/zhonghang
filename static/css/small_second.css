@@ -13,10 +13,6 @@ body {
 .top_ul li a:hover {  
 	background:#000;
 }
-img {
-	border:none;
-	width:80%;
-}
 
 .cl{
 	clear: both;
@@ -292,8 +288,8 @@ img {
 	line-height:40px;
 	text-align:center;
 }
-.bottom_logo img {
-	width:50%;
+.bottom_logo #img2 {
+	width:70%;
 }
 #bottom_div {
 	margin:30px 5% 20px 5%;
