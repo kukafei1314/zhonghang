@@ -206,3 +206,5 @@
             $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
         }(window.jQuery);
     </script>	
+</body>
+</html>

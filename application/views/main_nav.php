@@ -3,9 +3,11 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <link rel="stylesheet"  media="screen and (min-width:900px)" href="<?php echo base_url('static/css/home.css'); ?>"/>
 <link rel="stylesheet"  media="screen and (min-width:900px)" href="<?php echo base_url('static/css/home_middle.css'); ?>"/>
 <link rel="stylesheet" media="screen and (max-width:900px)" href="<?php echo base_url('static/css/small.css'); ?>" type="text/css" />
+<script type="text/javascript" src="<?php echo base_url('static/js/respond.min.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/jquery-1.8.0.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/pic.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/home.js'); ?>"></script>

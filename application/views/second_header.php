@@ -8,6 +8,7 @@
 <link rel="stylesheet" media="screen and (min-width:900px)" href="<?php echo base_url('static/css/home_middle.css'); ?>"/>
 <link rel="stylesheet" media="screen and (min-width:900px)" href="<?php echo base_url('static/css/nav_content.css'); ?>"/>
 <link rel="stylesheet" media="screen and (max-width:900px)" href="<?php echo base_url('static/css/small_second.css'); ?>" type="text/css" />
+<script type="text/javascript" src="<?php echo base_url('static/js/respond.min.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/jquery-1.8.0.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/home.js'); ?>"></script>
 <title>中航泰达</title>
