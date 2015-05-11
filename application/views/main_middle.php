@@ -3,23 +3,26 @@
 			<div class="content_title">
 				<div class="title_left">
 					<div class="title_img"><img src="<?php echo base_url('static/image/title1.jpg')?>"></img></div>
-					<div class="title_font">图片新闻</div>
+					<div class="title_font">公司概况</div>
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a href="<?php echo base_url('navigcontrol/?tid=9');?>">查看更多></a>
+					<a href="<?php echo base_url('about?aid=1');?>">查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
 			<div class="focus">
 				<div id="pic_news">
-					<ul>
-					<?php foreach ($pic_news as $row):?>
-						<li><a href="<?php echo base_url('navigcontrol/news?aid='. $row['aid'].'&tid=9');?>"><img width="250" height="180" src="<?php echo base_url($row['path'])?>" /></a></li>
-					<?php endforeach;?>
-					</ul>
+                	<?php foreach($video as $row):
+                    echo $row['video_address'];
+                    endforeach;?>
+					<!--<ul>
+					<?php //foreach ($pic_news as $row):?>
+						<li><a href="<?php //echo base_url('navigcontrol/news?aid='. $row['aid'].'&tid=9');?>"><img width="250" height="180" src="<?php //echo base_url($row['path'])?>" /></a></li>
+					<?php// endforeach;?>
+					</ul>-->
 				</div>
-				<div id="word">
+				<!--<div id="word">
 					<ul>
 					<?php foreach ($pic_news as $row):?>
 						<li><?php echo $row['title'];?></li>
@@ -33,7 +36,7 @@
 						<li id="smallimg_3" onclick="change(3)"></li>
 						<li id="smallimg_4" onclick="change(4)"></li>
 					</ul>
-				</div>
+				</div>-->
 			</div>
 			<div class="cl"></div>
 			

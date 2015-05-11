@@ -9,14 +9,14 @@ class Index extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->helper('url');
-		$this->load->model('article_list_model');
+		$this->load->model(array('article_list_model','home_video_m'));
 	}
 	
 	public function index()
 	{
 		$data['active_news'] = $this->article_list_model->query_article('10',7);
 		$data['notice'] 	 = $this->article_list_model->query_article('1',7);
-		$data['pic_news'] 	 = $this->article_list_model->pic_list();
+		$data['video'] 	     = $this->home_video_m->home_video_list();
 		$data['pic']    	 = $this->article_list_model->pic_home();
 		$this->load->view('main_nav',$data);
 		$this->load->view('main_middle',$data);
