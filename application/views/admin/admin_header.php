@@ -192,6 +192,11 @@
 					<span class="glyphicon glyphicon-picture"></span>首页大图管理
 				</a>
 			</li>
+            <li>
+				<a id="parent_5" onclick="parent_hold(6)" href="<?php echo base_url('admin/home_video');?>" id="index" target="main">
+					<span class="glyphicon glyphicon-film"></span>首页视频管理
+				</a>
+			</li>
 		</ul>
 	</div><!--/.sidebar-->
     <div id="mainframe">

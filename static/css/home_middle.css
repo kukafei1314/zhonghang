@@ -128,9 +128,16 @@ li {
 }
 .focus #pic_news{
 	width:286px !important;
-	height:210px;
+	height:220px;
 	overflow:hidden;
 }
+
+.focus #pic_news embed{
+	width:286px !important;
+	height:220px !important;
+	overflow:hidden;
+}
+
 .focus #pic_news ul{
 	width:4216px;
 	height:210px;
