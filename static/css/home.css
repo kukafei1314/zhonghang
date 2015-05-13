@@ -114,8 +114,8 @@ body {
 }
 .top_second{
 	width:100%;
-	height:280px;
-	background:url(../image/top_second.png) no-repeat center;
+	height:375px;
+	/*background:url(../image/top_second.png) no-repeat center;*/
 }
 
 .top_title{
