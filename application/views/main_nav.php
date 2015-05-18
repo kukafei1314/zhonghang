@@ -66,7 +66,17 @@
                 </div>
             </div>
             <div id="pic3"></div>
-            <div id="pic4"></div>
+            <div id="pic4">
+            	<div class="high-box">
+                	<div class="figure">
+                    	<img src="<?php echo base_url('static/image/5-1.png');?>" width="600"/>
+                    </div>
+                </div>
+                <div class="high-title">
+            		<h2><img src="<?php echo base_url('static/image/5-2.png');?>" width="466"/></h2>
+                	<h3><img src="<?php echo base_url('static/image/5-3.png');?>" width="466"/></h3>
+                </div>
+            </div>
             <div id="tip_top">
                 <ul>
                     <li id="fading_1" onclick="fadetop(1)" class="fading_top" ></li>

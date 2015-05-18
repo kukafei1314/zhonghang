@@ -76,7 +76,7 @@ body {
 	z-index:-10;
 	opacity:0;
 	filter:alpha(opacity=0); 
-	background: #FFF url(../image/h-enjoyevent-bg.jpg) no-repeat center center;
+	background: #FFF url(../image/h-x3v-bg.jpg) no-repeat center center;
 }
 #pic5 {
 	position: absolute;
@@ -245,6 +245,32 @@ body {
 	-moz-transform: translate3d(0,0,0);
 	-ms-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+}
+.high-box {
+	width: 1005px;
+	height: 700px;
+	position: relative;
+	margin: auto;
+}
+.current_pic .high-box .figure {
+	opacity: 1;
+	-webkit-transform: scale(1) rotate(0) translate3d(0,0,0);
+	-webkit-filter: blur(0);
+}
+.high-box .figure {
+	-webkit-transform: scale(.2) rotate(-20deg) translate3d(0,0,0);
+	-webkit-transform-origin: 10% 80%;
+	-webkit-filter: blur(10px);
+	-webkit-transition: all .8s ease;
+	opacity: 0;
+}
+.high-box .figure {
+	width: 600px;
+	height: 600px;
+	overflow: hidden;
+	position: absolute;
+	top: 70px;
+	left: 0;
 }
 #tip_top{
 	width:10px;
