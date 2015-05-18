@@ -353,7 +353,7 @@ body {
 .screen img {
 	position: relative;
 	left:0px;
-	-webkit-transition: left 3s 2s;
+	-webkit-transition: left 4.5s 2s;
 }
 .current_pic .screen img {
 	left:-600px;
