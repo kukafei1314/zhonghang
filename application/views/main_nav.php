@@ -84,6 +84,7 @@
             <a href="<?php echo base_url('navigcontrol/?tid=11');?>">业务介绍</a>  	
             <div class="cl"></div>
         </div>
+        <!--
         <div class="top_bottom">
         	<a class="top_bottom1" href="<?php echo base_url('about?aid=7');?>">
             	<div class="top_word1">企业文化</div>
@@ -94,7 +95,7 @@
                 <div class="top_word2">Typical Case</div>
             </a>
             <div class="cl"></div>
-        </div>
+        </div>-->
         <div class="top_small_nav">
         	<a href="<?php echo base_url('navigcontrol/?tid=4');?>">专利技术</a>
             <a href="<?php echo base_url('navigcontrol/?tid=15');?>">人力资源</a>
