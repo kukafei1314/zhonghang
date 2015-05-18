@@ -56,7 +56,7 @@
                     <em class="e3"></em>
                 </div>
                 <div class="title1">
-                	<h2><img src="<?php echo base_url('static/image/p2.png');?>" width="746"/></h2>
+                	<h2><img src="<?php echo base_url('static/image/p2.png');?>" width="600"/></h2>
                 </div>
             </div>
             <div id="pic2">
@@ -65,11 +65,20 @@
                 	<h3><img src="<?php echo base_url('static/image/3-2.png');?>" width="466"/></h3>
                 </div>
             </div>
-            <div id="pic3"></div>
+            <div id="pic3">
+            	<div class="high-title1">
+            		<h2><img src="<?php echo base_url('static/image/4-3.png');?>" width="466"/></h2>
+                </div>
+                <div class="figure1">
+                	<div class="screen">
+                    	<img src="<?php echo base_url('static/image/4-1.png');?>" width="1200"/>
+                    </div>
+                </div>
+            </div>
             <div id="pic4">
             	<div class="high-box">
                 	<div class="figure">
-                    	<img src="<?php echo base_url('static/image/5-1.png');?>" width="600"/>
+                    	<img src="<?php echo base_url('static/image/5-1.png');?>" width="500"/>
                     </div>
                 </div>
                 <div class="high-title">

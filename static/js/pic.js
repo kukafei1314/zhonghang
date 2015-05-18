@@ -52,7 +52,7 @@ function fadetop(id){
 	$("#pic"+focus_fade).stop().animate({opacity: '0'},1000);
 	focus_fade = id;
 	$("#pic"+focus_fade).stop().animate({opacity: '1'},1000);
-	//clearTimeout(interval);  //关闭定时器 
+	
 	for (var i = 1; i <= 4; i++) {
 		if(i == id){
 			$("#pic"+i).attr("class","current_pic");
@@ -60,10 +60,11 @@ function fadetop(id){
 			$("#pic"+i).attr("class","");
 		}
 	}
-	//run(); 
+	clearTimeout(interval);  //关闭定时器 
+	run(); 
 }
 $(document).ready(function() {
-  //	run();             //加载页面时启动定时器  
+  	run();             //加载页面时启动定时器  
 });
 function run() {  
      interval = setInterval(fadetime, "5000");  
@@ -74,11 +75,18 @@ function fadetime() {
 		focus_fade = 1;
 	}
 	$("#pic"+focus_fade).stop().animate({opacity: '1'},1000);
-		for (var i = 1; i <= 5; i++) {
+		for (var i = 1; i <= 4; i++) {
 		if(i == focus_fade){
 			$("#fading_"+i).attr("class","fading_top");
 		}else{
 			$("#fading_"+i).attr("class","");
+		}
+	}
+	for (var i = 1; i <= 4; i++) {
+		if(i == focus_fade){
+			$("#pic"+i).attr("class","current_pic");
+		}else{
+			$("#pic"+i).attr("class","");
 		}
 	}
 	clearTimeout(interval);  //关闭定时器 
