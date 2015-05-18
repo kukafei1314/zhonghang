@@ -56,7 +56,7 @@
                     <em class="e3"></em>
                 </div>
                 <div class="title1">
-                	<h2><img src="<?php echo base_url('static/image/p2.png');?>" width="600"/></h2>
+                	<h2><img src="<?php echo base_url('static/image/p2.png');?>" width="480"/></h2>
                 </div>
             </div>
             <div id="pic2">
