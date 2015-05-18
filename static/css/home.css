@@ -50,7 +50,7 @@ body {
 	opacity:0;
 	filter:alpha(opacity=0); 
 	background: #FFF url(../image/3.png) no-repeat center center;
-	background-size:1800px 700px;
+	background-size:1900px 700px;
 }
 #pic3 {
 	position: absolute;
@@ -346,7 +346,7 @@ body {
 	height: 380px;
 	overflow: hidden;
 	position: absolute;
-	top: 280px;
+	top: 200px;
 	left: 50%;
 	margin-left: -350px;
 }
