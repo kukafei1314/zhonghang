@@ -34,9 +34,9 @@ body {
 	right: auto;
 	width: 100%;
 	margin: 0 auto;
-	height: 400px;
+	height: 700px;
 	z-index: -10;
-	
+	background: #FFF url(../image/h-enjoyevent-bg.jpg) no-repeat center center;
 }
 #pic2 {
 	position: absolute;
@@ -45,10 +45,12 @@ body {
 	right: auto;
 	width: 100%;
 	margin:0 auto;
-	height:400px;
+	height:700px;
 	z-index:-10;
 	opacity:0;
 	filter:alpha(opacity=0); 
+	background: #FFF url(../image/3.png) no-repeat center center;
+	background-size:1920px 700px;
 }
 #pic3 {
 	position: absolute;
@@ -57,10 +59,11 @@ body {
 	right: auto;
 	width: 100%;
 	margin:0 auto;
-	height:400px;
+	height:700px;
 	z-index:-10;
 	opacity:0;
 	filter:alpha(opacity=0); 
+	background: #FFF url(../image/h-enjoyevent-bg.jpg) no-repeat center center;
 }
 #pic4 {
 	position: absolute;
@@ -69,10 +72,11 @@ body {
 	right: auto;
 	width: 100%;
 	margin:0 auto;
-	height:400px;
+	height:700px;
 	z-index:-10;
 	opacity:0;
 	filter:alpha(opacity=0); 
+	background: #FFF url(../image/h-enjoyevent-bg.jpg) no-repeat center center;
 }
 #pic5 {
 	position: absolute;
@@ -85,6 +89,162 @@ body {
 	z-index:-10;
 	opacity:0;
 	filter:alpha(opacity=0); 
+	background: #FFF url(../image/h-enjoyevent-bg.jpg) no-repeat center center;
+}
+.e-circle {
+	width: 1920px;
+	height: 632px;
+	position: relative;
+	top: 0;
+	left: 50%;
+	margin-left: -960px;
+	overflow: hidden;
+	z-index: 1;
+}
+.e1 {
+	border: 70px rgba(255,78,0,.65) solid;
+	width: 700px;
+	height: 700px;
+	top: -10px;
+	left: 50%;
+	margin-left: -420px;
+}
+.e2 {
+	border: 60px rgba(49,190,255,.5) solid;
+	width: 500px;
+	height: 500px;
+	top: 90px;
+	left: 50%;
+	margin-left: -320px;
+}
+.e3 {
+	border: 50px rgba(85,227,222,.5) solid;
+	width: 260px;
+	height: 260px;
+	top: 210px;
+	left: 50%;
+	margin-left: -200px;
+}
+.e-circle em {
+	overflow: hidden;
+	position: absolute;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-transition: opacity .5s .5s ease-in-out;
+	-moz-transition: opacity .5s .5s ease-in-out;
+	-ms-transition: opacity .5s .5s ease-in-out;
+	transition: opacity .5s .5s ease-in-out;
+}
+@-webkit-keyframes em3 /* Safari 和 Chrome */
+{
+	0% {opacity: 1;}
+	25% {width: 80px;height:80px;top:300px;margin-left:-110px;opacity: 1;}
+	50% {width: 200px;height:200px;top: 240px;margin-left: -170px;opacity: 1;}
+	75% {width: 160px;height:160px;top:260px;margin-left:-150px;opacity: 1;}
+	100% {width: 260px;height:260px;top: 210px;margin-left: -200px;opacity: 1;}
+}
+@-webkit-keyframes em2 /* Safari 和 Chrome */
+{
+	0% {opacity: 1;}
+	25% {width: 180px;height:180px;top:250px;margin-left:-160px;opacity: 1;}
+	50% {width: 350px;height:350px;top: 165px;margin-left: -245px;opacity: 1;}
+	75% {width: 260px;height:260px;top: 210px;margin-left: -200px;opacity: 1;}
+	100% {width: 500px;height:500px;top: 90px;margin-left: -320px;opacity: 1;}
+}
+@-webkit-keyframes em1 /* Safari 和 Chrome */
+{
+	0% {opacity: 1;}
+	25% {width: 260px;height:260px;top: 210px;margin-left: -200px;opacity: 1;}
+	50% {width: 700px;height:700px;top: -10px;margin-left: -420px;opacity: 1;}
+	75% {width: 500px;height:500px;top: 90px;margin-left: -320px;opacity: 1;}
+	100% {width: 800px;height:800px;top: -60px;margin-left: -470px;opacity: 1;}
+}
+.current_pic .e1 {
+  -webkit-animation:em1 infinite 1.5s 1.2s ease-in-out;
+  -moz-animation: em1 infinite 1.5s 1.2s ease-in-out;
+  -ms-animation: em1 infinite 1.5s 1.2s ease-in-out;
+}
+.current_pic .e2 {
+  -webkit-animation: em2 infinite 1.5s 1.5s ease-in-out;
+  -moz-animation: em2 infinite 1.5s 1.5s ease-in-out;
+  -ms-animation: em2 infinite 1.5s 1.5s ease-in-out;
+}
+.current_pic .e3 {
+	-webkit-animation: em3 infinite 1.5s 2s ease-in-out;
+}
+.current_pic .title1 h2 {
+	opacity: 1;
+	-webkit-animation: hshow 1.5s ease-in-out;
+	-moz-transition: hshow 1.5s ease-in-out;
+	-ms-transition: hshow 1.5s ease-in-out;
+	transition: hshow 1.5s ease-in-out;
+}
+.title1 h2 {
+	width: 756px;
+	height: 448px;
+	overflow: hidden;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin-left: -350px;
+	z-index: 2;
+	opacity: 0;
+	-webkit-transition: opacity 1.5s ease-in-out;
+	-moz-transition: opacity 1.5s ease-in-out;
+	-ms-transition: opacity 1.5s ease-in-out;
+	transition: opacity 1.5s ease-in-out;
+}
+@-webkit-keyframes hshow /* Safari 和 Chrome */
+{
+	0% {width:10px; height:10px;transform: rotate(-180deg);top:600px;margin-left:-5px;}
+	40% {width:10px; height:10px;transform: rotate(-180deg);top:600px;margin-left:-5px;}
+	70% {width: 756px;height:448px;transform: rotate(0deg);top: 200px;margin-left: -350px;}
+	750% {transform: rotate(10deg);}
+	80% {transform: rotate(-10deg);}
+	85%{transform: rotate(10deg);}
+	90%{transform: rotate(-10deg);}
+	95%{transform: rotate(10deg);}
+	100%{transform: rotate(0deg);}
+}
+.high-title {
+	width: 490px;
+	text-align: center;
+	position: absolute;
+	top: 220px;
+	right: 100px;
+}
+.high-title h2{
+	margin-bottom:40px;
+	opacity: 0;
+	-webkit-transform: translate3d(0,-20%,0);
+	-moz-transform: translate3d(0,-20%,0);
+	-ms-transform: translate3d(0,-20%,0);
+	transform: translate3d(0,-20%,0);
+	-webkit-transition: all .5s 1.1s ease;
+	-moz-transition: all .5s 1.1s ease;
+	-ms-transition: all .5s 1.1s ease;
+	transition: all .5s 1.1s ease;
+}
+.high-title h3 {
+	opacity: 0;
+	-webkit-transform: translate3d(0,-20%,0);
+	-moz-transform: translate3d(0,-20%,0);
+	-ms-transform: translate3d(0,-20%,0);
+	transform: translate3d(0,-20%,0);
+	-webkit-transition: all .5s 1.3s ease;
+	-moz-transition: all .5s 1.3s ease;
+	-ms-transition: all .5s 1.3s ease;
+	transition: all .5s 1.3s ease;
+}
+.current_pic .high-title h2,.current_pic .high-title h3 {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
 #tip_top{
 	width:10px;
@@ -109,7 +269,7 @@ body {
 }
 .top{
 	width: 100%;
-	height: 495px;
+	height: 700px;
 	margin: 0 auto;
 }
 .top_second{
@@ -174,10 +334,6 @@ body {
 	margin-right:10px;
 	float:left;
 	
-}
-
-.top_bottom{
-	margin-top:325px;
 }
 
 .top_bottom div div a{

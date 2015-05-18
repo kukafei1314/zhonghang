@@ -14,54 +14,70 @@
 <title>中航泰达</title>
 </head>
 <body>
-	<div class="top">
-        <div id="pic">
-            <?php $pic_num = count($pic); ?>
-            <?php for ($i = 1; $i <= $pic_num; ++$i): ?>
-            <div id="pic<?php echo $i;?>" style="background: #FFF url(<?php echo base_url($pic[$i-1]['url']);?>) no-repeat center center;"></div>
-            <?php endfor; ?>
-            <div id="tip_top">
-                <ul>
-                    <?php for ($i = 1; $i <= $pic_num; ++$i): ?>
-                    <li id="fading_<?php echo $i;?>" onclick="fadetop(<?php echo $i;?>)" <?php if ($i == 1) :?> class="fading_top" <?php endif; ?>></li>
-                    <?php endfor; ?>
-                </ul>
-            </div>
-        </div>
-	
-		<div class="top_title">
-		    <a href="<?php echo base_url('index');?>">
-				<img src="<?php echo base_url('static/image/logo.png'); ?>" width="170" height="45" class="top_logo" />
-			</a>
+    <div class="top_title">
+            <a href="<?php echo base_url('index');?>">
+                <img src="<?php echo base_url('static/image/logo.png'); ?>" width="170" height="45" class="top_logo" />
+            </a>
             <div id="top_nav">
-            	<ul>
+                <ul>
                     <li>
-                    	<a href="<?php echo base_url('about?aid=1');?>">公司概况</a>
+                        <a href="<?php echo base_url('about?aid=1');?>">公司概况</a>
                     </li>
                     <li>
-                    	<a href="<?php echo base_url('navigcontrol/?tid=8');?>">新闻动态</a>
+                        <a href="<?php echo base_url('navigcontrol/?tid=8');?>">新闻动态</a>
                     </li>
                     <li>
-                    	<a href="<?php echo base_url('navigcontrol/?tid=11');?>">业务介绍</a>
+                        <a href="<?php echo base_url('navigcontrol/?tid=11');?>">业务介绍</a>
                     </li>
                     <li>
-                    	<a  href="<?php echo base_url('navigcontrol/?tid=4');?>">专利技术</a>
+                        <a  href="<?php echo base_url('navigcontrol/?tid=4');?>">专利技术</a>
                     </li>
                     <li>
-                    	<a  href="<?php echo base_url('navigcontrol/?tid=15');?>">人力资源</a>
+                        <a  href="<?php echo base_url('navigcontrol/?tid=15');?>">人力资源</a>
                     </li>
                     <li>
-                    	<a  href="<?php echo base_url('navigcontrol/?tid=27');?>">下载中心</a>
+                        <a  href="<?php echo base_url('navigcontrol/?tid=27');?>">下载中心</a>
                     </li>
                     <div class="cl"></div>
                 </ul>
             </div>
             <div class="top_phone">
-				<img src="<?php echo base_url('static/image/top_phone.png'); ?>" alt="" class ="top_phone_pic">
-				<div class="top_phone_num">010-64689035</div>
+                <img src="<?php echo base_url('static/image/top_phone.png'); ?>" alt="" class ="top_phone_pic">
+                <div class="top_phone_num">010-64689035</div>
             </div>
             <div class="cl"></div>
-		</div>
+        </div>
+	<div class="top">
+        <div id="pic">
+            <div id="pic1" class="current_pic">
+                <div class="e-circle">
+                    <em class="e1"></em>
+                    <em class="e2"></em>
+                    <em class="e3"></em>
+                </div>
+                <div class="title1">
+                	<h2><img src="<?php echo base_url('static/image/p2.png');?>" width="746"/></h2>
+                </div>
+            </div>
+            <div id="pic2">
+            	<div class="high-title">
+            		<h2><img src="<?php echo base_url('static/image/3-1.png');?>" width="370"/></h2>
+                	<h3><img src="<?php echo base_url('static/image/3-2.png');?>" width="466"/></h3>
+                </div>
+            </div>
+            <div id="pic3"></div>
+            <div id="pic4"></div>
+            <div id="tip_top">
+                <ul>
+                    <li id="fading_1" onclick="fadetop(1)" class="fading_top" ></li>
+                    <li id="fading_2" onclick="fadetop(2)" class="" ></li>
+                    <li id="fading_3" onclick="fadetop(3)" class="" ></li>
+                    <li id="fading_4" onclick="fadetop(4)" class="" ></li>
+                </ul>
+            </div>
+        </div>
+	</div>
+		
         <div class="top_small_nav" style="margin-top:150px;">
             <a href="<?php echo base_url('about?aid=1');?>">公司概况</a>
             <a href="<?php echo base_url('navigcontrol/?tid=8');?>">新闻动态</a>
