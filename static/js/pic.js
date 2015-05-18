@@ -71,7 +71,7 @@ function run() {
 }  
 function fadetime() {
 	$("#pic"+focus_fade).stop().animate({opacity: '0'},1000);
-	if ((focus_fade = focus_fade + 1) > 5){
+	if ((focus_fade = focus_fade + 1) > 4){
 		focus_fade = 1;
 	}
 	$("#pic"+focus_fade).stop().animate({opacity: '1'},1000);
