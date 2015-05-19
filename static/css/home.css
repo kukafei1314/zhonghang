@@ -868,3 +868,7 @@ body {
 #popmenu {
 	display:none;
 }
+.second_img {
+	background:url(../../static/image/top_second.png) no-repeat center center;
+	height:280px;
+}

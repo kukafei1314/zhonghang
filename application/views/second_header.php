@@ -51,5 +51,5 @@
             </div>
             <div class="cl"></div>
 		</div>
-        <div style="background:url(../../static/image/top_second.png) no-repeat center center; height:280px;"></div>
+        <div class="second_img"></div>
 	</div>
