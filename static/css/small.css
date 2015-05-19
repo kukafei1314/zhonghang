@@ -419,10 +419,7 @@ body {
 	border-top:#d9d9d9 1px solid;
 	color:#555;
 }
-#small_footer2 {
-	display:none;
-}
-#small_footer3 {
+#small_footer2,#small_footer3,.content_left {
 	display:none;
 }
 .footer_line {
