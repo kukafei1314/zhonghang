@@ -13,6 +13,10 @@ body {
 .top_ul li a:hover {  
 	background:#000;
 }
+img {
+	border:none;
+	max-width:80%;
+}
 
 .cl{
 	clear: both;
