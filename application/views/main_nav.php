@@ -43,7 +43,7 @@
             </div>
             <div class="top_phone">
                 <img src="<?php echo base_url('static/image/top_phone.png'); ?>" alt="" class ="top_phone_pic">
-                <div class="top_phone_num">010-64689035</div>
+                <div class="top_phone_num">010-83650320</div>
             </div>
             <div class="cl"></div>
         </div>
