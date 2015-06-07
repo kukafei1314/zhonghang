@@ -75,3 +75,7 @@ $(document).ready(function() {
 		}
 	});
 });
+
+window.onload=function(){
+	$("#pic1").addClass("current_pic");
+};

@@ -49,14 +49,10 @@
         </div>
 	<div class="top">
         <div id="pic">
-            <div id="pic1" class="current_pic">
-                <div class="e-circle">
-                    <em class="e1"></em>
-                    <em class="e2"></em>
-                    <em class="e3"></em>
-                </div>
+            <div id="pic1">
                 <div class="title1">
-                	<h2><img src="<?php echo base_url('static/image/p2.png');?>" width="480"/></h2>
+                	<h2><img src="<?php echo base_url('static/image/p1.png');?>" width="480"/></h2>
+                    <h3><img src="<?php echo base_url('static/image/p12.png');?>" width="300"/></h3>
                 </div>
             </div>
             <div id="pic2">
@@ -67,18 +63,18 @@
             </div>
             <div id="pic3">
             	<div class="high-title1">
-            		<h2><img src="<?php echo base_url('static/image/4-3.png');?>" width="466"/></h2>
+            		<h2><img src="<?php echo base_url('static/image/4-3.png');?>" width="380"/></h2>
                 </div>
                 <div class="figure1">
                 	<div class="screen">
-                    	<img src="<?php echo base_url('static/image/4-1.png');?>" width="1200"/>
+                    	<img src="<?php echo base_url('static/image/4-1.png');?>" height="300"/>
                     </div>
                 </div>
             </div>
             <div id="pic4">
             	<div class="high-box">
                 	<div class="figure">
-                    	<img src="<?php echo base_url('static/image/5-1.png');?>" width="500"/>
+                    	<img src="<?php echo base_url('static/image/5-1.png');?>" width="400"/>
                     </div>
                 </div>
                 <div class="high-title">
