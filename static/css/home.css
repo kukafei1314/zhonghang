@@ -37,6 +37,7 @@ body {
 	height: 500px;
 	z-index: -10;
 	background: #FFF url(../image/h-enjoyevent-bg.jpg) no-repeat center center;
+	background-size: 100% 500px;
 }
 #pic2 {
 	position: absolute;
@@ -50,7 +51,7 @@ body {
 	opacity:0;
 	filter:alpha(opacity=0); 
 	background: #FFF url(../image/3.png) no-repeat center center;
-	background-size:1600px 500px;
+	background-size:100% 500px;
 }
 #pic3 {
 	position: absolute;
@@ -64,7 +65,7 @@ body {
 	opacity:0;
 	filter:alpha(opacity=0); 
 	background: #FFF url(../image/4-4.jpg) no-repeat center center;
-	background-size:1600px 500px;
+	background-size:100% 500px;
 }
 #pic4 {
 	position: absolute;
@@ -78,19 +79,7 @@ body {
 	opacity:0;
 	filter:alpha(opacity=0); 
 	background: #FFF url(../image/h-x3v-bg.jpg) no-repeat center center;
-}
-#pic5 {
-	position: absolute;
-	top: 95px;
-	left: auto;
-	right: auto;
-	width: 100%;
-	margin:0 auto;
-	height:400px;
-	z-index:-10;
-	opacity:0;
-	filter:alpha(opacity=0); 
-	background: #FFF url(../image/h-enjoyevent-bg.jpg) no-repeat center center;
+	background-size:100% 500px;
 }
 
 .current_pic .title1 h2 {
@@ -379,8 +368,8 @@ body {
 #tip_top{
 	width:10px;
 	position:absolute;
-	left:95%;
-	top:375px;
+	left:97%;
+	top:325px;
 	z-index:14;
 }
 #tip_top ul li{
