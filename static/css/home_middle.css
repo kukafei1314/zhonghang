@@ -87,7 +87,15 @@ li {
 }
 .middle_list {
 	margin-top:10px;
+	height:210px;
+	overflow:hidden;
 }
+
+#middle_list_scroll{
+	position:relative;
+	top:0;
+}
+
 .news_list {
 	height:30px;
 	color:#999;

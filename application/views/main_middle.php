@@ -45,16 +45,17 @@
 			<div class="content_title">
 				<div class="title_left title_middle_left">
 					<div class="title_img"><img src="<?php echo base_url('static/image/title1.jpg')?>"></img></div>
-					<div class="title_font">行业动态</div>
+					<div class="title_font">业绩案例</div>
 					<div class="cl"></div>
 				</div>
 				<div class="title_right title_middle_right">
-					<a href="<?php echo base_url('navigcontrol/?tid=10');?>">查看更多></a>
+					<a href="<?php echo base_url('navigcontrol/?tid=12');?>">查看更多></a>
 				</div>
 				<div class="cl"></div>
 			</div>
             <div class="middle_border">
 			<div class="middle_list">
+            	<div id="middle_list_scroll"> 
 				<ul>
 				<?php foreach ($active_news as $news): ?>
 					<li class="news_list">
@@ -66,6 +67,7 @@
 					</li>
 				<?php endforeach;?>
 				</ul>
+                </div>
 			</div>
             </div>
 		</div>

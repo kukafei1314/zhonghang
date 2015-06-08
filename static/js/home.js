@@ -79,3 +79,15 @@ $(document).ready(function() {
 window.onload=function(){
 	$("#pic1").addClass("current_pic");
 };
+
+$(document).ready(function() {
+    var h = document.getElementById("middle_list_scroll").offsetHeight;
+	setInterval(function(){
+			var top = parseInt($("#middle_list_scroll").css("top"));
+			if((top) + h > 210) {
+				$("#middle_list_scroll").css("top", (top-30*1.0)+"px");
+			} else {
+				$("#middle_list_scroll").css("top", 0);
+			}
+		},1000);
+});

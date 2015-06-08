@@ -11,11 +11,15 @@ class Article_list_model extends CI_Model
        $this->load->model('article_list_m');
    }
    
-   public function query_article($tid,$limit, $offset = 0)
+   public function query_article($tid,$limit = 0, $offset = 0)
    {
 		$this->db->where('type',$tid);
 		$this->db->order_by('add_time','desc');
-       $query = $this->db->get('zh_articles',$limit, $offset);
+		if($limit != 0){
+			$query = $this->db->get('zh_articles',$limit, $offset);
+		} else {
+			$query = $this->db->get('zh_articles');
+		}
        return $query->result_array();
    }
    
