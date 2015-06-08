@@ -37,7 +37,7 @@ body {
 	height: 500px;
 	z-index: -10;
 	background: #FFF url(../image/h-enjoyevent-bg.jpg) no-repeat center center;
-	background-size: 100% 500px;
+	background-size: 1435px 500px;
 }
 #pic2 {
 	position: absolute;
@@ -51,7 +51,7 @@ body {
 	opacity:0;
 	filter:alpha(opacity=0); 
 	background: #FFF url(../image/3.png) no-repeat center center;
-	background-size:100% 500px;
+	background-size:1435px 500px;
 }
 #pic3 {
 	position: absolute;
@@ -65,7 +65,7 @@ body {
 	opacity:0;
 	filter:alpha(opacity=0); 
 	background: #FFF url(../image/4-4.jpg) no-repeat center center;
-	background-size:100% 500px;
+	background-size:1435px 500px;
 }
 #pic4 {
 	position: absolute;
@@ -79,7 +79,7 @@ body {
 	opacity:0;
 	filter:alpha(opacity=0); 
 	background: #FFF url(../image/h-x3v-bg.jpg) no-repeat center center;
-	background-size:100% 500px;
+	background-size:1435px 500px;
 }
 
 .current_pic .title1 h2 {
@@ -189,7 +189,7 @@ body {
 	text-align: center;
 	position: absolute;
 	top: 220px;
-	right: 100px;
+	right: 200px;
 }
 .high-title h2{
 	margin-bottom:40px;
@@ -222,7 +222,7 @@ body {
 	transform: translate3d(0,0,0);
 }
 .high-box {
-	width: 1005px;
+	width: 1200px;
 	height: 700px;
 	position: relative;
 	margin: auto;
@@ -341,7 +341,7 @@ body {
 	overflow: hidden;
 	position: absolute;
 	top: 0;
-	left: 40px;
+	left: 60px;
 	background: #000;
 }
 .figure1 {
@@ -368,7 +368,7 @@ body {
 #tip_top{
 	width:10px;
 	position:absolute;
-	left:97%;
+	left:92%;
 	top:325px;
 	z-index:14;
 }

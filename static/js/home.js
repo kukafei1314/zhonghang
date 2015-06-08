@@ -77,6 +77,8 @@ $(document).ready(function() {
 });
 
 window.onload=function(){
+	var width=document.documentElement.clientWidth;
+	$(".title1 h3").css("left", parseInt(width/2)-717 + "px");
 	$("#pic1").addClass("current_pic");
 };
 

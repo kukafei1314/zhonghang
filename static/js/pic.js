@@ -67,7 +67,7 @@ $(document).ready(function() {
   	run();             //加载页面时启动定时器  
 });
 function run() {  
-     interval = setInterval(fadetime, "6000");  
+     //interval = setInterval(fadetime, "6000");  
 }  
 function fadetime() {
 	$("#pic"+focus_fade).stop().animate({opacity: '0'},1000);
