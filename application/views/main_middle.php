@@ -7,7 +7,7 @@
 					<div class="cl"></div>
 				</div>
 				<div class="title_right">
-					<a href="<?php echo base_url('about?aid=1');?>">查看更多></a>
+					<a href="<?php echo base_url('about?aid=1');?>">查看更多></a> 
 				</div>
 				<div class="cl"></div>
 			</div>
