@@ -36,7 +36,7 @@ body {
 	margin: 0 auto;
 	height: 500px;
 	z-index: -10;
-	background: #FFF url(../image/h-enjoyevent-bg.jpg) no-repeat center center;
+	background: #FFF url(../image/h-enjoyevent-bg.png) no-repeat center center;
 	background-size: 1435px 500px;
 }
 #pic2 {
@@ -99,7 +99,7 @@ body {
 }
 .title1 h2 {
 	width: 480px;
-	height: 448px;
+	height: 248px;
 	overflow: hidden;
 	position: absolute;
 	top: 150px;
@@ -223,7 +223,7 @@ body {
 }
 .high-box {
 	width: 1200px;
-	height: 700px;
+	height: 500px;
 	position: relative;
 	margin: auto;
 }

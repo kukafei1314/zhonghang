@@ -90,6 +90,7 @@ li {
 	margin-top:10px;
 	height:210px;
 	overflow:hidden;
+	position:relative;
 }
 
 #middle_list_scroll{
